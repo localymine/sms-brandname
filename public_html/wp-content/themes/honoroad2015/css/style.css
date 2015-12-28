@@ -25,6 +25,7 @@ input::-moz-focus-inner {
 /*$slider-height: 975px;*/
 #slider1_container {
   visibility: hidden;
+
   position: relative;
   margin: 0 auto;
   top: 0px;

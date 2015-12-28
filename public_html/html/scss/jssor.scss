@@ -11,8 +11,8 @@ $slider-border-color: #519044;
     left: 0px; 
     width: $slider-width; 
     height: $slider-height; 
-    border-top: 2px solid $slider-border-color;
-    border-bottom: 2px solid $slider-border-color;
+    // border-top: 2px solid $slider-border-color;
+    // border-bottom: 2px solid $slider-border-color;
     overflow: hidden;
     .box-loading{
         position: absolute;
@@ -245,3 +245,19 @@ $carousel-height: 150px;
 .jssora03r:hover { background-position: -183px -33px; }
 .jssora03l.jssora03ldn { background-position: -243px -33px; }
 .jssora03r.jssora03rdn { background-position: -303px -33px; }
+.jssora05l, .jssora05r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url('images/a17.png') no-repeat;
+    overflow: hidden;
+}
+.jssora05l { background-position: -10px -40px; }
+.jssora05r { background-position: -70px -40px; }
+.jssora05l:hover { background-position: -130px -40px; }
+.jssora05r:hover { background-position: -190px -40px; }
+.jssora05l.jssora05ldn { background-position: -250px -40px; }
+.jssora05r.jssora05rdn { background-position: -310px -40px; }
