@@ -64,7 +64,7 @@
   line-height: 19px;
   color: white;
   font-size: 12px;
-  background: url(../img/b21.png) no-repeat;
+  background: url(../images/b21.png) no-repeat;
   overflow: hidden;
   cursor: pointer; }
 
@@ -262,7 +262,7 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  background: url("images/a17.png") no-repeat;
+  background: url("../images/a17.png") no-repeat;
   overflow: hidden; }
 
 .jssora05l {

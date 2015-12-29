@@ -88,7 +88,7 @@ input::-moz-focus-inner {
   line-height: 19px;
   color: white;
   font-size: 12px;
-  background: url(../img/b21.png) no-repeat;
+  background: url(../images/b21.png) no-repeat;
   overflow: hidden;
   cursor: pointer; }
 
@@ -286,7 +286,7 @@ input::-moz-focus-inner {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  background: url("images/a17.png") no-repeat;
+  background: url("../images/a17.png") no-repeat;
   overflow: hidden; }
 
 .jssora05l {
@@ -391,6 +391,18 @@ p img {
   display: block;
   height: auto;
   max-width: 100%; }
+
+.row-gap-small {
+  height: 10px; }
+
+.row-gap-medium {
+  height: 20px; }
+
+.row-gap-big {
+  height: 50px; }
+
+.row-gap-huge {
+  height: 100px; }
 
 textarea {
   resize: both; }
@@ -585,15 +597,16 @@ h2 {
   .header #logo {
     /*transform: translate(100%, 0);*/ }
     .header #logo #menu-toggle .navbar-toggle {
-      border: 1px solid #ffef00; }
+      border: 1px solid #A79B92; }
       .header #logo #menu-toggle .navbar-toggle:hover {
-        background-color: #ffef00; }
+        background-color: #A79B92; }
         .header #logo #menu-toggle .navbar-toggle:hover .icon-bar {
-          background-color: #0010ff; }
+          background-color: #58646d; }
       .header #logo #menu-toggle .navbar-toggle .icon-bar {
-        background-color: #ffef00; }
+        background-color: #A79B92; }
     .header #logo .navbar-brand {
-      padding: 0;
+      margin-left: -80px !important;
+      margin-right: 160px;
       /*float: none;*/ }
   .header nav {
     padding-left: 0;
@@ -628,15 +641,15 @@ h2 {
           transition: all 0.3s ease 0s;
           /*background: $menu-bg;*/
           font-weight: 700;
-          color: #fff11a;
-          font-size: 16px;
+          color: #A79B92;
+          font-size: 14px;
           display: block;
-          padding: 20px 10px; }
+          padding: 30px 10px; }
           .header nav ul li a:before {
             -webkit-transition: all 0.3s ease 0s;
             -moz-transition: all 0.3s ease 0s;
             transition: all 0.3s ease 0s;
-            background: #ffef00;
+            background: #A79B92;
             bottom: 0;
             content: "";
             display: block;
@@ -647,14 +660,9 @@ h2 {
             width: 0; }
           .header nav ul li a:hover {
             text-decoration: none;
-            color: #fff; }
-          .header nav ul li a.active:before, .header nav ul li a:hover:before {
-            -webkit-transition: all 0.3s ease 0s;
-            -moz-transition: all 0.3s ease 0s;
-            transition: all 0.3s ease 0s;
-            width: 100%; }
+            color: #E9A17F; }
           .header nav ul li a.active {
-            color: #fff233; }
+            color: #EAA98A; }
           .header nav ul li a.nav-title {
             display: block;
             position: relative;
@@ -737,7 +745,7 @@ ul.m-sidebar {
       transition: all 0.3s ease 0s;
       background: #FFFFFF;
       font-weight: 700;
-      color: #fff11a;
+      color: #A79B92;
       font-size: 16px;
       display: block;
       padding: 20px 10px; }
@@ -745,7 +753,7 @@ ul.m-sidebar {
         -webkit-transition: all 0.3s ease 0s;
         -moz-transition: all 0.3s ease 0s;
         transition: all 0.3s ease 0s;
-        background: #ffef00;
+        background: #A79B92;
         bottom: 0;
         content: "";
         display: block;
@@ -756,14 +764,14 @@ ul.m-sidebar {
         width: 0; }
       ul.m-sidebar li a:hover {
         text-decoration: none;
-        color: #ffef00; }
+        color: #A79B92; }
       ul.m-sidebar li a.active:before, ul.m-sidebar li a:hover:before {
         -webkit-transition: all 0.3s ease 0s;
         -moz-transition: all 0.3s ease 0s;
         transition: all 0.3s ease 0s;
         width: 100%; }
       ul.m-sidebar li a.active {
-        color: #fff233; }
+        color: #EAA98A; }
       ul.m-sidebar li a.nav-title {
         display: block;
         position: relative;
@@ -796,26 +804,45 @@ ul.m-sidebar {
 .carousel-control.right {
   background-image: none; }
 
-.product {
-  margin-top: 30px;
-  margin-bottom: 30px; }
-  .product a {
-    color: #fff;
-    text-decoration: none; }
-    .product a article.item {
-      position: relative;
-      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15); }
-      .product a article.item .prod-title {
-        bottom: 0;
-        position: absolute;
-        background: rgba(0, 0, 0, 0.75);
-        padding: 6px;
-        text-align: center;
-        width: 100%; }
-        .product a article.item .prod-title h1 {
-          font-size: 16px;
-          color: #fff;
-          margin-top: 10px; }
+#design {
+  background: #F2EEEB;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  #design h2 {
+    color: #FFE9D8;
+    font-size: 40px;
+    font-weight: 300 !important; }
+  #design span {
+    color: #8F7D76;
+    font-size: 16px; }
+  #design .main-text-design {
+    padding-top: 75px; }
+    #design .main-text-design .title {
+      color: #DE9470;
+      padding-bottom: 10px; }
+    #design .main-text-design a {
+      text-decoration: none; }
+      #design .main-text-design a article.item {
+        position: relative; }
+        #design .main-text-design a article.item span {
+          color: #DE9470; }
+
+#service {
+  background: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  #service h2 {
+    color: #383838;
+    font-size: 40px;
+    font-weight: 300 !important; }
+  #service img {
+    padding-bottom: 20px; }
+  #service .service-title {
+    color: #1A1A1A;
+    font-size: 18px;
+    font-weight: 500; }
+  #service .service-content {
+    padding-top: 20px; }
 
 .information .module-info header {
   -moz-border-bottom-colors: none;
@@ -1116,7 +1143,7 @@ ul.m-sidebar {
   margin-bottom: 35px;
   font-size: 2em; }
   .product-all .prod-cat span {
-    color: #ffef00; }
+    color: #A79B92; }
 .product-all a {
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
@@ -1241,16 +1268,16 @@ ul.m-sidebar {
       margin-bottom: 5px; }
       .news .news-sidebar ul ul li a {
         display: block;
-        color: #ffef00; }
+        color: #A79B92; }
         .news .news-sidebar ul ul li a span {
           text-transform: capitalize;
           padding-left: 5px; }
         .news .news-sidebar ul ul li a:hover {
-          color: #fff233; }
+          color: #EAA98A; }
 .news article.box a h2 {
   padding: 5px; }
 .news article.box a:hover h2 {
-  color: #ffef00; }
+  color: #A79B92; }
 .news article.box-row a {
   display: block;
   position: relative;
