@@ -410,7 +410,7 @@ ul.m-sidebar{
     padding-top: 30px;
     padding-bottom: 30px;
     h2{
-        color: #FFE9D8;
+        color: #F79A57;
         font-size: 40px;
         font-weight: 300 !important;
     }
@@ -458,6 +458,55 @@ ul.m-sidebar{
     .service-content{
         padding-top: 20px;
     }
+}
+
+#project{
+    background: #2A2F33;
+    h2{
+        color: $white;
+        font-size: 40px;
+        font-weight: 300 !important;
+    }
+    span{
+        color: $white;
+    }
+}
+
+#sliderLogo{
+    background: #F2EEEB;
+}
+
+#news{
+    background: $white;
+    h2{
+        color: #1A1A1A;
+        font-size: 40px;
+        font-weight: 300 !important;
+    }
+    img{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .new-middle{
+        border-style: none solid none solid;
+        border-width: 0px 1px 0px 1px;
+        border-left-color: #F2EEEB;
+        border-right-color: #F2EEEB;
+    }
+    .service-title{
+        color: #1A1A1A;
+        font-size: 20px;
+        font-weight: 400 !important;
+    }
+    .service-content{
+        color: #C6C6C6;
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+}
+
+#slideDesign{
+    background: none;
 }
 
 .information{

@@ -38,6 +38,45 @@
     height: 849px;
     overflow: hidden; }
 
+#jssor_3 {
+  visibility: hidden;
+  position: relative;
+  margin: 0 auto;
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 430px;
+  overflow: hidden; }
+  #jssor_3 .box-loading {
+    position: absolute;
+    top: 0px;
+    left: 0px; }
+    #jssor_3 .box-loading .box-loading-overlay {
+      filter: alpha(opacity=70);
+      opacity: 0.7;
+      position: absolute;
+      display: block;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%; }
+    #jssor_3 .box-loading .box-loading-img {
+      position: absolute;
+      display: block;
+      background: url(../img/loading.gif) no-repeat center center;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%; }
+  #jssor_3 .box-slider {
+    cursor: move;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 430px;
+    overflow: hidden; }
+
 /*
 <!--#region Bullet Navigator Skin Begin -->
 <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
@@ -155,7 +194,7 @@
     #jssor_1 .box-loading .box-loading-img {
       position: absolute;
       display: block;
-      background: url("../img/loading.gif") no-repeat center center;
+      background: url("../images/loading.gif") no-repeat center center;
       top: 0px;
       left: 0px;
       width: 100%;
@@ -177,6 +216,58 @@
       width: 21px;
       height: 21px; }
   #jssor_1 .box-arrowleft, #jssor_1 .box-arrowright {
+    top: 0px;
+    left: 8px;
+    width: 55px;
+    height: 55px; }
+
+#jssor_2 {
+  position: relative;
+  margin: 0 auto;
+  top: 0px;
+  left: 0px;
+  width: 809px;
+  height: 150px;
+  overflow: hidden;
+  visibility: hidden; }
+  #jssor_2 .box-loading {
+    position: absolute;
+    top: 0px;
+    left: 0px; }
+    #jssor_2 .box-loading .box-loading-overlay {
+      filter: alpha(opacity=70);
+      opacity: 0.7;
+      position: absolute;
+      display: block;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%; }
+    #jssor_2 .box-loading .box-loading-img {
+      position: absolute;
+      display: block;
+      background: url("../images/loading.gif") no-repeat center center;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%; }
+  #jssor_2 .box-slider {
+    cursor: default;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 809px;
+    height: 150px;
+    overflow: hidden; }
+    #jssor_2 .box-slider .box-item {
+      display: none; }
+  #jssor_2 .box-navigator {
+    bottom: 10px;
+    right: 10px; }
+    #jssor_2 .box-navigator .box-prototype {
+      width: 21px;
+      height: 21px; }
+  #jssor_2 .box-arrowleft, #jssor_2 .box-arrowright {
     top: 0px;
     left: 8px;
     width: 55px;
@@ -282,5 +373,33 @@
 
 .jssora05r.jssora05rdn {
   background-position: -310px -40px; }
+
+.jssora06l, .jssora06r {
+  display: block;
+  position: absolute;
+  /* size of arrow element */
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  background: url("../images/a06.png") no-repeat;
+  overflow: hidden; }
+
+.jssora06l {
+  background-position: -8px -38px; }
+
+.jssora06r {
+  background-position: -68px -38px; }
+
+.jssora06l:hover {
+  background-position: -128px -38px; }
+
+.jssora06r:hover {
+  background-position: -188px -38px; }
+
+.jssora06l.jssora06ldn {
+  background-position: -248px -38px; }
+
+.jssora06r.jssora06rdn {
+  background-position: -308px -38px; }
 
 /*# sourceMappingURL=jssor.css.map */
