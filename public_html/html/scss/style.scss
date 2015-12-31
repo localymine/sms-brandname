@@ -470,6 +470,76 @@ ul.m-sidebar{
     span{
         color: $white;
     }
+    .menu-tab-pro{
+        ul{
+            display: inline-block;
+            /*float: right;*/
+            /*display: block;*/
+            float: none;
+            margin: 0px 0 0;
+            padding: 0;
+            list-style-type: none;
+            position: relative;
+            z-index: 5;
+            li.no-hover{
+                a{
+                    &.navbar-brand{
+                        padding: 0px;
+                    }
+                    &:before{
+                        height: 0;
+                    }
+                }
+            }
+            li{
+                display: inline-block;
+                /*position: relative;*/
+                line-height: 24px;
+                a{
+                    @include transition(0.3s);
+                    /*background: $menu-bg;*/
+                    font-weight: 700;
+                    color: $menu-color-normal;
+                    font-size: 14px;
+                    display: block;
+                    padding: 30px 10px;
+                    &:before{
+                        @include transition(0.3s);
+                        background: $menu-color;
+                        bottom: 0;
+                        content: "";
+                        display: block;
+                        height: 3px;
+                        left: 0;
+                        position: absolute;
+                        right: 0;
+                        width: 0;
+                    }
+                    &:hover{
+                        text-decoration: none;
+                        color: $menu-color-hover;
+                    }
+                    // &.active:before, &:hover:before{
+                    //     @include transition(0.3s);
+                    //     width: 100%;
+                    // }
+                    &.active{
+                        color: $menu-color-active;
+                    }
+                    &.nav-title{
+                        display: block;
+                        position: relative;
+                        text-transform: uppercase;
+                        z-index: 5;
+                    }
+                    span{
+                        text-align: center;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }
 
 #sliderLogo{
@@ -701,6 +771,18 @@ ul.m-sidebar{
             h5{
                 display: inline-block;
             }
+        }
+        span{
+            color: #606264;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+    .signs-up{
+        span{
+            color: #999B9C;
+            font-size: 32px;
+            font-weight: 300;
         }
     }
 }

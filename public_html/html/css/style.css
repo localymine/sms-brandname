@@ -971,6 +971,60 @@ ul.m-sidebar {
     font-weight: 300 !important; }
   #project span {
     color: #fff; }
+  #project .menu-tab-pro ul {
+    display: inline-block;
+    /*float: right;*/
+    /*display: block;*/
+    float: none;
+    margin: 0px 0 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    z-index: 5; }
+    #project .menu-tab-pro ul li.no-hover a.navbar-brand {
+      padding: 0px; }
+    #project .menu-tab-pro ul li.no-hover a:before {
+      height: 0; }
+    #project .menu-tab-pro ul li {
+      display: inline-block;
+      /*position: relative;*/
+      line-height: 24px; }
+      #project .menu-tab-pro ul li a {
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        /*background: $menu-bg;*/
+        font-weight: 700;
+        color: #A79B92;
+        font-size: 14px;
+        display: block;
+        padding: 30px 10px; }
+        #project .menu-tab-pro ul li a:before {
+          -webkit-transition: all 0.3s ease 0s;
+          -moz-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s;
+          background: #A79B92;
+          bottom: 0;
+          content: "";
+          display: block;
+          height: 3px;
+          left: 0;
+          position: absolute;
+          right: 0;
+          width: 0; }
+        #project .menu-tab-pro ul li a:hover {
+          text-decoration: none;
+          color: #E9A17F; }
+        #project .menu-tab-pro ul li a.active {
+          color: #EAA98A; }
+        #project .menu-tab-pro ul li a.nav-title {
+          display: block;
+          position: relative;
+          text-transform: uppercase;
+          z-index: 5; }
+        #project .menu-tab-pro ul li a span {
+          text-align: center;
+          display: block; }
 
 #sliderLogo {
   background: #F2EEEB; }
@@ -1130,7 +1184,7 @@ ul.m-sidebar {
     pointer-events: none; }
 
 #footer-wrapper {
-  background: #56ba57; }
+  background: #2A2F33; }
   #footer-wrapper .copyright {
     font-size: 0.75em;
     /*text-align: center;*/
@@ -1151,6 +1205,14 @@ ul.m-sidebar {
         display: inline-block; }
       #footer-wrapper .copyright .priv h5 {
         display: inline-block; }
+    #footer-wrapper .copyright span {
+      color: #606264;
+      font-size: 20px;
+      font-weight: 500; }
+  #footer-wrapper .signs-up span {
+    color: #999B9C;
+    font-size: 32px;
+    font-weight: 300; }
 
 #back-top {
   bottom: 90px;
