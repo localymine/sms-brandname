@@ -923,6 +923,13 @@ ul.m-sidebar {
 .carousel-control.right {
   background-image: none; }
 
+/*mangaer container*/
+.container-manager {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
 #design {
   background: #F2EEEB;
   padding-top: 30px;
@@ -1191,6 +1198,65 @@ ul.m-sidebar {
     padding-bottom: 20px;
     padding-top: 10px;
     font-weight: 200 !important; }
+  #news-page-body .news-info {
+    color: #fff;
+    padding-left: 20%;
+    position: relative; }
+    #news-page-body .news-info a h4 {
+      color: #fff;
+      display: inline-block;
+      font-size: 18px;
+      left: 5%;
+      opacity: 1;
+      position: absolute;
+      text-align: center;
+      top: 69%;
+      vertical-align: middle;
+      width: 80%;
+      z-index: 9; }
+    #news-page-body .news-info a .news-overlay {
+      background-color: #000;
+      border: 1px solid #999;
+      height: 30%;
+      left: 20%;
+      opacity: 0.3;
+      position: absolute;
+      top: 63%;
+      width: 73.5%; }
+  #news-page-body .more-news {
+    color: #fff;
+    padding-left: 11%;
+    padding-top: 50px;
+    position: relative; }
+    #news-page-body .more-news .txt_main_category {
+      color: #000;
+      font-size: 20px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #DEDEDE; }
+    #news-page-body .more-news li {
+      background: transparent url("images/graphics/bg_dot_gray_3x3.gif") no-repeat scroll left 6px;
+      padding: 0 0 0 10px; }
+    #news-page-body .more-news .content_box_category .list_news_dot_3x3 {
+      padding-top: 10px;
+      padding-left: 5px; }
+    #news-page-body .more-news .content_box_category .txt_666 {
+      color: #969696;
+      font-size: 16px; }
+  #news-page-body .pr-bar {
+    padding-top: 15px; }
+    #news-page-body .pr-bar .service-title {
+      color: #F88010;
+      font-size: 20px;
+      font-weight: bolder; }
+    #news-page-body .pr-bar .border-titile {
+      padding-top: 5px;
+      border-bottom: 1px solid #DEDEDE; }
+
+#marketing-white {
+  background: #fff; }
+
+#marketing-black {
+  background: #F2EEEB; }
 
 #main-bottom {
   background: #8fd400;
