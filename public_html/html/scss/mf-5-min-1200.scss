@@ -2,7 +2,7 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
-    @include product-top-middle(0);
-    
+	.container {
+		width: 1600px !important;
+	}
 }

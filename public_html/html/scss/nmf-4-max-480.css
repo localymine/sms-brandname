@@ -1,0 +1,18 @@
+/*==========  Non-Mobile First Method  ==========*/
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .header #logo .navbar-brand .img-logo {
+    /*margin-left: 0;*/ }
+
+  .contact-info .contact-info-form {
+    width: 100%;
+    margin: 0 auto; }
+    .contact-info .contact-info-form .nopadding-left {
+      padding-right: 0; }
+    .contact-info .contact-info-form .nopadding-right {
+      padding-left: 0; }
+
+  .newsletter-form-holder .newsletter-form {
+    margin-top: 0; } }
+
+/*# sourceMappingURL=nmf-4-max-480.css.map */
