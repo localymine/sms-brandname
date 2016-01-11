@@ -2,8 +2,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    /*@include header-part('', '', 16px);*/
     
-    @include product-top-middle(0);
-    
+    .container {
+		width: 900px !important;
+	}
 }

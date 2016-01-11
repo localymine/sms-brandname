@@ -5,8 +5,8 @@
   margin: 0 auto;
   top: 0px;
   left: 0px;
-  width: 1839px;
-  height: 849px;
+  width: 1600px;
+  height: 680px;
   overflow: hidden; }
   #slider1_container .box-loading {
     position: absolute;
@@ -34,8 +34,8 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    width: 1839px;
-    height: 849px;
+    width: 1600px;
+    height: 680px;
     overflow: hidden; }
 
 #slideDesign {
@@ -44,7 +44,7 @@
   margin: 0 auto;
   top: 0px;
   left: 0px;
-  width: 1839px;
+  width: 1600px;
   height: 430px;
   overflow: hidden; }
   #slideDesign .box-loading {
@@ -73,7 +73,7 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    width: 1839px;
+    width: 1600px;
     height: 430px;
     overflow: hidden; }
 
@@ -83,7 +83,7 @@
   margin: 0 auto;
   top: 0px;
   left: 0px;
-  width: 1920px;
+  width: 1600px;
   height: 430px;
   overflow: hidden; }
   #jssor_3 .box-loading {
@@ -112,7 +112,7 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    width: 1920px;
+    width: 1600px;
     height: 430px;
     overflow: hidden; }
 

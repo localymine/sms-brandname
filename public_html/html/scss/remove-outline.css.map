@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AACA,CAAE;EACE,OAAO,EAAE,CAAC;;AAEd,0BAA2B;EACvB,OAAO,EAAE,CAAC;EACV,eAAe,EAAE,IAAI;;AAEzB,aAAc;EACV,OAAO,EAAE,CAAC;;AAEd,uBAAwB;EACpB,MAAM,EAAE,CAAC",
+"sources": ["remove-outline.scss"],
+"names": [],
+"file": "remove-outline.css"
+}

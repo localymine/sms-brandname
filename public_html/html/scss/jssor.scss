@@ -1,5 +1,5 @@
-$slider-width: 1839px;
-$slider-height: 849px;
+$slider-width: 1600px;
+$slider-height: 680px;
 /*$slider-height: 975px;*/
 $slider-border-color: #519044;
 
@@ -99,7 +99,7 @@ $slider-border-color: #519044;
     margin: 0 auto;
     top: 0px; 
     left: 0px; 
-    width: 1920px; 
+    width: $slider-width; 
     height: 430px; 
     // border-top: 2px solid $slider-border-color;
     // border-bottom: 2px solid $slider-border-color;
@@ -133,7 +133,7 @@ $slider-border-color: #519044;
         position: absolute; 
         left: 0px; 
         top: 0px; 
-        width: 1920px; 
+        width: $slider-width; 
         height: 430px; 
         overflow: hidden;
     }
