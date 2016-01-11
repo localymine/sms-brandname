@@ -764,10 +764,10 @@ h2 {
         background-color: #A79B92; }
     .header #logo .navbar-brand {
       margin-left: -80px !important;
-      margin-right: 420px;
+      margin-right: 320px;
       /*float: none;*/ }
   .header nav {
-    padding-left: 16%;
+    padding-left: 12%;
     padding-right: 10%; }
     .header nav.navbar-oil {
       margin-bottom: 0;
