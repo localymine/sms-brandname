@@ -66,43 +66,119 @@ wp_reset_postdata();
 <!-- silder end -->
 <!-- design -->
 <div id="design">
-    <div class="container">
+    <div id="tabs-design" class="container">
         <div class="row-gap-big"></div>
-        <div class="row">
-            <div class="col-xs-12 col-md-12 text-center wow fadeInUp nopadding" data-wow-delay="0.5s">
-                <h2>What makes us different</h2>
-                <span>Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo</span>
+        <div id="tabs-1">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 text-center nopadding">
+                    <h2>What makes us different</h2>
+                    <span>Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo</span>
+                </div>
+            </div>
+            <div class="row-gap-big"></div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 main-text-design nopadding">
+                    <span class="title">Unique & Fresh Design</span><br /><br />
+                    <span>It is a long established fact that a reader will be distracted by.</span><br /><br />
+                    <a href="#">
+                        <article id="item-1" class="item">
+                            <span> READ MORE </span>
+                            <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                        </article>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-6 nopadding" data-wow-delay="1s">
+                    <a href="#">
+                        <article id="item-1" class="item">
+                            <img class="img-responsive pull-right" src="<?php echo get_template_directory_uri(); ?>/images/prod-p1.jpg"/>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="tabs-2">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 text-center nopadding">
+                    <h2>What makes us differentss</h2>
+                    <span>Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo</span>
+                </div>
+            </div>
+            <div class="row-gap-big"></div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 main-text-design nopadding">
+                    <span class="title">Unique & Fresh Design</span><br /><br />
+                    <span>It is a long established fact that a reader will be distracted by.</span><br /><br />
+                    <a href="#">
+                        <article id="item-1" class="item">
+                            <span> READ MORE </span>
+                            <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                        </article>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-6 nopadding" data-wow-delay="1s">
+                    <a href="#">
+                        <article id="item-1" class="item">
+                            <img class="img-responsive pull-right" src="<?php echo get_template_directory_uri(); ?>/images/prod-p2.jpg"/>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="tabs-3">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 text-center nopadding">
+                    <h2>What makes us differentss</h2>
+                    <span>Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo Demo</span>
+                </div>
+            </div>
+            <div class="row-gap-big"></div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 main-text-design nopadding">
+                    <span class="title">Unique & Fresh Design</span><br /><br />
+                    <span>It is a long established fact that a reader will be distracted by.</span><br /><br />
+                    <a href="#">
+                        <article id="item-1" class="item">
+                            <span> READ MORE </span>
+                            <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                        </article>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-6 nopadding">
+                    <a href="#">
+                        <article id="item-1" class="item">
+                            <img class="img-responsive pull-right" src="<?php echo get_template_directory_uri(); ?>/images/prod-p3.jpg"/>
+                        </article>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="row-gap-big"></div>
         <div class="row">
-            <div class="col-xs-12 col-md-6 main-text-design wow fadeInLeft nopadding" data-wow-delay="1s">
-                <span class="title">Unique & Fresh Design</span><br /><br />
-                <span>It is a long established fact that a reader will be distracted by.</span><br /><br />
-                <a href="#">
-                    <article id="item-1" class="item">
-                        <span> READ MORE </span>
-                        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
-                    </article>
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-6 wow fadeInRight nopadding" data-wow-delay="1s">
-                <a href="#">
-                    <article id="item-1" class="item">
-                        <img class="img-responsive pull-right" src="<?php echo get_template_directory_uri(); ?>/images/prod-p2.jpg"/>
-                    </article>
-                </a>
-            </div>
-        </div>
-        <div class="row-gap-big"></div>
-        <div class="row">
-            <div class="col-xs-12 col-md-12 text-center wow fadeInUp" data-wow-delay="1.5s">
+            <div class="col-xs-12 col-md-12 text-center wow fadeInUp">
                 <span>Unique & Fresh Design</span>
-                <a href="#">
-                    <article id="item-1" class="item">
-                        <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/images/bg-img.png"/>
-                    </article>
-                </a>
+                <ul class="list-inline">
+                    <li>
+                        <a href="#tabs-1">
+                            <article id="item-1" class="item">
+                                <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/images/icon-1.png"/>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-2">
+                            <article id="item-1" class="item">
+                                <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/images/icon-2.png"/>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tabs-3">
+                            <article id="item-1" class="item">
+                                <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/images/icon-2.png"/>
+                            </article>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

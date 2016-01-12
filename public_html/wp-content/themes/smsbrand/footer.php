@@ -5,56 +5,34 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo);
 <!-- footer wrapper -->
 <div id="footer-wrapper">
     <div class="footer-wrapper-inner">
-        <div id="copyright" class="vertical-align">
+        <div id="copyright">
+        <div class="row-gap-big"></div>
             <div class="container">
-                <div class="col-xs-12 copyright padding-bottom-md padding-top-xxl vcenter">
-                    <div class="col-xs-12 col-md-5 nopadding">
-                        <a class="footer-logo" href="#"><img src="<?php echo $logo->url ?>"/></a>
-                        <p class="inline-block"><?php echo $omw_theme_settings->ct_company_name ?></p>
-                        <p><?php echo $omw_theme_settings->ct_company_address ?></p>
-                        <p>Tel: <?php echo $omw_theme_settings->ct_company_telephone ?> - Fax: <?php echo $omw_theme_settings->ct_company_fax ?></p>
-                        <p>
-                            Email: <a href="mailto:<?php echo $omw_theme_settings->ct_company_email ?>"><?php echo $omw_theme_settings->ct_company_email ?></a>
-                        </p>
-                        <p>
-                            Website: <a href="<?php echo home_url() ?>"><?php echo str_replace('http://', '', home_url()) ?></a>
-                        </p>
-                    </div>
-                    <div class="col-md-4"></div>
-                    <div class="col-xs-12 col-md-3 nopadding vcenter">
-                        <div class="newsletter-form-holder">
-                            <form id="newsletter-form" name="newsletter-form" class="newsletter-form form-inline" method="post" action="">
-                                <div class="form-group">
-                                    <input type="text" id="re_newsletter" name="re_newsletter" value="" placeholder="Newsletter" class="form-control" />
-                                </div>
-                                <button type="submit" class="btn btn-success inline-block">Gửi</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 nopadding">
-                        <span class="priv">
-                            <span class="copy"><i class="fa fa-copyright"></i></span>
-                            <span class="year">Copyright 2015</span>
-                            <?php if ($omw_theme_settings->ct_copyright): ?>
-                                · <h5><?php echo $omw_theme_settings->ct_copyright ?></h5>
-                            <?php endif; ?>
-                        </span>
-                        <p class="text-center">
-                            <a href="<?php echo home_url('security') ?>">Chính Sách Bảo Mật</a>
-                        </p>
-                    </div>
+                <div class="col-xs-12 col-md-4 copyright">
+                    <span><?php echo $omw_theme_settings->ct_company_address ?>/span><br />
+                    <span><?php echo $omw_theme_settings->ct_company_telephone ?></span>
+                    <a href="mailto:<?php echo $omw_theme_settings->ct_company_email ?>"><?php echo $omw_theme_settings->ct_company_email ?></a><br />
+                    <a class="" href="#"><img src="images/logo-fb.png"/></a>
+                </div>
+                <div class="col-xs-12 col-md-4 signs-up">
+                <span>
+                    Sign Up for Our News Letter
+                </span><br /><br />
+                <input type="text"><button>Subscribe</button>
+                </div>
+                <div class="col-xs-12 col-md-4 copyright text-right">
+                    <span>A product of</span><br />
+                    <a class="footer-logo" href="#"><img class="img-responsive pull-right" src="<?php echo $logo->url ?>"/></a>
                 </div>
             </div>
+            <div class="row-gap-big"></div>
         </div>
     </div>
 </div>
 <!-- footer wrapper end -->
-
 <div id="back-top">
     <a href="javascript:void(0)"><i class="fa fa-chevron-circle-up fa-5x"></i></a>
 </div>
-
-
 <script src="<?php echo get_template_directory_uri() ?>/js/jquery-1.11.2.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/bootstrap.min.js"></script>
 <!-- <script src="<?php echo get_template_directory_uri() ?>/js/ie10-viewport-bug-workaround.js"></script>

@@ -292,6 +292,7 @@ jQuery(document).ready(function ($) {
 /* ---------------------------------------------------------------- jssor end */
 $(function() {
     $( "#tabs" ).tabs();
+    $( "#tabs-design" ).tabs();
 });   
 /* -------------------------------------------------- product carousel slider */
 $(function () {

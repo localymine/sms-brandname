@@ -29,8 +29,8 @@ input::-moz-focus-inner {
   margin: 0 auto;
   top: 0px;
   left: 0px;
-  width: 1600px;
-  height: 680px;
+  width: 1200px;
+  height: 580px;
   overflow: hidden; }
   #slider1_container .box-loading {
     position: absolute;
@@ -58,8 +58,8 @@ input::-moz-focus-inner {
     position: absolute;
     left: 0px;
     top: 0px;
-    width: 1600px;
-    height: 680px;
+    width: 1200px;
+    height: 580px;
     overflow: hidden; }
 
 #slideDesign {
@@ -68,8 +68,8 @@ input::-moz-focus-inner {
   margin: 0 auto;
   top: 0px;
   left: 0px;
-  width: 1600px;
-  height: 430px;
+  width: 1200px;
+  height: 330px;
   overflow: hidden; }
   #slideDesign .box-loading {
     position: absolute;
@@ -97,7 +97,7 @@ input::-moz-focus-inner {
     position: absolute;
     left: 0px;
     top: 0px;
-    width: 1600px;
+    width: 1200px;
     height: 430px;
     overflow: hidden; }
 
@@ -107,8 +107,8 @@ input::-moz-focus-inner {
   margin: 0 auto;
   top: 0px;
   left: 0px;
-  width: 1600px;
-  height: 430px;
+  width: 1200px;
+  height: 330px;
   overflow: hidden; }
   #jssor_3 .box-loading {
     position: absolute;
@@ -136,8 +136,8 @@ input::-moz-focus-inner {
     position: absolute;
     left: 0px;
     top: 0px;
-    width: 1600px;
-    height: 430px;
+    width: 1200px;
+    height: 330px;
     overflow: hidden; }
 
 /*
@@ -498,7 +498,7 @@ input::-moz-focus-inner {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   .container {
-    width: 1300px !important; } }
+    width: 1100px !important; } }
 .nopadding-left {
   padding-left: 0; }
 
@@ -763,7 +763,6 @@ h2 {
         background-color: #A79B92; }
     .header #logo .navbar-brand {
       margin-left: -80px !important;
-      margin-right: 320px;
       /*float: none;*/ }
   .header nav {
     padding-left: 12%;
@@ -960,13 +959,6 @@ ul.m-sidebar {
   background-image: none; }
 .carousel-control.right {
   background-image: none; }
-
-/*mangaer container*/
-.container-manager {
-  margin-left: 50px;
-  margin-right: 50px;
-  padding-left: 15px;
-  padding-right: 15px; }
 
 #design {
   background: #F2EEEB;
@@ -1243,8 +1235,8 @@ ul.m-sidebar {
     #news-page-body .news-info a h4 {
       color: #fff;
       display: inline-block;
-      font-size: 18px;
-      left: 5%;
+      font-size: 14px;
+      left: 17%;
       opacity: 1;
       position: absolute;
       text-align: center;
@@ -1255,12 +1247,12 @@ ul.m-sidebar {
     #news-page-body .news-info a .news-overlay {
       background-color: #000;
       border: 1px solid #999;
-      height: 30%;
+      height: 29%;
       left: 20%;
       opacity: 0.3;
       position: absolute;
-      top: 63%;
-      width: 73.5%; }
+      top: 61%;
+      width: 80%; }
   #news-page-body .more-news {
     color: #fff;
     padding-left: 11%;
@@ -1850,6 +1842,9 @@ ul.recent_short {
 
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 1180px !important; } }
 /*==========  Non-Mobile First Method  ==========*/
 /* Medium Devices, Desktops */
 /*==========  Non-Mobile First Method  ==========*/
