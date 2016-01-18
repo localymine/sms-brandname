@@ -1548,6 +1548,12 @@ ul.recent_short{
             background: url(../images/home/18-selected.png);
         }
     }
+    &.mico-19{
+        background: url(../images/home/19.png);
+        &:hover, &:focus, &.selected{
+            background: url(../images/home/19-selected.png);
+        }
+    }
 }
 
 /* carousel slider css */

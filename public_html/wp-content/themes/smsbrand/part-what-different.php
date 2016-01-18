@@ -2,6 +2,7 @@
 <div id="design">
     <div id="tabs-design" class="container">
         <div class="row-gap-big"></div>
+        
         <div id="tabs-1">
             <div class="row">
                 <div class="col-xs-12 col-md-12 text-center nopadding" data-wow-delay="0.5s">
@@ -92,37 +93,27 @@
                 <ul class="list-inline ul-diff">
                     <li>
                         <a href="#tabs-1">
-                            <article id="item-1" class="item mico mico-15">
-                                <!--<img class="img-responsive center-block" src="<?php echo get_template_directory_uri() ?>/images/home/15.png" data-selected="<?php echo get_template_directory_uri() ?>/images/home/15-selected.png" data-normal="<?php echo get_template_directory_uri() ?>/images/home/15.png"/>-->
-                            </article>
+                            <article id="item-1" class="item mico mico-15"></article>
                         </a>
                     </li>
                     <li>
                         <a href="#tabs-2">
-                            <article id="item-2" class="item">
-                                <img class="img-responsive center-block" src="<?php echo get_template_directory_uri() ?>/images/home/16.png" data-selected="<?php echo get_template_directory_uri() ?>/images/home/16-selected.png" data-normal="<?php echo get_template_directory_uri() ?>/images/home/16.png"/>
-                            </article>
+                            <article id="item-2" class="item mico mico-16"></article>
                         </a>
                     </li>
                     <li>
                         <a href="#tabs-3">
-                            <article id="item-3" class="item">
-                                <img class="img-responsive center-block" src="<?php echo get_template_directory_uri() ?>/images/home/17.png" data-selected="<?php echo get_template_directory_uri() ?>/images/home/17-selected.png" data-normal="<?php echo get_template_directory_uri() ?>/images/home/17.png"/>
-                            </article>
+                            <article id="item-3" class="item mico mico-17"></article>
                         </a>
                     </li>
                     <li>
                         <a href="#tabs-4">
-                            <article id="item-4" class="item">
-                                <img class="img-responsive center-block" src="<?php echo get_template_directory_uri() ?>/images/home/18.png" data-selected="<?php echo get_template_directory_uri() ?>/images/home/18-selected.png" data-normal="<?php echo get_template_directory_uri() ?>/images/home/18.png"/>
-                            </article>
+                            <article id="item-4" class="item mico mico-18"></article>
                         </a>
                     </li>
                     <li>
                         <a href="#tabs-5">
-                            <article id="item-5" class="item">
-                                <img class="img-responsive center-block" src="<?php echo get_template_directory_uri() ?>/images/home/19.png" data-selected="<?php echo get_template_directory_uri() ?>/images/home/19-selected.png" data-normal="<?php echo get_template_directory_uri() ?>/images/home/19.png"/>
-                            </article>
+                            <article id="item-5" class="item mico mico-19"></article>
                         </a>
                     </li>
                 </ul>

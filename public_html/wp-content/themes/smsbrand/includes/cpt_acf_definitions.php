@@ -39,11 +39,9 @@ function cptui_register_my_cpts() {
     );
     register_post_type("home-slider", $args);
 
-
     $labels = array(
-        "name" => "Top Info",
-        "singular_name" => "Top Info",
-        "menu_name" => "Top Info",
+        "name" => "Message",
+        "singular_name" => "Message",
     );
 
     $args = array(
@@ -57,13 +55,25 @@ function cptui_register_my_cpts() {
         "capability_type" => "post",
         "map_meta_cap" => true,
         "hierarchical" => false,
-        "rewrite" => array("slug" => "info", "with_front" => true),
+        "rewrite" => array("slug" => "message", "with_front" => true),
         "query_var" => true,
         "menu_position" => 26,
-        "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h3.png',
-        "supports" => array("title", "editor", "excerpt"),
+        "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h2.png',
+        "supports" => array("title"),
     );
-    register_post_type("info", $args);
+    register_post_type("message", $args);
+
+
+
+
+
+
+
+
+
+
+
+
 
     $labels = array(
         "name" => "News",
@@ -254,34 +264,63 @@ if (function_exists("register_field_group")) {
     ));
 
     register_field_group(array(
-        'id' => 'acf_top-info',
-        'title' => 'Top Info',
+        'id' => 'acf_message',
+        'title' => 'Message',
         'fields' => array(
             array(
-                'key' => 'field_56454336c93fa',
-                'label' => 'Show Button',
-                'name' => 'show_button',
-                'type' => 'radio',
+                'key' => 'field_569c6e651860b',
+                'label' => 'Icon Style',
+                'name' => 'icon_style',
+                'type' => 'select',
                 'choices' => array(
-                    1 => 'Show',
-                    0 => 'Hide',
+                    15 => 'Question',
+                    16 => 'Lightbulb',
+                    17 => 'Flag',
+                    18 => 'Microphone',
+                    19 => 'Pencil',
                 ),
-                'other_choice' => 0,
-                'save_other_choice' => 0,
                 'default_value' => '',
-                'layout' => 'horizontal',
+                'allow_null' => 0,
+                'multiple' => 0,
             ),
             array(
-                'key' => 'field_564542a9c93f9',
-                'label' => 'Link To',
-                'name' => 'link_to',
+                'key' => 'field_569c6bc0522d1',
+                'label' => 'Sub Title',
+                'name' => 'sub_title',
                 'type' => 'text',
                 'default_value' => '',
                 'placeholder' => '',
                 'prepend' => '',
                 'append' => '',
-                'formatting' => 'none',
+                'formatting' => 'html',
                 'maxlength' => '',
+            ),
+            array(
+                'key' => 'field_569c6c0c522d2',
+                'label' => 'Image',
+                'name' => 'image',
+                'type' => 'image',
+                'save_format' => 'object',
+                'preview_size' => 'thumbnail',
+                'library' => 'all',
+            ),
+            array(
+                'key' => 'field_569c6c4f522d3',
+                'label' => 'Sub Content',
+                'name' => 'sub_content',
+                'type' => 'wysiwyg',
+                'default_value' => '',
+                'toolbar' => 'basic',
+                'media_upload' => 'yes',
+            ),
+            array(
+                'key' => 'field_569c6c5f522d4',
+                'label' => 'Content',
+                'name' => 'content',
+                'type' => 'wysiwyg',
+                'default_value' => '',
+                'toolbar' => 'full',
+                'media_upload' => 'yes',
             ),
         ),
         'location' => array(
@@ -289,7 +328,7 @@ if (function_exists("register_field_group")) {
                 array(
                     'param' => 'post_type',
                     'operator' => '==',
-                    'value' => 'info',
+                    'value' => 'message',
                     'order_no' => 0,
                     'group_no' => 0,
                 ),
