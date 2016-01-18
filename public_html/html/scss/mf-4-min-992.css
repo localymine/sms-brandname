@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'product-top-middle'.
-        on line 6 of C:\xampp\htdocs\sms-brandname\public_html\html\scss\mf-4-min-992.scss, in `product-top-middle'
-        from line 6 of C:\xampp\htdocs\sms-brandname\public_html\html\scss\mf-4-min-992.scss
+        on line 6 of D:\xampp\htdocs\sms-brandname.localhost\public_html\html\scss\mf-4-min-992.scss, in `product-top-middle'
+        from line 6 of D:\xampp\htdocs\sms-brandname.localhost\public_html\html\scss\mf-4-min-992.scss
 
 1: /*==========  Mobile First Method  ==========*\/
 2: 
@@ -12,8 +12,8 @@ Error: Undefined mixin 'product-top-middle'.
 7: }
 
 Backtrace:
-C:\xampp\htdocs\sms-brandname\public_html\html\scss\mf-4-min-992.scss:6:in `product-top-middle'
-C:\xampp\htdocs\sms-brandname\public_html\html\scss\mf-4-min-992.scss:6
+D:\xampp\htdocs\sms-brandname.localhost\public_html\html\scss\mf-4-min-992.scss:6:in `product-top-middle'
+D:\xampp\htdocs\sms-brandname.localhost\public_html\html\scss\mf-4-min-992.scss:6
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'product-top-middle'.\A         on line 6 of C:\xampp\htdocs\sms-brandname\public_html\html\scss\mf-4-min-992.scss, in `product-top-middle'\A         from line 6 of C:\xampp\htdocs\sms-brandname\public_html\html\scss\mf-4-min-992.scss\A \A 1: /*==========  Mobile First Method  ==========*/\A 2: \A 3: /* Medium Devices, Desktops */\A 4: @media only screen and (min-width : 992px) {\A 5:     \A 6:     @include product-top-middle(15px 0);\A 7: }"; }
+  content: "Error: Undefined mixin 'product-top-middle'.\A         on line 6 of D:\xampp\htdocs\sms-brandname.localhost\public_html\html\scss\mf-4-min-992.scss, in `product-top-middle'\A         from line 6 of D:\xampp\htdocs\sms-brandname.localhost\public_html\html\scss\mf-4-min-992.scss\A \A 1: /*==========  Mobile First Method  ==========*/\A 2: \A 3: /* Medium Devices, Desktops */\A 4: @media only screen and (min-width : 992px) {\A 5:     \A 6:     @include product-top-middle(15px 0);\A 7: }"; }

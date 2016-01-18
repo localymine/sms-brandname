@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'product-top-middle'.
-        on line 7 of C:\xampp\htdocs\sms-brandname\public_html\html\scss\mf-1-min-320.scss, in `product-top-middle'
-        from line 7 of C:\xampp\htdocs\sms-brandname\public_html\html\scss\mf-1-min-320.scss
+        on line 7 of D:\xampp\htdocs\sms-brandname.localhost\public_html\html\scss\mf-1-min-320.scss, in `product-top-middle'
+        from line 7 of D:\xampp\htdocs\sms-brandname.localhost\public_html\html\scss\mf-1-min-320.scss
 
 2: 
 3: /* Custom, iPhone Retina *\/ 
@@ -16,8 +16,8 @@ Error: Undefined mixin 'product-top-middle'.
 12: 
 
 Backtrace:
-C:\xampp\htdocs\sms-brandname\public_html\html\scss\mf-1-min-320.scss:7:in `product-top-middle'
-C:\xampp\htdocs\sms-brandname\public_html\html\scss\mf-1-min-320.scss:7
+D:\xampp\htdocs\sms-brandname.localhost\public_html\html\scss\mf-1-min-320.scss:7:in `product-top-middle'
+D:\xampp\htdocs\sms-brandname.localhost\public_html\html\scss\mf-1-min-320.scss:7
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
@@ -69,4 +69,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'product-top-middle'.\A         on line 7 of C:\xampp\htdocs\sms-brandname\public_html\html\scss\mf-1-min-320.scss, in `product-top-middle'\A         from line 7 of C:\xampp\htdocs\sms-brandname\public_html\html\scss\mf-1-min-320.scss\A \A 2: \A 3: /* Custom, iPhone Retina */ \A 4: @media only screen and (min-width : 320px) {\A 5:     /*@include header-part(auto, 70%, '');*/\A 6: \A 7:     @include product-top-middle(15px 0);\A 8: \A 9:     .carousel-inner > .item > img {\A 10:         height: auto;\A 11:     }\A 12: "; }
+  content: "Error: Undefined mixin 'product-top-middle'.\A         on line 7 of D:\xampp\htdocs\sms-brandname.localhost\public_html\html\scss\mf-1-min-320.scss, in `product-top-middle'\A         from line 7 of D:\xampp\htdocs\sms-brandname.localhost\public_html\html\scss\mf-1-min-320.scss\A \A 2: \A 3: /* Custom, iPhone Retina */ \A 4: @media only screen and (min-width : 320px) {\A 5:     /*@include header-part(auto, 70%, '');*/\A 6: \A 7:     @include product-top-middle(15px 0);\A 8: \A 9:     .carousel-inner > .item > img {\A 10:         height: auto;\A 11:     }\A 12: "; }

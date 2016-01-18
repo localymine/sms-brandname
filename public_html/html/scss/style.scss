@@ -430,7 +430,7 @@ ul.m-sidebar{
                 &.item{
                     position: relative;
                     span{
-                       color: #DE9470; 
+                        color: #DE9470; 
                     }
                 }
             }
@@ -1516,6 +1516,37 @@ ul.recent_short{
     }
     .btn{
         @include border-radius(0);
+    }
+}
+
+.mico{
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    background-repeat: no-repeat;
+    &.mico-15{
+        background: url(../images/home/15.png);
+        &:hover, &:focus, &.selected{
+            background: url(../images/home/15-selected.png);
+        }
+    }
+    &.mico-16{
+        background: url(../images/home/16.png);
+        &:hover, &:focus, &.selected{
+            background: url(../images/home/16-selected.png);
+        }
+    }
+    &.mico-17{
+        background: url(../images/home/17.png);
+        &:hover, &:focus, &.selected{
+            background: url(../images/home/17-selected.png);
+        }
+    }
+    &.mico-18{
+        background: url(../images/home/18.png);
+        &:hover, &:focus, &.selected{
+            background: url(../images/home/18-selected.png);
+        }
     }
 }
 
