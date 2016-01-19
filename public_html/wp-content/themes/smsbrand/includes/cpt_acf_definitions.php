@@ -63,9 +63,53 @@ function cptui_register_my_cpts() {
     );
     register_post_type("message", $args);
 
+    $labels = array(
+        "name" => "Our Services",
+        "singular_name" => "Our Services",
+    );
 
+    $args = array(
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "show_ui" => true,
+        "has_archive" => false,
+        "show_in_menu" => true,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => array("slug" => "service", "with_front" => true),
+        "query_var" => true,
+        "menu_position" => 26,
+        "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h3.png',
+        "supports" => array("title"),
+    );
+    register_post_type("service", $args);
 
+    $labels = array(
+        "name" => "Last Projects",
+        "singular_name" => "Last Projects",
+    );
 
+    $args = array(
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "show_ui" => true,
+        "has_archive" => false,
+        "show_in_menu" => true,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => array("slug" => "last-project", "with_front" => true),
+        "query_var" => true,
+        "menu_position" => 26,
+        "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h4.png',
+        "supports" => array("title"),
+    );
+    register_post_type("last-project", $args);
 
 
 
@@ -95,59 +139,11 @@ function cptui_register_my_cpts() {
         "rewrite" => array("slug" => "topic/%news-type%", "with_front" => true),
         "query_var" => true,
         "menu_position" => 26,
-        "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h6.png',
+        "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h5.png',
         "supports" => array("title", "editor", "excerpt"),
     );
     register_post_type("news", $args);
 
-    $labels = array(
-        "name" => "Health & Nutrition",
-        "singular_name" => "Health & Nutrition",
-        "menu_name" => "Sức khỏe & Dinh dưỡng",
-    );
-
-    $args = array(
-        "labels" => $labels,
-        "description" => "",
-        "public" => true,
-        "show_ui" => true,
-        "has_archive" => true,
-        "show_in_menu" => true,
-        "exclude_from_search" => false,
-        "capability_type" => "post",
-        "map_meta_cap" => true,
-        "hierarchical" => false,
-        "rewrite" => array("slug" => "health", "with_front" => true),
-        "query_var" => true,
-        "menu_position" => 26,
-        "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h7.png',
-        "supports" => array("title", "editor", "excerpt"),
-    );
-    register_post_type("health", $args);
-
-    $labels = array(
-        "name" => "Company Info",
-        "singular_name" => "Company Info",
-    );
-
-    $args = array(
-        "labels" => $labels,
-        "description" => "",
-        "public" => true,
-        "show_ui" => true,
-        "has_archive" => false,
-        "show_in_menu" => true,
-        "exclude_from_search" => false,
-        "capability_type" => "post",
-        "map_meta_cap" => true,
-        "hierarchical" => false,
-        "rewrite" => array("slug" => "company-info", "with_front" => true),
-        "query_var" => true,
-        "menu_position" => 26,
-        "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h8.png',
-        "supports" => array("title"),
-    );
-    register_post_type("company-info", $args);
 
 // End of cptui_register_my_cpts()
 }
@@ -160,21 +156,20 @@ add_action('init', 'cptui_register_my_taxes');
 function cptui_register_my_taxes() {
 
     $labels = array(
-        "name" => "Product Line",
-        "label" => "Product Line",
+        "name" => "Project Category",
+        "label" => "Project Category",
     );
 
     $args = array(
         "labels" => $labels,
         "hierarchical" => true,
-        "label" => "Product Line",
+        "label" => "Project Category",
         "show_ui" => true,
         "query_var" => true,
-        "rewrite" => array('slug' => 'product-line', 'with_front' => true),
-        "show_admin_column" => false,
+        "rewrite" => array('slug' => 'project-cat', 'with_front' => true),
+        "show_admin_column" => true,
     );
-    register_taxonomy("product-line", array("product"), $args);
-
+    register_taxonomy("project-cat", array("last-project"), $args);
 
     $labels = array(
         "name" => "News",
@@ -192,22 +187,6 @@ function cptui_register_my_taxes() {
         "show_admin_column" => true,
     );
     register_taxonomy("news-type", array("news"), $args);
-
-    $labels = array(
-        "name" => "Company Branch",
-        "label" => "Company Branch",
-    );
-
-    $args = array(
-        "labels" => $labels,
-        "hierarchical" => true,
-        "label" => "Company Branch",
-        "show_ui" => true,
-        "query_var" => true,
-        "rewrite" => array('slug' => 'company-branch', 'with_front' => true),
-        "show_admin_column" => true,
-    );
-    register_taxonomy("company-branch", array("company-info"), $args);
 
 // End cptui_register_my_taxes
 }
@@ -306,8 +285,8 @@ if (function_exists("register_field_group")) {
             ),
             array(
                 'key' => 'field_569c6c4f522d3',
-                'label' => 'Sub Content',
-                'name' => 'sub_content',
+                'label' => 'Short Content',
+                'name' => 'short_content',
                 'type' => 'wysiwyg',
                 'default_value' => '',
                 'toolbar' => 'basic',
@@ -344,6 +323,111 @@ if (function_exists("register_field_group")) {
     ));
 
     register_field_group(array(
+        'id' => 'acf_our-services',
+        'title' => 'Our Services',
+        'fields' => array(
+            array(
+                'key' => 'field_569d7ae3b1d38',
+                'label' => 'Image',
+                'name' => 'image',
+                'type' => 'image',
+                'save_format' => 'object',
+                'preview_size' => 'thumbnail',
+                'library' => 'all',
+            ),
+            array(
+                'key' => 'field_569d7afbb1d39',
+                'label' => 'Description',
+                'name' => 'description',
+                'type' => 'textarea',
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'formatting' => 'br',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'service',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array(
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array(
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+
+    register_field_group(array(
+        'id' => 'acf_last-project',
+        'title' => 'Last Project',
+        'fields' => array(
+            array(
+                'key' => 'field_569d7f94a3342',
+                'label' => 'Images',
+                'name' => 'images',
+                'type' => 'repeater',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'field_569d7fb5a3343',
+                        'label' => 'Image',
+                        'name' => 'image',
+                        'type' => 'image',
+                        'column_width' => '',
+                        'save_format' => 'object',
+                        'preview_size' => 'thumbnail',
+                        'library' => 'all',
+                    ),
+                    array(
+                        'key' => 'field_569d810c50b1c',
+                        'label' => 'Url',
+                        'name' => 'url',
+                        'type' => 'text',
+                        'column_width' => '',
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'formatting' => 'none',
+                        'maxlength' => '',
+                    ),
+                ),
+                'row_min' => '',
+                'row_limit' => '',
+                'layout' => 'table',
+                'button_label' => 'Add Row',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'last-project',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array(
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array(
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+
+    register_field_group(array(
         'id' => 'acf_news',
         'title' => 'News',
         'fields' => array(
@@ -362,137 +446,6 @@ if (function_exists("register_field_group")) {
                     'param' => 'post_type',
                     'operator' => '==',
                     'value' => 'news',
-                    'order_no' => 0,
-                    'group_no' => 0,
-                ),
-            ),
-        ),
-        'options' => array(
-            'position' => 'normal',
-            'layout' => 'no_box',
-            'hide_on_screen' => array(
-            ),
-        ),
-        'menu_order' => 0,
-    ));
-
-    register_field_group(array(
-        'id' => 'acf_health',
-        'title' => 'Health',
-        'fields' => array(
-            array(
-                'key' => 'field_565802f94a54f',
-                'label' => 'Image',
-                'name' => 'image',
-                'type' => 'image',
-                'save_format' => 'object',
-                'preview_size' => 'thumbnail',
-                'library' => 'all',
-            ),
-        ),
-        'location' => array(
-            array(
-                array(
-                    'param' => 'post_type',
-                    'operator' => '==',
-                    'value' => 'health',
-                    'order_no' => 0,
-                    'group_no' => 0,
-                ),
-            ),
-        ),
-        'options' => array(
-            'position' => 'normal',
-            'layout' => 'no_box',
-            'hide_on_screen' => array(
-            ),
-        ),
-        'menu_order' => 0,
-    ));
-
-    register_field_group(array(
-        'id' => 'acf_company-info',
-        'title' => 'Company Info',
-        'fields' => array(
-            array(
-                'key' => 'field_567806fcd7c3b',
-                'label' => 'Image',
-                'name' => 'image',
-                'type' => 'image',
-                'instructions' => 'Hình Ảnh',
-                'save_format' => 'object',
-                'preview_size' => 'thumbnail',
-//                'library' => 'uploadedTo',
-            ),
-            array(
-                'key' => 'field_56780724d7c3c',
-                'label' => 'Address',
-                'name' => 'address',
-                'type' => 'text',
-                'instructions' => 'Địa Chỉ',
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'formatting' => 'none',
-                'maxlength' => '',
-            ),
-            array(
-                'key' => 'field_567807cbd7c3d',
-                'label' => 'Tel',
-                'name' => 'tel',
-                'type' => 'text',
-                'instructions' => 'Điện Thoại',
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'formatting' => 'none',
-                'maxlength' => '',
-            ),
-            array(
-                'key' => 'field_567807e3d7c3e',
-                'label' => 'Fax',
-                'name' => 'fax',
-                'type' => 'text',
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'formatting' => 'none',
-                'maxlength' => '',
-            ),
-            array(
-                'key' => 'field_56780837d7c3f',
-                'label' => 'Email',
-                'name' => 'email',
-                'type' => 'text',
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'formatting' => 'none',
-                'maxlength' => '',
-            ),
-            array(
-                'key' => 'field_56780864d7c40',
-                'label' => 'Website',
-                'name' => 'website',
-                'type' => 'text',
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'formatting' => 'none',
-                'maxlength' => '',
-            ),
-        ),
-        'location' => array(
-            array(
-                array(
-                    'param' => 'post_type',
-                    'operator' => '==',
-                    'value' => 'company-info',
                     'order_no' => 0,
                     'group_no' => 0,
                 ),

@@ -9,7 +9,7 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo);
         <div class="row-gap-big"></div>
             <div class="container">
                 <div class="col-xs-12 col-md-4 copyright">
-                    <span><?php echo $omw_theme_settings->ct_company_address ?>/span><br />
+                    <span><?php echo $omw_theme_settings->ct_company_address ?></span><br />
                     <span><?php echo $omw_theme_settings->ct_company_telephone ?></span>
                     <a href="mailto:<?php echo $omw_theme_settings->ct_company_email ?>"><?php echo $omw_theme_settings->ct_company_email ?></a><br />
                     <a class="" href="#"><img src="images/logo-fb.png"/></a>

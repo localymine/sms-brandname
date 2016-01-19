@@ -10,30 +10,35 @@
         <div class="row-gap-big"></div>
         <div class="row-gap-medium"></div>
         <div class="row">
-            <div class="col-xs-12 col-md-4 text-center wow fadeInUp nopadding" data-wow-delay="0.5s">
-                <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/images/service-1.png"/>
-                <a href="#">
-                    <span class="service-title">WEB DESIGN</span>
-                </a><br />
-                <div class="service-content"><span>Demo test test test test test<br /> test test test test test 
-                        test test test test <br /> test test test test test.</span></div>
-            </div>
-            <div class="col-xs-12 col-md-4 text-center wow fadeInUp nopadding" data-wow-delay="0.5s">
-                <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/images/service-1.png"/>
-                <a href="#">
-                    <span class="service-title">WEB DESIGN</span>
-                </a><br />
-                <div class="service-content"><span>Demo test test test test test<br /> test test test test test 
-                        test test test test <br /> test test test test test.</span></div>
-            </div>
-            <div class="col-xs-12 col-md-4 text-center wow fadeInUp nopadding" data-wow-delay="0.5s">
-                <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/images/service-1.png"/>
-                <a href="#">
-                    <span class="service-title">WEB DESIGN</span>
-                </a><br />
-                <div class="service-content"><span>Demo test test test test test<br /> test test test test test 
-                        test test test test <br /> test test test test test.</span></div>
-            </div>
+            <?php
+            $args = array(
+                'post_type' => 'service',
+                'posts_per_page' => 3,
+            );
+            $loop = new WP_Query($args);
+            ?>
+            <?php
+            if ($loop->have_posts()) :
+                while ($loop->have_posts()):
+                    $loop->the_post();
+                    ?>
+                    <?php
+                    $image = get_field('image');
+                    $url = $image['url'];
+                    $img_size = $image['sizes']['medium'];
+                    ?>
+                    <div class="col-xs-12 col-md-4 text-center wow fadeInUp nopadding" data-wow-delay="0.5s">
+                        <img class="img-responsive center-block" src="<?php echo $img_size ?>"/>
+                        <a href="javascript:void(0)">
+                            <span class="service-title"><?php the_title() ?></span>
+                        </a><br />
+                        <div class="service-content"><?php echo get_field('description') ?></div>
+                    </div>
+                    <?php
+                endwhile;
+            endif;
+            wp_reset_postdata();
+            ?>
         </div>
         <div class="row-gap-big"></div>
     </div>
