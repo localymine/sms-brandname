@@ -32,7 +32,6 @@
         );
         $loop = new WP_Query($args);
         $count_all = $loop_all->found_posts;
-        //
         ?>
         <div id="tabs" class="row menu-tab-pro text-center nopadding">
             <ul class="list-inline">
@@ -49,28 +48,28 @@
                         $loop->the_post();
                         ?>
                         <div id="tabs-<?php echo $term->slug ?>" class="col-xs-12 col-md-12 text-center nopadding">
-                            <div id="jssor_1" class="jssor_last_project" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1840px; height: 250px; overflow: hidden; visibility: hidden;">
-                                <!-- Loading Screen -->
+                            <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1840px; height: 250px; overflow: hidden; visibility: hidden;">
+                        <!-- Loading Screen -->
                                 <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
                                     <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-                                    <div style="position:absolute;display:block;background:url('<?php echo get_template_directory_uri(); ?>/images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                                    <div style="position:absolute;display:block;background:url('images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
                                 </div>
                                 <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1840px; height: 250px; overflow: hidden;">
-                                    <div style="display: none;">
-                                        <?php
-                                        if (have_rows('images')):
-                                            while (have_rows('images')): the_row();
-                                                ?>
-                                                <?php
-                                                $sub_image = get_sub_field('image');
-                                                $img_size = $sub_image['sizes']['medium'];
-                                                ?>
+                                    <?php
+                                    if (have_rows('images')):
+                                        while (have_rows('images')): the_row();
+                                            ?>
+                                             <?php
+                                            $sub_image = get_sub_field('image');
+                                            $img_size = $sub_image['sizes']['medium'];
+                                            ?>
+                                            <div style="display: none;">
                                                 <img data-u="image" src="<?php echo $img_size ?>" />
-                                                <?php
-                                            endwhile;
-                                        endif;
-                                        ?>
-                                    </div>
+                                            </div>
+                                             <?php
+                                        endwhile;
+                                    endif;
+                                    ?>
                                 </div>
                                 <!-- Arrow Navigator -->
                                 <span data-u="arrowleft" class="jssora06l" style="top:0px;left:200px;width:45px;height:45px;" data-autocenter="2"></span>

@@ -69,7 +69,7 @@ input::-moz-focus-inner {
   top: 0px;
   left: 0px;
   width: 1830px;
-  height: 330px;
+  height: 430px;
   overflow: hidden; }
   #jssor_4 .box-loading {
     position: absolute;
@@ -1811,6 +1811,32 @@ ul.recent_short {
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     border-radius: 0; }
+
+.mico {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  background-repeat: no-repeat; }
+  .mico.mico-15 {
+    background: url(../images/home/15.png); }
+    .mico.mico-15:hover, .mico.mico-15:focus, .mico.mico-15.selected {
+      background: url(../images/home/15-selected.png); }
+  .mico.mico-16 {
+    background: url(../images/home/16.png); }
+    .mico.mico-16:hover, .mico.mico-16:focus, .mico.mico-16.selected {
+      background: url(../images/home/16-selected.png); }
+  .mico.mico-17 {
+    background: url(../images/home/17.png); }
+    .mico.mico-17:hover, .mico.mico-17:focus, .mico.mico-17.selected {
+      background: url(../images/home/17-selected.png); }
+  .mico.mico-18 {
+    background: url(../images/home/18.png); }
+    .mico.mico-18:hover, .mico.mico-18:focus, .mico.mico-18.selected {
+      background: url(../images/home/18-selected.png); }
+  .mico.mico-19 {
+    background: url(../images/home/19.png); }
+    .mico.mico-19:hover, .mico.mico-19:focus, .mico.mico-19.selected {
+      background: url(../images/home/19-selected.png); }
 
 /* carousel slider css */
 .carousel-inner .active.left {
