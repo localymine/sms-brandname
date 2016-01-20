@@ -1,24 +1,25 @@
 <?php
 global $omw_theme_settings;
-$logo = (object) json_decode($omw_theme_settings->ct_company_logo);
+$logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
 ?>
 <!-- footer wrapper -->
 <div id="footer-wrapper">
     <div class="footer-wrapper-inner">
         <div id="copyright">
-        <div class="row-gap-big"></div>
+            <div class="row-gap-big"></div>
             <div class="container">
                 <div class="col-xs-12 col-md-4 copyright">
-                    <span><?php echo $omw_theme_settings->ct_company_address ?></span><br />
-                    <span><?php echo $omw_theme_settings->ct_company_telephone ?></span>
-                    <a href="mailto:<?php echo $omw_theme_settings->ct_company_email ?>"><?php echo $omw_theme_settings->ct_company_email ?></a><br />
-                    <a class="" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-fb.png"/></a>
+                    <span><i class="fa fa-map-marker"></i><?php echo $omw_theme_settings->ct_company_address ?></span><br/>
+                    <span><i class="fa fa-phone"></i><?php echo $omw_theme_settings->ct_company_telephone ?></span><br/>
+                    <span><i class="fa fa-envelope-o"></i><a href="mailto:<?php echo $omw_theme_settings->ct_company_email ?>"><?php echo $omw_theme_settings->ct_company_email ?></a></span>
                 </div>
                 <div class="col-xs-12 col-md-4 signs-up">
-                <span>
-                    Sign Up for Our News Letter
-                </span><br /><br />
-                <input type="text"><button>Subscribe</button>
+                    <span>
+                        Sign Up for Our News Letter
+                    </span>
+                    <form>
+                        <input type="text" class="controls"><button class="btn btn-default">Subscribe</button>
+                    </form>
                 </div>
                 <div class="col-xs-12 col-md-4 copyright text-right">
                     <span>A product of</span><br />

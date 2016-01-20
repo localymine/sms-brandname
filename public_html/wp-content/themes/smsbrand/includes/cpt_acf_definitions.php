@@ -135,11 +135,29 @@ function cptui_register_my_cpts() {
     );
     register_post_type("group-logos", $args);
 
+    $labels = array(
+        "name" => "Information Slider",
+        "singular_name" => "Information Slider",
+    );
 
-
-
-
-
+    $args = array(
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "show_ui" => true,
+        "has_archive" => false,
+        "show_in_menu" => true,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => array("slug" => "info-slider", "with_front" => true),
+        "query_var" => true,
+        "menu_position" => 26,
+        "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h6.png',
+        "supports" => array("title"),
+    );
+    register_post_type("info-slider", $args);
 
     $labels = array(
         "name" => "News",
@@ -161,7 +179,7 @@ function cptui_register_my_cpts() {
         "rewrite" => array("slug" => "topic/%news-type%", "with_front" => true),
         "query_var" => true,
         "menu_position" => 26,
-        "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h5.png',
+        "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h7.png',
         "supports" => array("title", "editor", "excerpt"),
     );
     register_post_type("news", $args);
@@ -497,6 +515,53 @@ if (function_exists("register_field_group")) {
     ));
 
     register_field_group(array(
+        'id' => 'acf_information-slider',
+        'title' => 'Information Slider',
+        'fields' => array(
+            array(
+                'key' => 'field_569fd359f04da',
+                'label' => 'Images',
+                'name' => 'images',
+                'type' => 'repeater',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'field_569fd362f04db',
+                        'label' => 'Image',
+                        'name' => 'image',
+                        'type' => 'image',
+                        'column_width' => '',
+                        'save_format' => 'object',
+                        'preview_size' => 'thumbnail',
+                        'library' => 'all',
+                    ),
+                ),
+                'row_min' => '',
+                'row_limit' => '',
+                'layout' => 'table',
+                'button_label' => 'Add Row',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'info-slider',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array(
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array(
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+
+    register_field_group(array(
         'id' => 'acf_news',
         'title' => 'News',
         'fields' => array(
@@ -550,7 +615,7 @@ function news_permalink($permalink, $post_id, $leavename) {
     if (!is_wp_error($terms) && !empty($terms) && is_object($terms[0]))
         $taxonomy_slug = $terms[0]->slug;
     else
-        $taxonomy_slug = 'no-type';
+        $taxonomy_slug = 'n';
 
     return str_replace('%news-type%', $taxonomy_slug, $permalink);
 }

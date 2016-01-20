@@ -16,7 +16,7 @@ get_header();
 
 <?php get_template_part('part-logos') ?>
 
-<?php get_template_part('part-information') ?>
+<?php get_template_part('part-information-slider') ?>
 
 <?php get_template_part('part-last-news') ?>
 

@@ -72,6 +72,44 @@ $(function () {
 });
 
 /*--------------------------------------------------------------------- jssor */
+jQuery(document).ready(function () {
+    var jssor_last_project = function (jssor_id) {
+        'use strict';
+        if ($(jssor_id).length > 0) {
+            //slider project [start]
+            var jssor_options = {
+                $AutoPlay: true,
+                $AutoPlaySteps: 1,
+                $SlideDuration: 160,
+                $SlideWidth: 400,
+                $SlideSpacing: 0,
+                $Cols: 6,
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                }
+            };
+
+            var jssor_slider = new $JssorSlider$(jssor_id, jssor_options);
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            var ScaleSliderLastProject = function() {
+                var refSize = jssor_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                } else {
+                    window.setTimeout(ScaleSliderLastProject, 30);
+                }
+            }
+            ScaleSliderLastProject();
+            $(window).bind("load", ScaleSliderLastProject);
+            $(window).bind("resize", ScaleSliderLastProject);
+            $(window).bind("orientationchange", ScaleSliderLastProject);
+            //option end
+        }
+    };
+});
+
 jQuery(document).ready(function ($) {
     if ($('#slider1_container').length > 0) {
         //slider top [start]
@@ -177,6 +215,7 @@ jQuery(document).ready(function ($) {
         $(window).bind("resize", ScaleSlider1);
         $(window).bind("orientationchange", ScaleSlider1);
         //option 1 end
+
         //option 2 start
         var jssor_2_options = {
             $AutoPlay: true,

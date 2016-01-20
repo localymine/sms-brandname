@@ -8,7 +8,7 @@
         <meta content="" name="description">
         <meta content="" name="author">
 
-        <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/images/fav/favicon.jpg">
+        <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/images/fav/favicon.png">
         <meta name="theme-color" content="#ffffff">
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/bootstrap.min.css"/>
@@ -83,12 +83,13 @@
                                 </div>
                                 <div class="navbar-collapse collapse nopadding">
                                     <ul class="top-menu">
-                                        <li><a class="nav-title active" href="index.html"><span>HOME</span></a></li>
-                                        <li><a class="nav-title" href="#"><span>SMS BRANDNAME</span></a></li>
-                                        <li><a class="nav-title" href="#"><span>SMS MARKETING</span></a></li>
-                                        <li><a class="nav-title" href="#"><span>SMS ĐẦU SỐ 8X77</span></a></li>
-                                        <li><a class="nav-title" href="#"><span>TIN TỨC</span></a></li>
-                                        <li><a class="nav-title" href="#"><span>LIÊN HỆ</span></a></li>
+                                        <li><a class="nav-title active" href="<?php echo home_url() ?>"><span>HOME</span></a></li>
+                                        <li><a class="nav-title" href="<?php echo home_url('sms-brandname') ?>"><span>SMS BRANDNAME</span></a></li>
+                                        <li><a class="nav-title" href="<?php echo home_url('otp-sms-brandname') ?>"><span>OTP SMS (BRANDNAME)</span></a></li>
+                                        <li><a class="nav-title" href="<?php echo home_url('sms-marketting') ?>"><span>SMS MARKETING</span></a></li>
+                                        <li><a class="nav-title" href="<?php echo home_url('sms-8x77-gateway') ?>"><span>SMS ĐẦU SỐ 8X77 (GATEWAY)</span></a></li>
+                                        <li><a class="nav-title" href="<?php echo home_url('news') ?>"><span>TIN TỨC</span></a></li>
+                                        <li><a class="nav-title" href="<?php echo home_url('contact') ?>"><span>LIÊN HỆ</span></a></li>
                                         <li class="menu-search">
                                             <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/b-search.png" alt="Search" />
                                             <form class="nav-form">
