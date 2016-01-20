@@ -180,7 +180,7 @@ jQuery(document).ready(function ($) {
     }
 
     if ($('#jssor_2').length > 0) {
-    	//option 2 start
+        //option 2 start
         var jssor_2_options = {
             $AutoPlay: true,
             $AutoPlaySteps: 1,
