@@ -2,7 +2,7 @@
 <div class="row nopadding nomargin" style="min-height: 50px;">
     <div id="slideDesign">
         <!-- Jssor Slider Begin -->
-        <div id="jssor_3">
+        <div id="jssor_4">
             <!-- Loading Screen -->
             <div class="box-loading" u="loading">
                 <div class="box-loading-overlay"></div>

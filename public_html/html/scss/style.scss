@@ -436,6 +436,19 @@ ul.m-sidebar{
             }
         }
     }
+    .middle-item{
+        border-top: solid 1px #CECCCA;
+        width: 100px;
+        height: 30px;
+        margin-right: -5px;
+        margin-left:  -5px;
+    }
+    .list-inline{
+        li{
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+    }
 }
 
 #service{
@@ -464,7 +477,7 @@ ul.m-sidebar{
     background: #2A2F33;
     h2{
         color: $white;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 300 !important;
     }
     span{
@@ -494,18 +507,18 @@ ul.m-sidebar{
             li{
                 display: inline-block;
                 /*position: relative;*/
-                line-height: 24px;
+                line-height: 30px;
                 a{
                     @include transition(0.3s);
                     /*background: $menu-bg;*/
                     font-weight: 700;
-                    color: $menu-color-normal;
+                    color: #999B9C;
                     font-size: 14px;
                     display: block;
-                    padding: 30px 10px;
+                    padding: 5px 20px;
                     &:before{
                         @include transition(0.3s);
-                        background: $menu-color;
+                        background: #999B9C;
                         bottom: 0;
                         content: "";
                         display: block;
@@ -517,14 +530,20 @@ ul.m-sidebar{
                     }
                     &:hover{
                         text-decoration: none;
-                        color: $menu-color-hover;
+                        color: #F88010;
+                        // border: solid 2px #EE7C12;
+                        border-radius: 15px;
+                        box-shadow: 0 0 0 2px #EE7C12 inset;
                     }
                     // &.active:before, &:hover:before{
                     //     @include transition(0.3s);
                     //     width: 100%;
                     // }
                     &.active{
-                        color: $menu-color-active;
+                        color: #F88010;
+                        // border: solid 2px #EE7C12;
+                        border-radius: 15px;
+                        box-shadow: 0 0 0 2px #EE7C12 inset;
                     }
                     &.nav-title{
                         display: block;
