@@ -1031,7 +1031,7 @@ ul.m-sidebar {
     #project .menu-tab-pro ul li {
       display: inline-block;
       /*position: relative;*/
-      line-height: 24px; }
+      line-height: 30px; }
       #project .menu-tab-pro ul li a {
         -webkit-transition: all 0.3s ease 0s;
         -moz-transition: all 0.3s ease 0s;
@@ -1041,9 +1041,7 @@ ul.m-sidebar {
         color: #999B9C;
         font-size: 14px;
         display: block;
-        padding: 5px 20px;
-        border: solid 2px #EE7C12;
-        border-radius: 15px; }
+        padding: 5px 20px; }
         #project .menu-tab-pro ul li a:before {
           -webkit-transition: all 0.3s ease 0s;
           -moz-transition: all 0.3s ease 0s;
@@ -1059,9 +1057,13 @@ ul.m-sidebar {
           width: 0; }
         #project .menu-tab-pro ul li a:hover {
           text-decoration: none;
-          color: #F88010; }
+          color: #F88010;
+          border-radius: 15px;
+          box-shadow: 0 0 0 2px #EE7C12 inset; }
         #project .menu-tab-pro ul li a.active {
-          color: #F88010; }
+          color: #F88010;
+          border-radius: 15px;
+          box-shadow: 0 0 0 2px #EE7C12 inset; }
         #project .menu-tab-pro ul li a.nav-title {
           display: block;
           position: relative;

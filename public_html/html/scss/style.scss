@@ -507,7 +507,7 @@ ul.m-sidebar{
             li{
                 display: inline-block;
                 /*position: relative;*/
-                line-height: 24px;
+                line-height: 30px;
                 a{
                     @include transition(0.3s);
                     /*background: $menu-bg;*/
@@ -516,8 +516,6 @@ ul.m-sidebar{
                     font-size: 14px;
                     display: block;
                     padding: 5px 20px;
-                    border: solid 2px #EE7C12;
-                    border-radius: 15px;
                     &:before{
                         @include transition(0.3s);
                         background: #999B9C;
@@ -533,6 +531,9 @@ ul.m-sidebar{
                     &:hover{
                         text-decoration: none;
                         color: #F88010;
+                        // border: solid 2px #EE7C12;
+                        border-radius: 15px;
+                        box-shadow: 0 0 0 2px #EE7C12 inset;
                     }
                     // &.active:before, &:hover:before{
                     //     @include transition(0.3s);
@@ -540,6 +541,9 @@ ul.m-sidebar{
                     // }
                     &.active{
                         color: #F88010;
+                        // border: solid 2px #EE7C12;
+                        border-radius: 15px;
+                        box-shadow: 0 0 0 2px #EE7C12 inset;
                     }
                     &.nav-title{
                         display: block;
