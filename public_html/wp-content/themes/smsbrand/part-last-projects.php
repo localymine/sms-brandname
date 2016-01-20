@@ -65,7 +65,7 @@
                                             <div style="display: none;">
                                                 <img data-u="image" src="<?php echo $img_size ?>" />
                                             </div>
-                                             <?php
+                                            <?php
                                         endwhile;
                                     endif;
                                     ?>
