@@ -8,7 +8,6 @@
                 <span>Test demo Test demo, Test demo Test demo Test demo</span>
             </div>
         </div>
-        <div class="row-gap-big"></div>
         <?php
         $args = array(
             'hide_empty' => 0
@@ -33,20 +32,20 @@
         $loop = new WP_Query($args);
         $count_all = $loop_all->found_posts;
         ?>
+        <div class="row-gap-medium"></div>
         <div id="tabs" class="row menu-tab-pro text-center nopadding">
             <ul class="list-inline">
                 <?php foreach ($terms as $term) : ?>
                     <li><a href="#tabs-<?php echo $term->slug ?>"><?php echo $term->name ?></a></li>
                 <?php endforeach; ?>
             </ul>
-            <div class="row-gap-medium"></div>
-
             <?php foreach ($terms as $term) : ?>
                 <?php
                 if ($loop->have_posts()) :
                     while ($loop->have_posts()):
                         $loop->the_post();
                         ?>
+                        <div class="row-gap-medium"></div>
                         <div id="tabs-<?php echo $term->slug ?>" class="col-xs-12 col-md-12 text-center nopadding">
                             <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1840px; height: 250px; overflow: hidden; visibility: hidden;">
                         <!-- Loading Screen -->

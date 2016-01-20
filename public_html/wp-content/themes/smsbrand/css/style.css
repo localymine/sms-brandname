@@ -979,6 +979,15 @@ ul.m-sidebar {
         position: relative; }
         #design .main-text-design a article.item span {
           color: #DE9470; }
+  #design .middle-item {
+    border-top: solid 1px #CECCCA;
+    width: 100px;
+    height: 30px;
+    margin-right: -5px;
+    margin-left: -5px; }
+  #design .list-inline li {
+    padding-right: 0px !important;
+    padding-left: 0px !important; }
 
 #service {
   background: #fff;
@@ -1001,7 +1010,7 @@ ul.m-sidebar {
   background: #2A2F33; }
   #project h2 {
     color: #fff;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 300 !important; }
   #project span {
     color: #fff; }
@@ -1029,15 +1038,17 @@ ul.m-sidebar {
         transition: all 0.3s ease 0s;
         /*background: $menu-bg;*/
         font-weight: 700;
-        color: #A79B92;
+        color: #999B9C;
         font-size: 14px;
         display: block;
-        padding: 30px 10px; }
+        padding: 5px 20px;
+        border: solid 2px #EE7C12;
+        border-radius: 15px; }
         #project .menu-tab-pro ul li a:before {
           -webkit-transition: all 0.3s ease 0s;
           -moz-transition: all 0.3s ease 0s;
           transition: all 0.3s ease 0s;
-          background: #A79B92;
+          background: #999B9C;
           bottom: 0;
           content: "";
           display: block;
@@ -1048,9 +1059,9 @@ ul.m-sidebar {
           width: 0; }
         #project .menu-tab-pro ul li a:hover {
           text-decoration: none;
-          color: #E9A17F; }
+          color: #F88010; }
         #project .menu-tab-pro ul li a.active {
-          color: #EAA98A; }
+          color: #F88010; }
         #project .menu-tab-pro ul li a.nav-title {
           display: block;
           position: relative;

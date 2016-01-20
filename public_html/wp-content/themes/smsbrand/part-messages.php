@@ -8,6 +8,7 @@
             'posts_per_page' => 5,
         );
         $loop = new WP_Query($args);
+        $countLine =  1;
         ?>
         <?php
         if ($loop->have_posts()) :
@@ -59,12 +60,20 @@
                         while ($loop->have_posts()):
                             $loop->the_post();
                             ?>
+                            <?php if($countLine == 1) :?>
+                            <li>
+                                <div class='middle-item'></div>
+                            </li>
+                            <?php endif;?>
                             <li>
                                 <a href="#tabs-<?php the_ID() ?>">
                                     <article id="item-<?php the_ID() ?>" class="item mico mico-<?php echo get_field('icon_style') ?>"></article>
                                 </a>
                             </li>
-                            <?php
+                            <li>
+                                <div class='middle-item'></div>
+                            </li>
+                            <?php $countLine++;
                         endwhile;
                     endif;
                     wp_reset_postdata();

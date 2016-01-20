@@ -436,6 +436,19 @@ ul.m-sidebar{
             }
         }
     }
+    .middle-item{
+        border-top: solid 1px #CECCCA;
+        width: 100px;
+        height: 30px;
+        margin-right: -5px;
+        margin-left:  -5px;
+    }
+    .list-inline{
+        li{
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+    }
 }
 
 #service{
@@ -464,7 +477,7 @@ ul.m-sidebar{
     background: #2A2F33;
     h2{
         color: $white;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 300 !important;
     }
     span{
@@ -499,13 +512,15 @@ ul.m-sidebar{
                     @include transition(0.3s);
                     /*background: $menu-bg;*/
                     font-weight: 700;
-                    color: $menu-color-normal;
+                    color: #999B9C;
                     font-size: 14px;
                     display: block;
-                    padding: 30px 10px;
+                    padding: 5px 20px;
+                    border: solid 2px #EE7C12;
+                    border-radius: 15px;
                     &:before{
                         @include transition(0.3s);
-                        background: $menu-color;
+                        background: #999B9C;
                         bottom: 0;
                         content: "";
                         display: block;
@@ -517,14 +532,14 @@ ul.m-sidebar{
                     }
                     &:hover{
                         text-decoration: none;
-                        color: $menu-color-hover;
+                        color: #F88010;
                     }
                     // &.active:before, &:hover:before{
                     //     @include transition(0.3s);
                     //     width: 100%;
                     // }
                     &.active{
-                        color: $menu-color-active;
+                        color: #F88010;
                     }
                     &.nav-title{
                         display: block;
