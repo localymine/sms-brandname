@@ -50,11 +50,6 @@
                         <div class="row-gap-medium"></div>
                         <div id="tabs-<?php echo $term->slug ?>" class="col-xs-12 col-md-12 text-center nopadding">
                             <div id="<?php echo $jssor_id ?>" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1840px; height: 250px; overflow: hidden; visibility: hidden;">
-                                <!-- Loading Screen -->
-                                <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-                                    <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-                                    <div style="position:absolute;display:block;background:url('images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-                                </div>
                                 <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1840px; height: 250px; overflow: hidden;">
                                     <?php
                                     if (have_rows('images')):

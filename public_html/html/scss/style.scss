@@ -119,15 +119,22 @@ $paddings: (xs: 0.5rem, sm: 1rem, md: 1.5rem, lg: 2rem, xl: 2.5rem, xxl: 3rem);
         li{
             vertical-align: middle;
             display: inline-block;
-            padding: 5px 20px;
+            padding: 5px 2px;
             i{
                 vertical-align: middle;
             }
             .hotline{
                 @include phone-number(20px, 300);
                 vertical-align: middle;
+                font-size: 16px;
+                color: #E37D63;
             }
         }
+    }
+    .fa-phone{
+        font-size: 20px;
+        color: #474747;
+        padding-right: 3px;
     }
 }
 
@@ -152,6 +159,7 @@ $paddings: (xs: 0.5rem, sm: 1rem, md: 1.5rem, lg: 2rem, xl: 2.5rem, xxl: 3rem);
     background: $menu-bg;
     #logo{
         /*transform: translate(100%, 0);*/
+        padding-top: 1.3%;
         #menu-toggle{
             .navbar-toggle{
                 border: 1px solid $menu-color;
@@ -173,7 +181,7 @@ $paddings: (xs: 0.5rem, sm: 1rem, md: 1.5rem, lg: 2rem, xl: 2.5rem, xxl: 3rem);
         }
     }
     nav{
-        padding-left: 12%;
+        padding-left: 9%;
         padding-right: 10%;
         &.navbar-oil{
             margin-bottom: 0;
@@ -209,11 +217,11 @@ $paddings: (xs: 0.5rem, sm: 1rem, md: 1.5rem, lg: 2rem, xl: 2.5rem, xxl: 3rem);
                 a{
                     @include transition(0.3s);
                     /*background: $menu-bg;*/
-                    font-weight: 700;
+                    font-weight: 500;
                     color: $menu-color-normal;
                     font-size: 14px;
                     display: block;
-                    padding: 30px 10px;
+                    padding: 25px 4px;
                     &:before{
                         @include transition(0.3s);
                         background: $menu-color;
@@ -250,6 +258,17 @@ $paddings: (xs: 0.5rem, sm: 1rem, md: 1.5rem, lg: 2rem, xl: 2.5rem, xxl: 3rem);
                 }
             }
         }
+    }
+    .line-header{
+        border-left: #EBEBEB 1px solid;
+        height: 11px;
+    }
+    .form-header{
+        padding-left: 69.8%;
+    }
+    .menu-bar-1{
+        height: 50px !important;
+        padding-right: 5%;
     }
 }
 
@@ -420,6 +439,7 @@ ul.m-sidebar{
     }
     .main-text-design{
         padding-top: 75px;
+        padding-left: 12%;
         .title{
             color: #DE9470;
             padding-bottom: 10px;
@@ -435,6 +455,9 @@ ul.m-sidebar{
                 }
             }
         }
+    }
+    .main-img-design{
+        padding-right: 12%;
     }
     .middle-item{
         border-top: solid 1px #CECCCA;
@@ -591,6 +614,11 @@ ul.m-sidebar{
         color: #C6C6C6;
         font-size: 16px;
         padding-bottom: 20px;
+    }
+    .line-news{
+        border-left: #E3E3E3 1px solid;
+        border-right: #E3E3E3 1px solid;
+        height: 100%;
     }
 }
 .information{
@@ -922,6 +950,21 @@ ul.m-sidebar{
             color: #999B9C;
             font-size: 32px;
             font-weight: 300;
+        }
+        .controls{
+            padding-right: 18px;
+            padding-bottom: 10px;
+            border: 1px solid #717477;
+            background-color: #42464A;
+        }
+        button{
+            margin-left: 10px;
+            border: 1px solid #717477;
+            color: #9A9A9A;
+            background-color: #2A2F33;
+            height: 29px;
+            padding: 4px 15px 4px 15px;
+            margin-top: 8px;
         }
     }
 }

@@ -2,14 +2,9 @@
 <div class="row nopadding nomargin" style="min-height: 50px;">
     <div id="slideDesign">
         <!-- Jssor Slider Begin -->
-        <div id="jssor_4">
+        <div id="jssor_4" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1200px; height: 330px; overflow: hidden; visibility: hidden;">
             <!-- Loading Screen -->
-            <div class="box-loading" u="loading">
-                <div class="box-loading-overlay"></div>
-                <div class="box-loading-img"></div>
-            </div>
-            <!-- Slides Container -->
-            <div class="box-slider" u="slides">
+            <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1200px; height: 330px; overflow: hidden;">
                 <?php
                 $args = array(
                     'post_type' => 'info-slider',
@@ -27,8 +22,8 @@
                                 //
                                 $sub_image = get_sub_field('image');
                                 ?>
-                                <div>
-                                    <img u="image" src2="<?php echo $sub_image['url'] ?>" />
+                                <div data-p="191.25" style="display: none;">
+                                    <img data-u="image" src2="<?php echo $sub_image['url'] ?>" />
                                 </div>
                                 <?php
                             endwhile;
@@ -38,13 +33,11 @@
                 wp_reset_postdata();
                 ?>
             </div>
-            <!--#region Bullet Navigator Skin Begin -->
-            <!-- bullet navigator container -->
-            <div u="navigator" class="jssorb21">
+            <!-- Bullet Navigator -->
+            <div data-u="navigator" class="jssorb21" style="bottom:16px;right:16px;" data-autocenter="1">
                 <!-- bullet navigator item prototype -->
-                <div u="prototype"></div>
+                <div data-u="prototype"></div>
             </div>
-            <!--#endregion Bullet Navigator Skin End -->
         </div>
         <!-- Jssor Slider End -->
     </div>

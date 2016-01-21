@@ -56,7 +56,7 @@
                 <div class="container">
                     <ul class="top-menu pull-right nopadding">
                         <li>
-                            <i class="fa fa-phone fa-2x"></i><span class="hotline"><?php echo $omw_theme_settings->ct_company_telephone ?></span>
+                            <i class="fa fa-phone fa-2x"></i><span class="hotline">Hotline <?php echo $omw_theme_settings->ct_company_telephone ?></span>
                         </li>
                     </ul>
                 </div>
@@ -77,19 +77,31 @@
                                             <span class="icon-bar"></span>
                                         </button>
                                     </a>
-                                    <a class="navbar-brand nopadding">
+                                    <a class="navbar-brand nopadding img-a-logo">
                                         <img class="img-logo img-responsive" src="<?php echo $logo->url ?>" alt="<?php echo $omw_theme_settings->ct_company_name ?>" />
                                     </a>
                                 </div>
-                                <div class="navbar-collapse collapse nopadding">
+                                <div class="navbar-collapse collapse nopadding menu-bar-1">
                                     <ul class="top-menu">
                                         <li><a class="nav-title active" href="<?php echo home_url() ?>"><span>HOME</span></a></li>
+                                        <li><div class="line-header"></div></li>
                                         <li><a class="nav-title" href="<?php echo home_url('sms-brandname') ?>"><span>SMS BRANDNAME</span></a></li>
+                                        <li><div class="line-header"></div></li>
                                         <li><a class="nav-title" href="<?php echo home_url('otp-sms-brandname') ?>"><span>OTP SMS (BRANDNAME)</span></a></li>
+                                        <li><div class="line-header"></div></li>
                                         <li><a class="nav-title" href="<?php echo home_url('sms-marketting') ?>"><span>SMS MARKETING</span></a></li>
+                                        <li><div class="line-header"></div></li>
                                         <li><a class="nav-title" href="<?php echo home_url('sms-8x77-gateway') ?>"><span>SMS ĐẦU SỐ 8X77 (GATEWAY)</span></a></li>
+                                        <li><div class="line-header"></div></li>
                                         <li><a class="nav-title" href="<?php echo home_url('news') ?>"><span>TIN TỨC</span></a></li>
+                                        <li><div class="line-header"></div></li>
+                                        <li><a class="nav-title" href="#"><span>HƯỚNG DẪN</span></a></li>
+                                        <li><div class="line-header"></div></li>
                                         <li><a class="nav-title" href="<?php echo home_url('contact') ?>"><span>LIÊN HỆ</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="navbar-collapse collapse nopadding menu-bar-2">
+                                    <ul class="form-header">
                                         <li class="menu-search">
                                             <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/b-search.png" alt="Search" />
                                             <form class="nav-form">
@@ -120,6 +132,7 @@
                         <a class="<?php echo $omw_active_menu['news'] ?>" href="javascript:void(0);"><span>SMS ĐẦU SỐ 8X77</span></a>
                     </li>
                     <li><a class="<?php echo $omw_active_menu['health'] ?>" href="<?php bloginfo('url') ?>/health"><span>TIN TỨC</span></a></li>
+                    <li><a class="<?php echo $omw_active_menu['health'] ?>" href="#"><span>HƯỚNG DẪN</span></a></li>
                     <li><a class="<?php echo $omw_active_menu['contact'] ?>" href="<?php bloginfo('url') ?>/contact"><span>LIÊN HỆ</span></a></li>
                 </ul>
                 <!--side-bar-->
