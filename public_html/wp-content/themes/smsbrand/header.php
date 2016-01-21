@@ -86,7 +86,7 @@
                                         <li><a class="nav-title active" href="<?php echo home_url() ?>"><span>HOME</span></a></li>
                                         <li><a class="nav-title" href="<?php echo home_url('sms-brandname') ?>"><span>SMS BRANDNAME</span></a></li>
                                         <li><a class="nav-title" href="<?php echo home_url('otp-sms-brandname') ?>"><span>OTP SMS (BRANDNAME)</span></a></li>
-                                        <li><a class="nav-title" href="<?php echo home_url('sms-marketting') ?>"><span>SMS MARKETING</span></a></li>
+                                        <li><a class="nav-title" href="<?php echo home_url('sms-marketing') ?>"><span>SMS MARKETING</span></a></li>
                                         <li><a class="nav-title" href="<?php echo home_url('sms-8x77-gateway') ?>"><span>SMS ĐẦU SỐ 8X77 (GATEWAY)</span></a></li>
                                         <li><a class="nav-title" href="<?php echo home_url('news') ?>"><span>TIN TỨC</span></a></li>
                                         <li><a class="nav-title" href="<?php echo home_url('contact') ?>"><span>LIÊN HỆ</span></a></li>
