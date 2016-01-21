@@ -11,98 +11,88 @@ get_header();
     <div class="container">
         <div class="row-gap-huge"></div>
         <div class="row">
-            <div class="col-xs-12 col-md-4 text-center nopadding">
-                <img class="img-responsive center-block" src="images/service-1.png"/>
-                <a href="#">
-                    <span class="service-title">VIỄN THÔNG</span>
-                </a><br />
-                <div class="service-content"><span>Demo test test test test test<br />Demo test test test test test test test<br />Demo test test test test test</span></div>
-            </div>
-            <div class="col-xs-12 col-md-4 text-center new-middle nopadding">
-                <img class="img-responsive center-block" src="images/service-1.png"/>
-                <a href="#">
-                    <span class="service-title">CÔNG NGHỆ THÔNG TIN</span>
-                </a><br />
-                <div class="service-content"><span>Demo test test test test test<br />Demo test test test test test test test<br />Demo test test test test test</span></div>
-            </div>
-            <div class="col-xs-12 col-md-3 text-center nopadding">
-                <img class="img-responsive center-block" src="images/service-1.png"/>
-                <a href="#">
-                    <span class="service-title">KINH DOANH</span>
-                </a><br />
-                <div class="service-content"><span>Demo test test test test test<br />Demo test test test test test test test<br />Demo test test test test test</span></div>
-            </div>
+            <?php
+            $args = array(
+                'post_type' => array('news'),
+                'posts_per_page' => 3,
+                'order' => 'DESC',
+                'orderby' => 'post_date',
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'news-cat',
+                        'field' => 'slug',
+                        'terms' => array('top'),
+                    ),
+                ),
+            );
+            $loop = new WP_Query($args);
+            if ($loop->have_posts()):
+                while ($loop->have_posts()): $loop->the_post();
+                    $image = get_field('image');
+                    ?>
+                    <div class="col-xs-12 col-md-4 text-center nopadding">
+                        <img class="img-responsive center-block" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
+                        <a href="#">
+                            <span class="service-title"><?php the_title() ?></span>
+                        </a><br />
+                        <div class="service-content"><?php the_excerpt() ?></div>
+                    </div>
+                    <?php
+                endwhile;
+            endif;
+            wp_reset_postdata();
+            ?>
             <div class="col-md-1"></div>
         </div>
         <div class="row-gap-big"></div>
     </div>
 </div>
 <!-- news end -->
-<!-- body -->
+
+<!-- list news -->
 <div id="news-page-body">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-8 text-center nopadding">
-                <div class="col-xs-12 col-md-6 text-center">
-                    <div class="news-info">
-                        <a href="#">
-                            <h4>Demo demo demo demo</h4>
-                            <span class="news-overlay"></span>
-                            <img class="img-responsive" src="images/img-new1.png"/>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 text-center">
-                    <div class="news-info">
-                        <a href="#">
-                            <h4>Demo demo demo demo</h4>
-                            <span class="news-overlay">Demo demo</span>
-                            <img class="img-responsive" src="images/img-new1.png"/>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 text-center">
-                    <div class="news-info">
-                        <a href="#">
-                            <h4>Demo demo demo demo</h4>
-                            <span class="news-overlay">Demo demo</span>
-                            <img class="img-responsive" src="images/img-new1.png"/>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 text-center">
-                    <div class="news-info">
-                        <a href="#">
-                            <h4>Demo demo demo demo</h4>
-                            <span class="news-overlay">Demo demo</span>
-                            <img class="img-responsive" src="images/img-new1.png"/>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 text-center">
-                    <div class="news-info">
-                        <a href="#">
-                            <h4>Demo demo demo demo</h4>
-                            <span class="news-overlay">Demo demo</span>
-                            <img class="img-responsive" src="images/img-new1.png"/>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 text-center">
-                    <div class="news-info">
-                        <a href="#">
-                            <h4>Demo demo demo demo</h4>
-                            <span class="news-overlay">Demo demo</span>
-                            <img class="img-responsive" src="images/img-new1.png"/>
-                        </a>
-                    </div>
-                </div>
-                <!-- pr-bar -->
+                <?php
+                $args = array(
+                    'post_type' => array('news'),
+                    'order' => 'DESC',
+                    'orderby' => 'post_date',
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'news-cat',
+                            'field' => 'slug',
+                            'terms' => array('top'),
+                            'operator' => 'NOT IN',
+                        ),
+                    ),
+                );
+                $loop = new WP_Query($args);
+                if ($loop->have_posts()):
+                    while ($loop->have_posts()): $loop->the_post();
+                        $image = get_field('image');
+                        ?>
+                        <div class="col-xs-12 col-md-6 text-center">
+                            <div class="news-info">
+                                <a href="<?php the_permalink() ?>">
+                                    <h4><?php the_title() ?></h4>
+                                    <span class="news-overlay"></span>
+                                    <img class="img-responsive" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
+                                </a>
+                            </div>
+                        </div>
+                        <?php
+                    endwhile;
+                endif;
+                wp_reset_postdata();
+                ?>
+                <!-- relation news -->
                 <div class="col-xs-12 col-md-12 text-left nopadding">
                     <div class="more-news">
                         <div class="title_box_category width_common style_02">
                             <div class="txt_main_category">
-                                <span>Xem Them </span>
+                                <span class="news-rel-title">Tin tức liên quan</span>
                             </div>
                         </div>
                         <div class="content_box_category width_common">
@@ -141,68 +131,6 @@ get_header();
             <!-- <div class="col-md-1"></div> -->
         </div>
         <div class="row-gap-big"></div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="container news margin-top-xl margin-bottom-xl">
-    <div class="row">
-        <div class="col-xs-12 col-md-9 nopadding">
-            <?php
-            $args = array(
-                'post_type' => array('news'),
-                'posts_per_page' => 12,
-                'order' => 'DESC',
-                'orderby' => 'post_date',
-                'paged' => $paged,
-            );
-            $wp_query = new WP_Query($args);
-            ?>
-            <?php if ($wp_query->have_posts()): ?>
-                <?php while ($wp_query->have_posts()): $wp_query->the_post(); ?>
-                    <?php $image = get_field('image'); ?>
-                    <div class="col-xs-12 col-md-3 padding-left-xs padding-right-xs margin-bottom-sm margin-top-xs">
-                        <article class="box">
-                            <a href="<?php the_permalink() ?>">
-                                <figure>
-                                    <img src="<?php echo $image['sizes']['thumbnail'] ?>" class="img-responsive center-block" />
-                                </figure>
-                                <h2><?php the_title() ?></h2>
-                            </a>
-                        </article>
-                    </div>
-                <?php endwhile; ?>
-            <?php endif; ?>
-            <div class="col-xs-12">
-                <div class="paging-navigation text-center">
-                    <?php
-                    wpbeginner_numeric_posts_nav();
-                    ?>
-                </div>
-            </div>
-            <?php wp_reset_postdata() ?>
-        </div>
-        <div class="col-xs-12 col-md-3">
-
-        </div>
     </div>
 </div>
 
