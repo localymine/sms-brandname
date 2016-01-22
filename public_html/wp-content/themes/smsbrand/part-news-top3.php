@@ -1,3 +1,8 @@
+<div class="row nopadding nomargin" style="min-height: 50px;">
+    <div class="col-xs-12 col-md-12 nopadding">
+        <img class="img-responsive nopadding" src="<?php echo get_template_directory_uri() ?>/images/banner-market.png"/>
+    </div>
+</div>
 <div id="news-page">
     <div class="container">
         <div class="row-gap-huge"></div>
