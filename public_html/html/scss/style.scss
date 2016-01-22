@@ -859,10 +859,19 @@ ul.m-sidebar{
 }
 
 #marketing-white{
-    background: $white;
+    /*background: $white;*/
 }
 #marketing-black{
-    background: #F2EEEB;
+    /*background: #F2EEEB;*/
+}
+
+.marketing{
+    .odd{
+        background: $white;
+    }
+    .even{
+        background: #F2EEEB;
+    }
 }
 
 #main-bottom{
