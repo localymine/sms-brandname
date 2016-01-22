@@ -33,7 +33,7 @@
                                 </article>
                             </a>
                         </div>
-                        <div class="col-xs-12 col-md-6 nopadding" data-wow-delay="1s">
+                        <div class="col-xs-12 col-md-6 main-img-design nopadding" data-wow-delay="1s">
                             <?php
                             $image = get_field('image');
                             $url = $image['url'];

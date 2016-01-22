@@ -24,33 +24,28 @@ wp_reset_postdata();
 <div class="row nopadding nomargin" style="min-height: 50px;">
     <!-- Jssor Slider Begin -->
     <div id="slider1_container">
-        <!-- Loading Screen -->
-        <div class="box-loading" u="loading">
-            <div class="box-loading-overlay"></div>
-            <div class="box-loading-img"></div>
-        </div>
         <!-- Slides Container -->
-        <div class="box-slider" u="slides">
+        <div class="box-slider" data-u="slides">
             <?php for ($i = 0; $i < count($home_slider); $i++): ?>
                 <div>
-                    <img u="image" src2="<?php echo $home_slider[$i]['image'] ?>" />
+                    <img data-u="image" src2="<?php echo $home_slider[$i]['image'] ?>" />
                 </div>
             <?php endfor; ?>
         </div>
 
         <!--#region Bullet Navigator Skin Begin -->
         <!-- bullet navigator container -->
-        <div u="navigator" class="jssorb21">
+        <div data-u="navigator" class="jssorb21">
             <!-- bullet navigator item prototype -->
-            <div u="prototype"></div>
+            <div data-u="prototype"></div>
         </div>
         <!--#endregion Bullet Navigator Skin End -->
 
         <!--#region Arrow Navigator Skin Begin -->
         <!-- Arrow Left -->
-        <span u="arrowleft" class="jssora05l" style="top:158px;left:230px;width:40px;height:40px;"></span>
+        <span data-u="arrowleft" class="jssora05l" style="top:0px;left:10%;width:45px;height:45px;" data-autocenter="2"></span>
         <!-- Arrow Right -->
-        <span u="arrowright" class="jssora05r" style="top:158px;right:230px;width:40px;height:40px;"></span>
+        <span data-u="arrowright" class="jssora05r" style="top:0px;right:10%;width:45px;height:45px;" data-autocenter="2"></span>
         <!--#endregion Arrow Navigator Skin End -->
     </div>
     <!-- Jssor Slider End -->

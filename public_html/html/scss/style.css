@@ -62,45 +62,6 @@ input::-moz-focus-inner {
     height: 630px;
     overflow: hidden; }
 
-#jssor_4 {
-  visibility: hidden;
-  position: relative;
-  margin: 0 auto;
-  top: 0px;
-  left: 0px;
-  width: 1830px;
-  height: 430px;
-  overflow: hidden; }
-  #jssor_4 .box-loading {
-    position: absolute;
-    top: 0px;
-    left: 0px; }
-    #jssor_4 .box-loading .box-loading-overlay {
-      filter: alpha(opacity=70);
-      opacity: 0.7;
-      position: absolute;
-      display: block;
-      top: 0px;
-      left: 0px;
-      width: 100%;
-      height: 100%; }
-    #jssor_4 .box-loading .box-loading-img {
-      position: absolute;
-      display: block;
-      background: url(../img/loading.gif) no-repeat center center;
-      top: 0px;
-      left: 0px;
-      width: 100%;
-      height: 100%; }
-  #jssor_4 .box-slider {
-    cursor: move;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 1830px;
-    height: 430px;
-    overflow: hidden; }
-
 #jssor_3 {
   visibility: hidden;
   position: relative;
@@ -722,14 +683,20 @@ h2 {
     .hot-top ul li {
       vertical-align: middle;
       display: inline-block;
-      padding: 5px 20px; }
+      padding: 5px 2px; }
       .hot-top ul li i {
         vertical-align: middle; }
       .hot-top ul li .hotline {
         font-family: 'Lora', serif;
         font-size: 20px;
         font-weight: 300;
-        vertical-align: middle; }
+        vertical-align: middle;
+        font-size: 16px;
+        color: #E37D63; }
+  .hot-top .fa-phone {
+    font-size: 20px;
+    color: #474747;
+    padding-right: 3px; }
 
 #nav.affix {
   position: fixed;
@@ -749,7 +716,8 @@ h2 {
 .header {
   background: #FFFFFF; }
   .header #logo {
-    /*transform: translate(100%, 0);*/ }
+    /*transform: translate(100%, 0);*/
+    padding-top: 1.3%; }
     .header #logo #menu-toggle .navbar-toggle {
       border: 1px solid #A79B92; }
       .header #logo #menu-toggle .navbar-toggle:hover {
@@ -762,7 +730,7 @@ h2 {
       margin-left: -80px !important;
       /*float: none;*/ }
   .header nav {
-    padding-left: 12%;
+    padding-left: 9%;
     padding-right: 10%; }
     .header nav.navbar-oil {
       margin-bottom: 0;
@@ -793,11 +761,11 @@ h2 {
           -moz-transition: all 0.3s ease 0s;
           transition: all 0.3s ease 0s;
           /*background: $menu-bg;*/
-          font-weight: 700;
-          color: #A79B92;
+          font-weight: 500;
+          color: #9B9B9B;
           font-size: 14px;
           display: block;
-          padding: 30px 10px; }
+          padding: 25px 4px; }
           .header nav ul li a:before {
             -webkit-transition: all 0.3s ease 0s;
             -moz-transition: all 0.3s ease 0s;
@@ -813,9 +781,9 @@ h2 {
             width: 0; }
           .header nav ul li a:hover {
             text-decoration: none;
-            color: #E9A17F; }
+            color: #F83130; }
           .header nav ul li a.active {
-            color: #EAA98A; }
+            color: #F83130; }
           .header nav ul li a.nav-title {
             display: block;
             position: relative;
@@ -824,6 +792,14 @@ h2 {
           .header nav ul li a span {
             text-align: center;
             display: block; }
+  .header .line-header {
+    border-left: #EBEBEB 1px solid;
+    height: 11px; }
+  .header .form-header {
+    padding-left: 69.8%; }
+  .header .menu-bar-1 {
+    height: 50px !important;
+    padding-right: 5%; }
 
 /*.menu-holder{
     width: 100%;
@@ -898,7 +874,7 @@ ul.m-sidebar {
       transition: all 0.3s ease 0s;
       background: #FFFFFF;
       font-weight: 700;
-      color: #A79B92;
+      color: #9B9B9B;
       font-size: 16px;
       display: block;
       padding: 20px 10px; }
@@ -924,7 +900,7 @@ ul.m-sidebar {
         transition: all 0.3s ease 0s;
         width: 100%; }
       ul.m-sidebar li a.active {
-        color: #EAA98A; }
+        color: #F83130; }
       ul.m-sidebar li a.nav-title {
         display: block;
         position: relative;
@@ -969,7 +945,8 @@ ul.m-sidebar {
     color: #8F7D76;
     font-size: 16px; }
   #design .main-text-design {
-    padding-top: 75px; }
+    padding-top: 75px;
+    padding-left: 12%; }
     #design .main-text-design .title {
       color: #DE9470;
       padding-bottom: 10px; }
@@ -979,6 +956,8 @@ ul.m-sidebar {
         position: relative; }
         #design .main-text-design a article.item span {
           color: #DE9470; }
+  #design .main-img-design {
+    padding-right: 12%; }
   #design .middle-item {
     border-top: solid 1px #CECCCA;
     width: 100px;
@@ -1098,6 +1077,10 @@ ul.m-sidebar {
     color: #C6C6C6;
     font-size: 16px;
     padding-bottom: 20px; }
+  #news .line-news {
+    border-left: #E3E3E3 1px solid;
+    border-right: #E3E3E3 1px solid;
+    height: 100%; }
 
 .information .module-info header {
   -moz-border-bottom-colors: none;
@@ -1356,6 +1339,19 @@ ul.m-sidebar {
     color: #999B9C;
     font-size: 32px;
     font-weight: 300; }
+  #footer-wrapper .signs-up .controls {
+    padding-right: 18px;
+    padding-bottom: 10px;
+    border: 1px solid #717477;
+    background-color: #42464A; }
+  #footer-wrapper .signs-up button {
+    margin-left: 10px;
+    border: 1px solid #717477;
+    color: #9A9A9A;
+    background-color: #2A2F33;
+    height: 29px;
+    padding: 4px 15px 4px 15px;
+    margin-top: 8px; }
 
 #back-top {
   bottom: 90px;
@@ -1635,7 +1631,7 @@ ul.m-sidebar {
           text-transform: capitalize;
           padding-left: 5px; }
         .news .news-sidebar ul ul li a:hover {
-          color: #EAA98A; }
+          color: #F83130; }
 .news article.box a h2 {
   padding: 5px; }
 .news article.box a:hover h2 {
@@ -1883,7 +1879,22 @@ ul.recent_short {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .header #logo .navbar-brand .img-logo {
-    /*margin-left: 0;*/ }
+    margin-left: 55px;
+    margin-top: 5px; }
+  .header #logo button {
+    margin-top: 15px;
+    margin-right: -20px; }
+
+  #slider1_container .jssorb21 {
+    bottom: 5px; }
+
+  #design .main-text-design {
+    padding-top: 0px;
+    padding-left: 8%;
+    padding-right: 8%; }
+
+  #new .row-gap-huge {
+    height: 10px; }
 
   .contact-info .contact-info-form {
     width: 100%;

@@ -11,7 +11,13 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
                 <div class="col-xs-12 col-md-4 copyright">
                     <span><i class="fa fa-map-marker"></i><?php echo $omw_theme_settings->ct_company_address ?></span><br/>
                     <span><i class="fa fa-phone"></i><?php echo $omw_theme_settings->ct_company_telephone ?></span><br/>
-                    <span><i class="fa fa-envelope-o"></i><a href="mailto:<?php echo $omw_theme_settings->ct_company_email ?>"><?php echo $omw_theme_settings->ct_company_email ?></a></span>
+                    <span><i class="fa fa-envelope-o"></i><a href="mailto:<?php echo $omw_theme_settings->ct_company_email ?>">
+                    <?php echo $omw_theme_settings->ct_company_email ?></a></span><br /><br />
+                    <span>
+                        <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/51.png"></a>
+                        <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/52.png"></a>
+                        <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/53.png"></a>
+                    </span>
                 </div>
                 <div class="col-xs-12 col-md-4 signs-up">
                     <span>

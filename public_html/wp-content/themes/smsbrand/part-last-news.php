@@ -16,20 +16,20 @@
                 'orderby' => array('date' => 'DESC'),
             );
             $loop = new WP_Query($args);
-            //
+            $row_line = 1;
             if ($loop->have_posts()):
                 while ($loop->have_posts()):
                     $loop->the_post();
                     $image = get_field('image');
                     ?>
-                    <div class="col-xs-12 col-md-4 text-center wow fadeInUp nopadding" data-wow-delay="0.5s">
+                    <div class="col-xs-12 col-md-4 text-center <?php if($row_line == 2){echo('line-news');}?> wow fadeInUp" data-wow-delay="0.5s">
                         <a href="<?php the_permalink() ?>">
                             <img class="img-responsive center-block" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
                             <span class="service-title"><?php the_title() ?></span>
                             <div class="service-content"><?php the_excerpt() ?></div>
                         </a>
                     </div>
-                    <?php
+                    <?php $row_line++;
                 endwhile;
             endif;
             wp_reset_postdata();
