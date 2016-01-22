@@ -14,20 +14,7 @@ get_header();
                 <div><?php echo get_field('content') ?></div>
             </div>
             
-            <div class="col-xs-12 col-md-3 pr-bar">
-                <span class="service-title">TIN TỨC LIÊN QUAN</span>
-                <div class="border-titile"></div>
-                <div>
-                    <img src="images/window-layer.png" class="img-responsive center-block">
-                </div>
-                <div>
-                    <img src="images/layer-2.png" class="img-responsive center-block">
-                </div>
-                <a href="#">
-                    <span class="service-title">VIỄN THÔNG</span>
-                </a><br>
-                <div class="service-content"><span>Demo test test test test test<br>Demo test test test test test test test<br>Demo test test test test test</span></div>
-            </div>
+            <?php get_sidebar('message') ?>
             <!-- <div class="col-md-1"></div> -->
         </div>
         <div class="row-gap-big"></div>

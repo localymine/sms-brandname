@@ -176,7 +176,7 @@ function cptui_register_my_cpts() {
         "capability_type" => "post",
         "map_meta_cap" => true,
         "hierarchical" => false,
-        "rewrite" => array("slug" => "topic/%news-type%", "with_front" => true),
+        "rewrite" => array("slug" => "topic/%news-cat%", "with_front" => true),
         "query_var" => true,
         "menu_position" => 26,
         "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h7.png',
@@ -220,13 +220,13 @@ function cptui_register_my_taxes() {
     $args = array(
         "labels" => $labels,
         "hierarchical" => true,
-        "label" => "News Type",
+        "label" => "News Category",
         "show_ui" => true,
         "query_var" => true,
         "rewrite" => array('slug' => 'news', 'with_front' => true),
         "show_admin_column" => true,
     );
-    register_taxonomy("news-type", array("news"), $args);
+    register_taxonomy("news-cat", array("news"), $args);
 
 // End cptui_register_my_taxes
 }
@@ -602,8 +602,8 @@ add_filter('post_link', 'news_permalink', 1, 3);
 add_filter('post_type_link', 'news_permalink', 1, 3);
 
 function news_permalink($permalink, $post_id, $leavename) {
-    //replace %news-type% with custom post type category slug
-    if (strpos($permalink, '%news-type%') === FALSE)
+    //replace %news-cat% with custom post type category slug
+    if (strpos($permalink, '%news-cat%') === FALSE)
         return $permalink;
     // Get post
     $post = get_post($post_id);
@@ -611,13 +611,13 @@ function news_permalink($permalink, $post_id, $leavename) {
         return $permalink;
 
     // Get taxonomy terms
-    $terms = wp_get_object_terms($post->ID, 'news-type');
+    $terms = wp_get_object_terms($post->ID, 'news-cat');
     if (!is_wp_error($terms) && !empty($terms) && is_object($terms[0]))
         $taxonomy_slug = $terms[0]->slug;
     else
         $taxonomy_slug = 'n';
 
-    return str_replace('%news-type%', $taxonomy_slug, $permalink);
+    return str_replace('%news-cat%', $taxonomy_slug, $permalink);
 }
 
 /*
