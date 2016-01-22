@@ -1,7 +1,7 @@
 <?php
 /*
  * Author: KhangLe
- * Template Name: SMS Marketing
+ * Template Name: SMS OTP
  */
 get_header();
 ?>
@@ -14,7 +14,7 @@ $args = array(
         array(
             'taxonomy' => 'sms-type',
             'field' => 'slug',
-            'terms' => array('sms-marketing'),
+            'terms' => array('sms-otp'),
         ),
     ),
 );

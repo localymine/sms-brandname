@@ -87,15 +87,15 @@
                                         <li><div class="line-header"></div></li>
                                         <li><a class="nav-title" href="<?php echo home_url('sms-brandname') ?>"><span>SMS BRANDNAME</span></a></li>
                                         <li><div class="line-header"></div></li>
-                                        <li><a class="nav-title" href="<?php echo home_url('otp-sms-brandname') ?>"><span>OTP SMS (BRANDNAME)</span></a></li>
+                                        <li><a class="nav-title" href="<?php echo home_url('sms-otp') ?>"><span>OTP SMS (BRANDNAME)</span></a></li>
                                         <li><div class="line-header"></div></li>
-                                        <li><a class="nav-title" href="<?php echo home_url('sms-marketting') ?>"><span>SMS MARKETING</span></a></li>
+                                        <li><a class="nav-title" href="<?php echo home_url('sms-marketing') ?>"><span>SMS MARKETING</span></a></li>
                                         <li><div class="line-header"></div></li>
-                                        <li><a class="nav-title" href="<?php echo home_url('sms-8x77-gateway') ?>"><span>SMS ĐẦU SỐ 8X77 (GATEWAY)</span></a></li>
+                                        <li><a class="nav-title" href="<?php echo home_url('sms-8x77') ?>"><span>SMS ĐẦU SỐ 8X77 (GATEWAY)</span></a></li>
                                         <li><div class="line-header"></div></li>
                                         <li><a class="nav-title" href="<?php echo home_url('news') ?>"><span>TIN TỨC</span></a></li>
                                         <li><div class="line-header"></div></li>
-                                        <li><a class="nav-title" href="#"><span>HƯỚNG DẪN</span></a></li>
+                                        <li><a class="nav-title" href="<?php echo home_url('help') ?>"><span>HƯỚNG DẪN</span></a></li>
                                         <li><div class="line-header"></div></li>
                                         <li><a class="nav-title" href="<?php echo home_url('contact') ?>"><span>LIÊN HỆ</span></a></li>
                                     </ul>
@@ -108,12 +108,14 @@
 
                                             </form>
                                         </li>
+                                        <!--
                                         <li class="">
                                             <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/flag-vn.png" alt="vietnam" />
                                         </li>
                                         <li>
                                             <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/flag-en.png" alt="english" />
                                         </li>
+                                        -->
                                     </ul>
                                 </div>
                             </div>
