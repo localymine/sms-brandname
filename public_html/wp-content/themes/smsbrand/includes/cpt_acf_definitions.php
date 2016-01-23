@@ -184,6 +184,29 @@ function cptui_register_my_cpts() {
     );
     register_post_type("news", $args);
 
+    $labels = array(
+        "name" => "SMS",
+        "singular_name" => "SMS",
+    );
+
+    $args = array(
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "show_ui" => true,
+        "has_archive" => false,
+        "show_in_menu" => true,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => array("slug" => "sms", "with_front" => true),
+        "query_var" => true,
+        "menu_position" => 26,
+        "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h8.png',
+        "supports" => array("title"),
+    );
+    register_post_type("sms", $args);
 
 // End of cptui_register_my_cpts()
 }
@@ -227,6 +250,22 @@ function cptui_register_my_taxes() {
         "show_admin_column" => true,
     );
     register_taxonomy("news-cat", array("news"), $args);
+
+    $labels = array(
+        "name" => "SMS Type",
+        "label" => "SMS Type",
+    );
+
+    $args = array(
+        "labels" => $labels,
+        "hierarchical" => true,
+        "label" => "SMS Type",
+        "show_ui" => true,
+        "query_var" => true,
+        "rewrite" => array('slug' => 'sms-type', 'with_front' => true),
+        "show_admin_column" => true,
+    );
+    register_taxonomy("sms-type", array("sms"), $args);
 
 // End cptui_register_my_taxes
 }
@@ -580,6 +619,173 @@ if (function_exists("register_field_group")) {
                     'param' => 'post_type',
                     'operator' => '==',
                     'value' => 'news',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array(
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array(
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+
+    register_field_group(array(
+        'id' => 'acf_sms',
+        'title' => 'SMS',
+        'fields' => array(
+            array(
+                'key' => 'field_56a1e3ac48595',
+                'label' => 'Banner Image',
+                'name' => 'banner_image',
+                'type' => 'image',
+                'save_format' => 'object',
+                'preview_size' => 'thumbnail',
+                'library' => 'all',
+            ),
+//            array(
+//                'key' => 'field_56a1e3e248596',
+//                'label' => 'Image',
+//                'name' => 'image',
+//                'type' => 'image',
+//                'save_format' => 'object',
+//                'preview_size' => 'thumbnail',
+//                'library' => 'all',
+//            ),
+            array(
+                'key' => 'field_56a1e3f948597',
+                'label' => 'Block Information',
+                'name' => 'block_information',
+                'type' => 'repeater',
+                'conditional_logic' => array(
+                    'status' => 1,
+                    'rules' => array(
+                        array(
+                            'field' => 'null',
+                            'operator' => '==',
+                        ),
+                    ),
+                    'allorany' => 'all',
+                ),
+                'sub_fields' => array(
+                    array(
+                        'key' => 'field_56a1f8ce9d164',
+                        'label' => 'Set Position',
+                        'name' => 'set_position',
+                        'type' => 'select',
+                        'column_width' => '',
+                        'choices' => array(
+                            0 => 'Left',
+                            1 => 'Right',
+                        ),
+                        'default_value' => '',
+                        'allow_null' => 0,
+                        'multiple' => 0,
+                    ),
+                    array(
+                        'key' => 'field_56a1f6b505b9a',
+                        'label' => 'Set Image Left',
+                        'name' => 'set_image_left',
+                        'type' => 'repeater',
+                        'conditional_logic' => array(
+                            'status' => 1,
+                            'rules' => array(
+                                array(
+                                    'field' => 'field_56a1f8ce9d164',
+                                    'operator' => '==',
+                                    'value' => '0',
+                                ),
+                            ),
+                            'allorany' => 'all',
+                        ),
+                        'column_width' => '',
+                        'sub_fields' => array(
+                            array(
+                                'key' => 'field_56a1f73605b9b',
+                                'label' => 'Image',
+                                'name' => 'image',
+                                'type' => 'image',
+                                'column_width' => '',
+                                'save_format' => 'object',
+                                'preview_size' => 'thumbnail',
+                                'library' => 'all',
+                            ),
+                            array(
+                                'key' => 'field_56a1f74905b9c',
+                                'label' => 'Content',
+                                'name' => 'content',
+                                'type' => 'wysiwyg',
+                                'column_width' => '',
+                                'default_value' => '',
+                                'toolbar' => 'full',
+                                'media_upload' => 'yes',
+                            ),
+                        ),
+                        'row_min' => 1,
+                        'row_limit' => 1,
+                        'layout' => 'table',
+                        'button_label' => 'Add Row',
+                    ),
+                    array(
+                        'key' => 'field_56a1f79405b9d',
+                        'label' => 'Set Image Right',
+                        'name' => 'set_image_right',
+                        'type' => 'repeater',
+                        'conditional_logic' => array(
+                            'status' => 1,
+                            'rules' => array(
+                                array(
+                                    'field' => 'field_56a1f8ce9d164',
+                                    'operator' => '==',
+                                    'value' => '1',
+                                ),
+                            ),
+                            'allorany' => 'all',
+                        ),
+                        'column_width' => '',
+                        'sub_fields' => array(
+                            array(
+                                'key' => 'field_56a1f7bc05b9e',
+                                'label' => 'Content',
+                                'name' => 'content',
+                                'type' => 'wysiwyg',
+                                'column_width' => '',
+                                'default_value' => '',
+                                'toolbar' => 'full',
+                                'media_upload' => 'yes',
+                            ),
+                            array(
+                                'key' => 'field_56a1f7c805b9f',
+                                'label' => 'Image',
+                                'name' => 'image',
+                                'type' => 'image',
+                                'column_width' => '',
+                                'save_format' => 'object',
+                                'preview_size' => 'thumbnail',
+                                'library' => 'all',
+                            ),
+                        ),
+                        'row_min' => 1,
+                        'row_limit' => 1,
+                        'layout' => 'table',
+                        'button_label' => 'Add Row',
+                    ),
+                ),
+                'row_min' => '',
+                'row_limit' => '',
+                'layout' => 'row',
+                'button_label' => 'Add Information',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'sms',
                     'order_no' => 0,
                     'group_no' => 0,
                 ),
