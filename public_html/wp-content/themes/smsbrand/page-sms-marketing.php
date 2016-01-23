@@ -29,11 +29,9 @@ if ($loop->have_posts()):
                 </div>
             </div>
         </section>
-
         <!-- content -->
         <?php
         $counter = 0;
-        //
         if (have_rows('block_information')):
             while (have_rows('block_information')): the_row();
                 $class = ($counter % 2 == 0) ? 'even' : 'odd';
