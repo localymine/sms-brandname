@@ -31,8 +31,11 @@ if ($terms && !is_wp_error($terms)) {
                 <!-- content detail -->
                 <section id="content-detail" class="text-left">
                     <h2><?php the_title() ?></h2>
-                    <div><?php echo $on_draught ?></div>
+                    <div class="time"><span>INTERNET | 08:49, 18/12/2015</span></div>
+                    <div class="social-network"><span>facebook-twister</span><span class="content-right">Bàn in</span></div>
+                    <div class="content"><?php echo $on_draught ?></div>
                     <div><?php the_content() ?></div>
+                    <div class="social-network"><span>facebook-twister</span><span class="content-right">Bàn in</span></div>
                 </section>
                 <!-- content detail end -->
                 

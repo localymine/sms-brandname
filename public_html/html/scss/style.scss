@@ -767,14 +767,34 @@ ul.m-sidebar{
 
 #news-page-body{
     background: $white;
-    h2{
-        color: #1A1A1A;
-        font-size: 40px;
-        font-weight: 300 !important;
-    }
     img{
         padding-bottom: 20px;
         padding-top: 20px;
+    }
+    #content-detail{
+        h2{
+            font-size: 42px;
+            font-weight: 500;
+        }
+        .time{
+            font-size: 16px;
+            font-weight: 300;
+            color: #969696;
+            padding-bottom: 20px;
+        }
+        .social-network{
+            padding-top: 4px;
+            padding-bottom: 2px;
+            border-top: 1px solid #DEDEDE;
+            border-bottom: 1px solid #DEDEDE;
+        }
+        .content{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .content-right{
+            padding-left: 80%;
+        }
     }
     .service-title{
         color: #1A1A1A;
@@ -818,32 +838,6 @@ ul.m-sidebar{
             }
         }
     }
-    .more-news{
-        color: #fff;
-        padding-left: 11%;
-        padding-top: 50px;
-        position: relative;
-        .txt_main_category{
-            color: #000;
-            font-size: 20px;
-            padding-bottom: 5px;
-            border-bottom: 1px solid #DEDEDE;
-        }
-        li {
-            background: rgba(0, 0, 0, 0) url("images/graphics/bg_dot_gray_3x3.gif") no-repeat scroll left 6px;
-            padding: 0 0 0 10px;
-        }
-        .content_box_category{
-            .list_news_dot_3x3{
-                padding-top: 10px;
-                padding-left: 5px;
-            }
-            .txt_666{
-                color: #969696;
-                font-size: 16px;
-            }
-        }
-    }
     .pr-bar{
         padding-top: 15px;
         .service-title{
@@ -857,12 +851,179 @@ ul.m-sidebar{
         }
     }
 }
+#contact-info{
+    background-color: white;
+    .contact-header{
+        border-bottom: 1px dotted #1A1A1A;
+        span{
+            font-size: 32px;
+            font-weight: 700;
+            color: #1A1A1A;
+        }
+    }
+    .detail-company{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        span{
+            font-size: 18px;
+        }
+    }
+    .adv-info{
+        span{
+            padding-left: 20px;
+        }
+    }
+    .contact-form{
+        padding-top: 50px;
+        border-bottom: 1px dotted #1A1A1A;
+        span{
+            font-size: 32px;
+            font-weight: 700;
+            color: #1A1A1A;
+        }
+    }
+    :-moz-placeholder {
+        color: #C4AAA1;
+    }
+     
+    ::-webkit-input-placeholder {
+        color: #C4AAA1;
+    }
+    .form-sms{
+        ul{
+            width:750px;
+            list-style-type:none;
+            list-style-position:outside;
+            margin:0px;
+            padding:0px;
+        }
+        li{
+            padding:12px; 
+            position:relative;
+        }
+        label {
+            width: 80px;
+            display: inline-block;
+            float: left;
+            padding: 5px;
+        }
+        input {
+            height:20px; 
+            width:220px; 
+            padding:5px 8px;
+        }
+        textarea {
+            padding:8px;
+            width:300px;
+        }
+        button {
+            margin-left: 50%;
+        }
+        input { 
+            border: 1px solid #EDB498;
+            height: 30px;
+            border-radius: 4px;
+            width: 57.7%;
+        }
+        textarea { 
+            border: 1px solid #EDB498;
+            border-radius: 4px;
+            width: 57.7%;
+        }
+        input:focus, textarea:focus {
+            background: #fff; 
+            border:1px solid #555; 
+            box-shadow: 0 0 3px #EDB498; 
+        }
+        /* Button Style */
+        button.submit {
+            background-color: #F88010;
+            background: -webkit-gradient(linear, left top, left bottom, from(#F88010), to(#FF8E32));
+            background: -webkit-linear-gradient(top, #F88010, #FF8E32);
+            background: -moz-linear-gradient(top, #F88010, #FF8E32);
+            background: -ms-linear-gradient(top, #F88010, #FF8E32);
+            background: -o-linear-gradient(top, #F88010, #FF8E32);
+            background: linear-gradient(top, #F88010, #FF8E32);
+            border: 1px solid #F88010;
+            border-bottom: 1px solid #F88010;
+            border-radius: 3px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            box-shadow: 0 3px 0 #030303;
+            -webkit-box-shadow: 0 3px 0 #030303;
+            -moz-box-shadow: 0 3px 0 #030303;
+            -ms-box-shadow: 0 3px 0 #030303;
+            -o-box-shadow: 0 3px 0 #030303;
+            color: white;
+            font-weight: bold;
+            padding: 6px 20px;
+            text-align: center;
+        }
+        button.submit:hover {
+            opacity:.85;
+            cursor: pointer; 
+        }
+        button.submit:active {
+            border: 1px solid #20911e;
+            box-shadow: 0 0 10px 5px #356b0b inset; 
+            -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+            -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+            -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+            -o-box-shadow: 0 0 10px 5px #356b0b inset;
+             
+        }
+    }
+}
+.more-news{
+    color: #fff;
+    padding-left: 11%;
+    padding-top: 50px;
+    position: relative;
+    .txt_main_category{
+        color: #000;
+        font-size: 20px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #DEDEDE;
+    }
+    li {
+        background: rgba(0, 0, 0, 0) url("img/dot-grey.gif") no-repeat scroll left 3px;
+        padding: 0 0 0 20px;
+    }
+    .content_box_category{
+        .list_news_dot_3x3{
+            padding-top: 10px;
+            padding-left: 5px;
+        }
+        .txt_666{
+            color: #969696;
+            font-size: 16px;
+        }
+    }
+}
 
 #marketing-white{
-    /*background: $white;*/
+    background: $white;
+    .text-marketing{
+        h2{
+            font-size: 36px;
+            font-weight: 500;
+            color: #73432F;
+            padding-bottom: 20px;
+        }
+    }
 }
 #marketing-black{
-    /*background: #F2EEEB;*/
+    background: #F2EEEB;
+    .text-marketing{
+        h2{
+            font-size: 36px;
+            font-weight: 500;
+            color: #73432F;
+            padding-bottom: 20px;
+        }
+    }
 }
 
 .marketing{

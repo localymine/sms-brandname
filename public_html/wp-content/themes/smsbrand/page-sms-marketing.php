@@ -5,7 +5,6 @@
  */
 get_header();
 ?>
-
 <?php
 $args = array(
     'post_type' => array('sms'),
@@ -23,19 +22,16 @@ if ($loop->have_posts()):
     while ($loop->have_posts()): $loop->the_post();
         $banner_image = get_field('banner_image');
         ?>
-
         <section>
-            <div class="col-xs-12 col-md-12">
-                <div class="row">
-                    <img src="<?php echo $banner_image['url'] ?>" />
+            <div class="row nopadding nomargin" style="min-height: 50px;">
+                <div class="col-xs-12 col-md-12 nopadding">
+                    <img class="img-responsive nopadding" src="<?php echo $banner_image['url'] ?>" />
                 </div>
             </div>
         </section>
-
         <!-- content -->
         <?php
         $counter = 0;
-        //
         if (have_rows('block_information')):
             while (have_rows('block_information')): the_row();
                 $class = ($counter % 2 == 0) ? 'even' : 'odd';

@@ -78,7 +78,7 @@
                                         </button>
                                     </a>
                                     <a class="navbar-brand nopadding img-a-logo">
-                                        <img class="img-logo img-responsive" width="220" src="<?php echo $logo->url ?>" alt="<?php echo $omw_theme_settings->ct_company_name ?>" />
+                                        <img class="img-logo img-responsive" src="<?php echo $logo->url ?>" alt="<?php echo $omw_theme_settings->ct_company_name ?>" />
                                     </a>
                                 </div>
                                 <div class="navbar-collapse collapse nopadding menu-bar-1">

@@ -13,11 +13,11 @@
                 </li>
                 <li>
                     <a href="">Thiết lập khu vực cấm bay, hạn chế bay</a> 
-                    <span class="txt_666">(14/12)</span>
+                    <span class="txt_666">Thứ 6 - 18/12/2015</span>
                 </li>
                 <li>
                     <a href="">Thiết lập khu vực cấm bay, hạn chế bay</a> 
-                    <span class="txt_666">(14/12)</span>
+                    <span class="txt_666">Thứ 6 - 18/12/2015</span>
                 </li>
             </ul>
         </div>

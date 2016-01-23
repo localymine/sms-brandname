@@ -1201,13 +1201,27 @@ ul.m-sidebar {
 
 #news-page-body {
   background: #fff; }
-  #news-page-body h2 {
-    color: #1A1A1A;
-    font-size: 40px;
-    font-weight: 300 !important; }
   #news-page-body img {
     padding-bottom: 20px;
     padding-top: 20px; }
+  #news-page-body #content-detail h2 {
+    font-size: 42px;
+    font-weight: 500; }
+  #news-page-body #content-detail .time {
+    font-size: 16px;
+    font-weight: 300;
+    color: #969696;
+    padding-bottom: 20px; }
+  #news-page-body #content-detail .social-network {
+    padding-top: 4px;
+    padding-bottom: 2px;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE; }
+  #news-page-body #content-detail .content {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  #news-page-body #content-detail .content-right {
+    padding-left: 80%; }
   #news-page-body .service-title {
     color: #1A1A1A;
     font-size: 20px;
@@ -1243,25 +1257,6 @@ ul.m-sidebar {
       position: absolute;
       top: 61%;
       width: 80%; }
-  #news-page-body .more-news {
-    color: #fff;
-    padding-left: 11%;
-    padding-top: 50px;
-    position: relative; }
-    #news-page-body .more-news .txt_main_category {
-      color: #000;
-      font-size: 20px;
-      padding-bottom: 5px;
-      border-bottom: 1px solid #DEDEDE; }
-    #news-page-body .more-news li {
-      background: transparent url("images/graphics/bg_dot_gray_3x3.gif") no-repeat scroll left 6px;
-      padding: 0 0 0 10px; }
-    #news-page-body .more-news .content_box_category .list_news_dot_3x3 {
-      padding-top: 10px;
-      padding-left: 5px; }
-    #news-page-body .more-news .content_box_category .txt_666 {
-      color: #969696;
-      font-size: 16px; }
   #news-page-body .pr-bar {
     padding-top: 15px; }
     #news-page-body .pr-bar .service-title {
@@ -1272,10 +1267,144 @@ ul.m-sidebar {
       padding-top: 5px;
       border-bottom: 1px solid #DEDEDE; }
 
+#contact-info {
+  background-color: white; }
+  #contact-info .contact-header {
+    border-bottom: 1px dotted #1A1A1A; }
+    #contact-info .contact-header span {
+      font-size: 32px;
+      font-weight: 700;
+      color: #1A1A1A; }
+  #contact-info .detail-company {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    #contact-info .detail-company span {
+      font-size: 18px; }
+  #contact-info .adv-info span {
+    padding-left: 20px; }
+  #contact-info .contact-form {
+    padding-top: 50px;
+    border-bottom: 1px dotted #1A1A1A; }
+    #contact-info .contact-form span {
+      font-size: 32px;
+      font-weight: 700;
+      color: #1A1A1A; }
+  #contact-info :-moz-placeholder {
+    color: #C4AAA1; }
+  #contact-info ::-webkit-input-placeholder {
+    color: #C4AAA1; }
+  #contact-info .form-sms {
+    /* Button Style */ }
+    #contact-info .form-sms ul {
+      width: 750px;
+      list-style-type: none;
+      list-style-position: outside;
+      margin: 0px;
+      padding: 0px; }
+    #contact-info .form-sms li {
+      padding: 12px;
+      position: relative; }
+    #contact-info .form-sms label {
+      width: 80px;
+      display: inline-block;
+      float: left;
+      padding: 5px; }
+    #contact-info .form-sms input {
+      height: 20px;
+      width: 220px;
+      padding: 5px 8px; }
+    #contact-info .form-sms textarea {
+      padding: 8px;
+      width: 300px; }
+    #contact-info .form-sms button {
+      margin-left: 50%; }
+    #contact-info .form-sms input {
+      border: 1px solid #EDB498;
+      height: 30px;
+      border-radius: 4px;
+      width: 57.7%; }
+    #contact-info .form-sms textarea {
+      border: 1px solid #EDB498;
+      border-radius: 4px;
+      width: 57.7%; }
+    #contact-info .form-sms input:focus, #contact-info .form-sms textarea:focus {
+      background: #fff;
+      border: 1px solid #555;
+      box-shadow: 0 0 3px #EDB498; }
+    #contact-info .form-sms button.submit {
+      background-color: #F88010;
+      background: -webkit-gradient(linear, left top, left bottom, from(#F88010), to(#FF8E32));
+      background: -webkit-linear-gradient(top, #F88010, #FF8E32);
+      background: -moz-linear-gradient(top, #F88010, #FF8E32);
+      background: -ms-linear-gradient(top, #F88010, #FF8E32);
+      background: -o-linear-gradient(top, #F88010, #FF8E32);
+      background: linear-gradient(top, #F88010, #FF8E32);
+      border: 1px solid #F88010;
+      border-bottom: 1px solid #F88010;
+      border-radius: 3px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      box-shadow: 0 3px 0 #030303;
+      -webkit-box-shadow: 0 3px 0 #030303;
+      -moz-box-shadow: 0 3px 0 #030303;
+      -ms-box-shadow: 0 3px 0 #030303;
+      -o-box-shadow: 0 3px 0 #030303;
+      color: white;
+      font-weight: bold;
+      padding: 6px 20px;
+      text-align: center; }
+    #contact-info .form-sms button.submit:hover {
+      opacity: .85;
+      cursor: pointer; }
+    #contact-info .form-sms button.submit:active {
+      border: 1px solid #20911e;
+      box-shadow: 0 0 10px 5px #356b0b inset;
+      -webkit-box-shadow: 0 0 10px 5px #356b0b inset;
+      -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+      -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+      -o-box-shadow: 0 0 10px 5px #356b0b inset; }
+
+.more-news {
+  color: #fff;
+  padding-left: 11%;
+  padding-top: 50px;
+  position: relative; }
+  .more-news .txt_main_category {
+    color: #000;
+    font-size: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #DEDEDE; }
+  .more-news li {
+    background: transparent url("img/dot-grey.gif") no-repeat scroll left 3px;
+    padding: 0 0 0 20px; }
+  .more-news .content_box_category .list_news_dot_3x3 {
+    padding-top: 10px;
+    padding-left: 5px; }
+  .more-news .content_box_category .txt_666 {
+    color: #969696;
+    font-size: 16px; }
+
 #marketing-white {
   background: #fff; }
+  #marketing-white .text-marketing h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #73432F;
+    padding-bottom: 20px; }
 
 #marketing-black {
+  background: #F2EEEB; }
+  #marketing-black .text-marketing h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #73432F;
+    padding-bottom: 20px; }
+
+.marketing .odd {
+  background: #fff; }
+.marketing .even {
   background: #F2EEEB; }
 
 #main-bottom {
