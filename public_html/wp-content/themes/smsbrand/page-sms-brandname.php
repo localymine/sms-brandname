@@ -23,15 +23,13 @@ if ($loop->have_posts()):
     while ($loop->have_posts()): $loop->the_post();
         $banner_image = get_field('banner_image');
         ?>
-
         <section>
-            <div class="col-xs-12 col-md-12">
+            <div class="col-xs-12 col-md-12 img-top">
                 <div class="row">
-                    <img src="<?php echo $banner_image['url'] ?>" />
+                    <img class="img-responsive" src="<?php echo $banner_image['url'] ?>" />
                 </div>
             </div>
         </section>
-
         <!-- content -->
         <?php
         $counter = 0;
@@ -46,7 +44,6 @@ if ($loop->have_posts()):
                         while (have_rows('set_image_left')): the_row();
                             $image = get_sub_field('image');
                             ?>
-
                             <div id="marketing-<?php the_ID() ?>" class="<?php echo $class ?>">
                                 <div class="container">
                                     <div class="row-gap-big"></div>

@@ -1,6 +1,10 @@
 <div class="col-xs-12 col-md-3 pr-bar">
-    <span class="service-title">TIN TỨC LIÊN QUAN</span>
-    <div class="border-titile"></div>
+    <span class="service-title">
+        <i class="fa">
+            <img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/images/dif-detail-3.png" />
+        </i> TIN TỨC LIÊN QUAN
+    </span>
+    <div></div>
     <?php
     $args = array(
         'post_type' => array('news'),
@@ -21,7 +25,7 @@
         while ($loop->have_posts()): $loop->the_post();
             $image = get_field('image');
             ?>
-            <div>
+            <div class="border-title">
                 <h2><?php the_title() ?></h2>
                 <div><?php the_excerpt() ?></div>
             </div>

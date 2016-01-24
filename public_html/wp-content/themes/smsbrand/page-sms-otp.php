@@ -25,9 +25,9 @@ if ($loop->have_posts()):
         ?>
 
         <section>
-            <div class="col-xs-12 col-md-12">
+            <div class="col-xs-12 col-md-12 img-top">
                 <div class="row">
-                    <img src="<?php echo $banner_image['url'] ?>" />
+                    <img class="img-responsive" src="<?php echo $banner_image['url'] ?>" />
                 </div>
             </div>
         </section>
