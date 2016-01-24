@@ -1,4 +1,4 @@
-<div class="col-xs-12 col-md-3 pr-bar">
+<div class="col-xs-12 col-md-3 pr-bar nopadding">
     <span class="service-title">TIN TỨC LIÊN QUAN</span>
     <div class="border-titile"></div>
     <?php
