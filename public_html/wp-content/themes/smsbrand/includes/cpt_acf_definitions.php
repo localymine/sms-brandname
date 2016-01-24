@@ -704,6 +704,18 @@ if (function_exists("register_field_group")) {
                         'column_width' => '',
                         'sub_fields' => array(
                             array(
+                                'key' => 'field_56a4d27bbd597',
+                                'label' => 'Sub Title',
+                                'name' => 'sub_title',
+                                'type' => 'text',
+                                'default_value' => '',
+                                'placeholder' => '',
+                                'prepend' => '',
+                                'append' => '',
+                                'formatting' => 'html',
+                                'maxlength' => '',
+                            ),
+                            array(
                                 'key' => 'field_56a1f73605b9b',
                                 'label' => 'Image',
                                 'name' => 'image',
@@ -726,7 +738,7 @@ if (function_exists("register_field_group")) {
                         ),
                         'row_min' => 1,
                         'row_limit' => 1,
-                        'layout' => 'table',
+                        'layout' => 'row',
                         'button_label' => 'Add Row',
                     ),
                     array(
@@ -747,6 +759,18 @@ if (function_exists("register_field_group")) {
                         ),
                         'column_width' => '',
                         'sub_fields' => array(
+                            array(
+                                'key' => 'field_56a4d2dd90aae',
+                                'label' => 'Sub Title',
+                                'name' => 'sub_title',
+                                'type' => 'text',
+                                'default_value' => '',
+                                'placeholder' => '',
+                                'prepend' => '',
+                                'append' => '',
+                                'formatting' => 'html',
+                                'maxlength' => '',
+                            ),
                             array(
                                 'key' => 'field_56a1f7bc05b9e',
                                 'label' => 'Content',
@@ -770,7 +794,7 @@ if (function_exists("register_field_group")) {
                         ),
                         'row_min' => 1,
                         'row_limit' => 1,
-                        'layout' => 'table',
+                        'layout' => 'row',
                         'button_label' => 'Add Row',
                     ),
                 ),

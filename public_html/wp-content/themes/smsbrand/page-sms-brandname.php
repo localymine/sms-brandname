@@ -47,7 +47,7 @@ if ($loop->have_posts()):
                             $image = get_sub_field('image');
                             ?>
 
-                            <div id="marketing-<?php the_ID() ?>" class="<?php echo $class ?>">
+                            <div id="marketing-<?php the_ID() ?>" class="marketing <?php echo $class ?>">
                                 <div class="container">
                                     <div class="row-gap-big"></div>
                                     <div class="row">
@@ -55,6 +55,7 @@ if ($loop->have_posts()):
                                             <img class="img-responsive pull-left" src="<?php echo $image['url'] ?>"/>
                                         </div>
                                         <div class="col-xs-12 col-md-6 text-left wow fadeInRight" data-wow-delay="0.5s">
+                                            <h2><?php echo get_sub_field('sub_title') ?></h2>
                                             <?php echo get_sub_field('content') ?>
                                         </div>
                                     </div>
@@ -73,11 +74,12 @@ if ($loop->have_posts()):
                             $image = get_sub_field('image');
                             ?>
 
-                            <div id="marketing-<?php the_ID() ?>" class="<?php echo $class ?>">
+                            <div id="marketing-<?php the_ID() ?>" class="marketing <?php echo $class ?>">
                                 <div class="container">
                                     <div class="row-gap-big"></div>
                                     <div class="row">
                                         <div class="col-xs-12 col-md-6 text-left wow fadeInRight" data-wow-delay="0.5s">
+                                            <h2><?php echo get_sub_field('sub_title') ?></h2>
                                             <?php echo get_sub_field('content') ?>
                                         </div>
                                         <div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-delay="0.5s">
