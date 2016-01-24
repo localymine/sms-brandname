@@ -2,7 +2,7 @@
 <div class="row nopadding nomargin" style="min-height: 50px;">
     <div id="slideDesign">
         <!-- Jssor Slider Begin -->
-        <div id="jssor_4" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1200px; height: 330px; overflow: hidden; visibility: hidden;">
+        <div id="jssor_info" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1200px; height: 330px; overflow: hidden; visibility: hidden;">
             <!-- Loading Screen -->
             <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1200px; height: 330px; overflow: hidden;">
                 <?php

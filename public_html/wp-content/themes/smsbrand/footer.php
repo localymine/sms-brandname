@@ -12,7 +12,7 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
                     <span><i class="fa fa-map-marker"></i> <?php echo $omw_theme_settings->ct_company_address ?></span><br/>
                     <span><i class="fa fa-phone"></i> <?php echo $omw_theme_settings->ct_company_telephone ?></span><br/>
                     <span><i class="fa fa-envelope-o"></i> <a href="mailto:<?php echo $omw_theme_settings->ct_company_email ?>">
-                    <?php echo $omw_theme_settings->ct_company_email ?></a></span><br /><br />
+                            <?php echo $omw_theme_settings->ct_company_email ?></a></span><br /><br />
                     <span>
                         <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/51.png"></a>
                         <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/52.png"></a>
@@ -42,17 +42,20 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
 </div>
 <script src="<?php echo get_template_directory_uri() ?>/js/jquery-1.11.2.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/bootstrap.min.js"></script>
-<!-- <script src="<?php echo get_template_directory_uri() ?>/js/ie10-viewport-bug-workaround.js"></script>
-<script src="<?php echo get_template_directory_uri() ?>/js/jquery.zoom.min.js"></script>
-<script src="<?php echo get_template_directory_uri() ?>/js/jquery.heightLine.js"></script>
-<script src="<?php echo get_template_directory_uri() ?>/js/jquery.validate.min.js"></script>
-<script src="<?php echo get_template_directory_uri() ?>/fancybox/jquery.fancybox.pack.js"></script>
-<script src="<?php echo get_template_directory_uri() ?>/js/jquery.parallax.js"></script>-->
 <script src="<?php echo get_template_directory_uri() ?>/js/jssor.slider.mini.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/jquery.sidr.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/wow.min.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/common.js"></script>
+<script>
+    
+    //
+    $.each(jssor_last_project_ids, function (key, value) {
+        if ($('#' + value).length > 0) {
+            jssor_last_project(value);
+        }
+    });
+</script>
 
 <?php if ($omw_theme_settings->ct_use_script): ?>
     <script>

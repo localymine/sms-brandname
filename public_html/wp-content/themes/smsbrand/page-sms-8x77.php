@@ -31,6 +31,7 @@ if ($loop->have_posts()):
                 </div>
             </div>
         </section>
+
         <!-- content -->
         <?php
         $counter = 0;

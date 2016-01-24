@@ -22,6 +22,7 @@ if ($loop->have_posts()):
     while ($loop->have_posts()): $loop->the_post();
         $banner_image = get_field('banner_image');
         ?>
+
         <section>
             <div class="row nopadding nomargin" style="min-height: 50px;">
                 <div class="col-xs-12 col-md-12 nopadding">
@@ -29,6 +30,7 @@ if ($loop->have_posts()):
                 </div>
             </div>
         </section>
+
         <!-- content -->
         <?php
         $counter = 0;

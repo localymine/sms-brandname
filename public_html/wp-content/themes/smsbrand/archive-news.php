@@ -6,6 +6,12 @@
 get_header();
 ?>
 
+<div class="row nopadding nomargin" style="min-height: 50px;">
+    <div class="col-xs-12 col-md-12 nopadding">
+        <img class="img-responsive nopadding" src="<?php echo get_banner_news() ?>"/>
+    </div>
+</div>
+
 <!-- news -->
 <?php get_template_part('part-news-top3') ?>
 <!-- news end -->

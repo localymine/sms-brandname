@@ -41,30 +41,30 @@ function omw_active_menu() {
 
     $omw_active_menu = array(
         'home' => '',
-        'about-us' => '',
-        'product' => '',
+        'sms-brandname' => '',
+        'sms-opt' => '',
+        'sms-marketing' => '',
+        'sms-8x77' => '',
         'news' => '',
-        'health' => '',
-        'order' => '',
-        'policy' => '',
+        'help' => '',
         'contact' => '');
 
     $active = ' active ';
 
     if (is_home() || is_front_page()) {
         $omw_active_menu['home'] = $active;
-    } elseif ($pagename == 'about-us') {
-        $omw_active_menu['about-us'] = $active;
-    } elseif ($post_type == 'product') {
-        $omw_active_menu['product'] = $active;
+    } elseif ($pagename == 'sms-brandname') {
+        $omw_active_menu['sms-brandname'] = $active;
+    } elseif ($post_type == 'sms-opt') {
+        $omw_active_menu['sms-opt'] = $active;
+    } elseif ($post_type == 'sms-marketing') {
+        $omw_active_menu['sms-marketing'] = $active;
+    } elseif ($pagename == 'sms-8x77') {
+        $omw_active_menu['sms-8x77'] = $active;
     } elseif (is_post_type_archive('news') || is_page('news') || is_tax('news-type')) {
         $omw_active_menu['news'] = $active;
-    } elseif ($post_type == 'health') {
-        $omw_active_menu['health'] = $active;
-    } elseif ($pagename == 'order') {
-        $omw_active_menu['order'] = $active;
-    } elseif ($pagename == 'policy') {
-        $omw_active_menu['policy'] = $active;
+    } elseif ($pagename == 'help') {
+        $omw_active_menu['help'] = $active;
     } elseif ($pagename == 'contact') {
         $omw_active_menu['contact'] = $active;
     }

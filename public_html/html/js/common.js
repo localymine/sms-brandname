@@ -72,43 +72,42 @@ $(function () {
 });
 
 /*--------------------------------------------------------------------- jssor */
-jQuery(document).ready(function () {
-    var jssor_last_project = function (jssor_id) {
-        'use strict';
-        if ($(jssor_id).length > 0) {
-            //slider project [start]
-            var jssor_options = {
-                $AutoPlay: true,
-                $AutoPlaySteps: 1,
-                $SlideDuration: 160,
-                $SlideWidth: 400,
-                $SlideSpacing: 0,
-                $Cols: 6,
-                $ArrowNavigatorOptions: {
-                    $Class: $JssorArrowNavigator$
-                }
-            };
-
-            var jssor_slider = new $JssorSlider$(jssor_id, jssor_options);
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizing
-            var ScaleSliderLastProject = function() {
-                var refSize = jssor_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 1920);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                } else {
-                    window.setTimeout(ScaleSliderLastProject, 30);
-                }
+var jssor_last_project_ids;
+var jssor_last_project = function (jssor_id) {
+    'use strict';
+    if ($('#' + jssor_id).length > 0) {
+        //slider project [start]
+        var jssor_options = {
+            $AutoPlay: true,
+            $AutoPlaySteps: 1,
+            $SlideDuration: 160,
+            $SlideWidth: 400,
+            $SlideSpacing: 0,
+            $Cols: 6,
+            $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
             }
-            ScaleSliderLastProject();
-            $(window).bind("load", ScaleSliderLastProject);
-            $(window).bind("resize", ScaleSliderLastProject);
-            $(window).bind("orientationchange", ScaleSliderLastProject);
-            //option end
+        };
+
+        var jssor_slider = new $JssorSlider$(jssor_id, jssor_options);
+        //responsive code begin
+        //you can remove responsive code if you don't want the slider scales while window resizing
+        var ScaleSliderLastProject = function() {
+            var refSize = jssor_slider.$Elmt.parentNode.clientWidth;
+            if (refSize) {
+                refSize = Math.min(refSize, 1920);
+                jssor_slider.$ScaleWidth(refSize);
+            } else {
+                window.setTimeout(ScaleSliderLastProject, 30);
+            }
         }
-    };
-});
+        ScaleSliderLastProject();
+        $(window).bind("load", ScaleSliderLastProject);
+        $(window).bind("resize", ScaleSliderLastProject);
+        $(window).bind("orientationchange", ScaleSliderLastProject);
+        //option end
+    }
+};
 
 jQuery(document).ready(function ($) {
     if ($('#slider1_container').length > 0) {
@@ -183,76 +182,8 @@ jQuery(document).ready(function ($) {
         //slider top [end]
     }
 
-    if ($('#jssor_1').length > 0) {
-        //slider project [start]
-        var jssor_1_options = {
-            $AutoPlay: true,
-            $AutoPlaySteps: 1,
-            $SlideDuration: 160,
-            $SlideWidth: 400,
-            $SlideSpacing: 0,
-            $Cols: 6,
-            $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-            }
-        };
-
-        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-        //responsive code begin
-        //you can remove responsive code if you don't want the slider scales while window resizing
-        function ScaleSlider1() {
-            var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-            if (refSize) {
-                refSize = Math.min(refSize, 1920);
-                jssor_1_slider.$ScaleWidth(refSize);
-            } else {
-                window.setTimeout(ScaleSlider1, 30);
-            }
-        }
-        ScaleSlider1();
-        $(window).bind("load", ScaleSlider1);
-        $(window).bind("resize", ScaleSlider1);
-        $(window).bind("orientationchange", ScaleSlider1);
-        //option 1 end
-
-        //option 2 start
-        var jssor_2_options = {
-            $AutoPlay: true,
-            $AutoPlaySteps: 1,
-            $SlideDuration: 160,
-            $SlideWidth: 400,
-            $SlideSpacing: 0,
-            $Cols: 6,
-            $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-            }
-        };
-    }
-
-    if ($('#jssor_2').length > 0) {
-        var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
-
-        //responsive code begin
-        //you can remove responsive code if you don't want the slider scales while window resizing
-        function ScaleSlider2() {
-            var refSize = jssor_2_slider.$Elmt.parentNode.clientWidth;
-            if (refSize) {
-                refSize = Math.min(refSize, 1920);
-                jssor_2_slider.$ScaleWidth(refSize);
-            } else {
-                window.setTimeout(ScaleSlider2, 30);
-            }
-        }
-        ScaleSlider2();
-        $(window).bind("load", ScaleSlider2);
-        $(window).bind("resize", ScaleSlider2);
-        $(window).bind("orientationchange", ScaleSlider2);
-        //slider project [end]
-    }
-
-    if ($('#jssor_4').length > 0) {
-        var jssor_4_options = {
+    if ($('#jssor_info').length > 0) {
+        var jssor_info_options = {
             $AutoPlay: true,
             $SlideDuration: 800,
             $SlideEasing: $Jease$.$OutQuint,
@@ -261,23 +192,23 @@ jQuery(document).ready(function ($) {
             }
         };
 
-        var jssor_4_slider = new $JssorSlider$("jssor_4", jssor_4_options);
+        var jssor_info_slider = new $JssorSlider$("jssor_info", jssor_info_options);
 
         //responsive code begin
         //you can remove responsive code if you don't want the slider scales while window resizing
-        function ScaleSlider4() {
-            var refSize = jssor_4_slider.$Elmt.parentNode.clientWidth;
+        function ScaleSlider_jssor_info() {
+            var refSize = jssor_info_slider.$Elmt.parentNode.clientWidth;
             if (refSize) {
                 refSize = Math.min(refSize, 1920);
-                jssor_4_slider.$ScaleWidth(refSize);
+                jssor_info_slider.$ScaleWidth(refSize);
             } else {
-                window.setTimeout(ScaleSlider4, 30);
+                window.setTimeout(ScaleSlider_jssor_info, 30);
             }
         }
-        ScaleSlider4();
-        $(window).bind("load", ScaleSlider4);
-        $(window).bind("resize", ScaleSlider4);
-        $(window).bind("orientationchange", ScaleSlider4);
+        ScaleSlider_jssor_info();
+        $(window).bind("load", ScaleSlider_jssor_info);
+        $(window).bind("resize", ScaleSlider_jssor_info);
+        $(window).bind("orientationchange", ScaleSlider_jssor_info);
         //responsive code end
     }
 });
