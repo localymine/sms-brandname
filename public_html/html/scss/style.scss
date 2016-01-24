@@ -1027,10 +1027,10 @@ ul.m-sidebar{
 }
 
 .marketing{
-    .odd{
+    &.odd{
         background: $white;
     }
-    .even{
+    &.even{
         background: #F2EEEB;
     }
 }
