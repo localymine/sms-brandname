@@ -23,15 +23,13 @@ if ($loop->have_posts()):
     while ($loop->have_posts()): $loop->the_post();
         $banner_image = get_field('banner_image');
         ?>
-
         <section>
-            <div class="row nopadding nomargin" style="min-height: 50px;">
-                <div class="col-xs-12 col-md-12 nopadding">
-                    <img class="img-responsive nopadding" src="<?php echo $banner_image['url'] ?>" />
+            <div class="col-xs-12 col-md-12 img-top">
+                <div class="row">
+                    <img class="img-responsive" src="<?php echo $banner_image['url'] ?>" />
                 </div>
             </div>
         </section>
-
         <!-- content -->
         <?php
         $counter = 0;

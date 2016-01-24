@@ -264,7 +264,13 @@ $paddings: (xs: 0.5rem, sm: 1rem, md: 1.5rem, lg: 2rem, xl: 2.5rem, xxl: 3rem);
         height: 11px;
     }
     .form-header{
-        padding-left: 69.8%;
+        padding-left: 59%;
+        .nav-form{
+            input{
+                height: 20px;
+                border: 1px solid #717477
+            }
+        }
     }
     .menu-bar-1{
         height: 50px !important;
@@ -1443,7 +1449,9 @@ ul.m-sidebar{
         }
     }
 }
-
+.img-top{
+    padding-bottom: 50px;
+}
 .user-fe-form{
     text-align: center;
     input[type="text"], input[type="password"]{
@@ -1469,7 +1477,30 @@ ul.m-sidebar{
         box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.15);
     }
 }
-
+#message-detail{
+    .service-title{
+        font-weight: bold;
+        img{
+            padding-right: 5px;
+        }
+    }
+    .content-message{
+        padding-right: 80px;
+        h2{
+            font-weight: 500;
+            font-size: 42px;
+            padding-bottom: 30px;
+            color: #F88011;
+        }
+    }
+    .border-title{
+        border-top: 1px solid #969696;
+        padding-top: 10px;
+        h2{
+            font-size: 18px;
+        }
+    }
+}
 .news{
     .news-sidebar{
         padding: 5px 0;

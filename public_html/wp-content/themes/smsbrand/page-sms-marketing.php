@@ -24,8 +24,8 @@ if ($loop->have_posts()):
         ?>
 
         <section>
-            <div class="row nopadding nomargin" style="min-height: 50px;">
-                <div class="col-xs-12 col-md-12 nopadding">
+            <div class="col-xs-12 col-md-12 img-top">
+                <div class="row">
                     <img class="img-responsive nopadding" src="<?php echo $banner_image['url'] ?>" />
                 </div>
             </div>

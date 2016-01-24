@@ -796,7 +796,10 @@ h2 {
     border-left: #EBEBEB 1px solid;
     height: 11px; }
   .header .form-header {
-    padding-left: 69.8%; }
+    padding-left: 59%; }
+    .header .form-header .nav-form input {
+      height: 20px;
+      border: 1px solid #717477; }
   .header .menu-bar-1 {
     height: 50px !important;
     padding-right: 5%; }
@@ -1713,6 +1716,9 @@ ul.m-sidebar {
   .contact-info .all-coms .c-info-title:after {
     content: ' : '; }
 
+.img-top {
+  padding-bottom: 50px; }
+
 .user-fe-form {
   text-align: center; }
   .user-fe-form input[type="text"], .user-fe-form input[type="password"] {
@@ -1729,6 +1735,23 @@ ul.m-sidebar {
     padding: 20px;
     background: #e0ffa1;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.15); }
+
+#message-detail .service-title {
+  font-weight: bold; }
+  #message-detail .service-title img {
+    padding-right: 5px; }
+#message-detail .content-message {
+  padding-right: 80px; }
+  #message-detail .content-message h2 {
+    font-weight: 500;
+    font-size: 42px;
+    padding-bottom: 30px;
+    color: #F88011; }
+#message-detail .border-title {
+  border-top: 1px solid #969696;
+  padding-top: 10px; }
+  #message-detail .border-title h2 {
+    font-size: 18px; }
 
 .news .news-sidebar {
   padding: 5px 0;
