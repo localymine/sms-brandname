@@ -42,13 +42,14 @@
                 );
                 $loop = new WP_Query($args);
                 $jssor_id = 'jssor_' . $i;
+                $jssor_last_project_ids[] = $jssor_id;
                 //
                 if ($loop->have_posts()) :
                     while ($loop->have_posts()):
                         $loop->the_post();
                         ?>
-                        <div class="row-gap-medium"></div>
-                        <div id="tabs-<?php echo $term->slug ?>" class="col-xs-12 col-md-12 text-center nopadding">
+                        <!--<div class="row-gap-medium"></div>-->
+                        <div id="tabs-<?php echo $term->slug ?>" class="col-xs-12 col-md-12 text-center nopadding" style="margin-top: 2em;">
                             <div id="<?php echo $jssor_id ?>" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1840px; height: 250px; overflow: hidden; visibility: hidden;">
                                 <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1840px; height: 250px; overflow: hidden;">
                                     <?php
@@ -75,11 +76,6 @@
                     endwhile;
                 endif;
                 wp_reset_postdata();
-                ?>
-                <script>
-                    jssor_last_project('<?php echo $jssor_id ?>');
-                </script>
-                <?php
                 $i++;
             endforeach;
             ?>
@@ -87,3 +83,6 @@
     </div>
 </div>
 <!-- project end -->
+<script>
+    jssor_last_project_ids = <?php echo json_encode($jssor_last_project_ids) ?>;
+</script>

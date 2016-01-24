@@ -22,13 +22,15 @@ if ($loop->have_posts()):
     while ($loop->have_posts()): $loop->the_post();
         $banner_image = get_field('banner_image');
         ?>
+
         <section>
-            <div class="row nopadding nomargin" style="min-height: 50px;">
-                <div class="col-xs-12 col-md-12 nopadding">
+            <div class="col-xs-12 col-md-12 img-top">
+                <div class="row">
                     <img class="img-responsive nopadding" src="<?php echo $banner_image['url'] ?>" />
                 </div>
             </div>
         </section>
+
         <!-- content -->
         <?php
         $counter = 0;
@@ -43,7 +45,7 @@ if ($loop->have_posts()):
                             $image = get_sub_field('image');
                             ?>
 
-                            <div id="marketing-<?php the_ID() ?>" class="<?php echo $class ?>">
+                            <div id="marketing-<?php the_ID() ?>" class="marketing <?php echo $class ?>">
                                 <div class="container">
                                     <div class="row-gap-big"></div>
                                     <div class="row">
@@ -51,6 +53,7 @@ if ($loop->have_posts()):
                                             <img class="img-responsive pull-left" src="<?php echo $image['url'] ?>"/>
                                         </div>
                                         <div class="col-xs-12 col-md-6 text-left wow fadeInRight" data-wow-delay="0.5s">
+                                            <h2><?php echo get_sub_field('sub_title') ?></h2>
                                             <?php echo get_sub_field('content') ?>
                                         </div>
                                     </div>
@@ -69,11 +72,12 @@ if ($loop->have_posts()):
                             $image = get_sub_field('image');
                             ?>
 
-                            <div id="marketing-<?php the_ID() ?>" class="<?php echo $class ?>">
+                            <div id="marketing-<?php the_ID() ?>" class="marketing <?php echo $class ?>">
                                 <div class="container">
                                     <div class="row-gap-big"></div>
                                     <div class="row">
                                         <div class="col-xs-12 col-md-6 text-left wow fadeInRight" data-wow-delay="0.5s">
+                                            <h2><?php echo get_sub_field('sub_title') ?></h2>
                                             <?php echo get_sub_field('content') ?>
                                         </div>
                                         <div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-delay="0.5s">

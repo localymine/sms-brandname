@@ -3,21 +3,51 @@
     <div class="border-titile"></div>
     <?php
     global $posts__id;
-    $args = array(
-        'post_type' => array('news'),
-        'posts_per_page' => 6,
-        'order' => 'DESC',
-        'orderby' => 'post_date',
-        'post__not_in' => $posts__id,
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'news-cat',
-                'field' => 'slug',
-                'terms' => array('top'),
-                'operator' => 'NOT IN',
+    $arr_terms = array();
+
+    if (is_single()) {
+        $terms = get_the_terms($post->ID, 'news-cat');
+        $arr_terms[] = ($terms != FALSE) ? $terms[0]->slug : '';
+        //
+        $args = array(
+            'post_type' => array('news'),
+            'posts_per_page' => 6,
+            'order' => 'DESC',
+            'orderby' => 'post_date',
+            'post__not_in' => $post->ID,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'news-cat',
+                    'field' => 'slug',
+                    'terms' => $arr_terms,
+                ),
+                array(
+                    'taxonomy' => 'news-cat',
+                    'field' => 'slug',
+                    'terms' => array('top', 'guide'),
+                    'operator' => 'NOT IN',
+                ),
             ),
-        ),
-    );
+        );
+    } else {
+        //
+        $args = array(
+            'post_type' => array('news'),
+            'posts_per_page' => 6,
+            'order' => 'DESC',
+            'orderby' => 'post_date',
+            'post__not_in' => $posts__id,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'news-cat',
+                    'field' => 'slug',
+                    'terms' => array('top', 'guide'),
+                    'operator' => 'NOT IN',
+                ),
+            ),
+        );
+    }
+
     $loop = new WP_Query($args);
     if ($loop->have_posts()):
         while ($loop->have_posts()): $loop->the_post();
