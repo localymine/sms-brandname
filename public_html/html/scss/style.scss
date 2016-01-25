@@ -160,6 +160,7 @@ $paddings: (xs: 0.5rem, sm: 1rem, md: 1.5rem, lg: 2rem, xl: 2.5rem, xxl: 3rem);
     #logo{
         /*transform: translate(100%, 0);*/
         padding-top: 1.3%;
+        padding-left: 7%;
         #menu-toggle{
             .navbar-toggle{
                 border: 1px solid $menu-color;
@@ -181,8 +182,6 @@ $paddings: (xs: 0.5rem, sm: 1rem, md: 1.5rem, lg: 2rem, xl: 2.5rem, xxl: 3rem);
         }
     }
     nav{
-        padding-left: 9%;
-        padding-right: 10%;
         &.navbar-oil{
             margin-bottom: 0;
             background-color: $menu-bg;
@@ -274,7 +273,7 @@ $paddings: (xs: 0.5rem, sm: 1rem, md: 1.5rem, lg: 2rem, xl: 2.5rem, xxl: 3rem);
     }
     .menu-bar-1{
         height: 50px !important;
-        padding-right: 5%;
+        padding-left: 20%;
     }
 }
 
@@ -287,6 +286,7 @@ $paddings: (xs: 0.5rem, sm: 1rem, md: 1.5rem, lg: 2rem, xl: 2.5rem, xxl: 3rem);
     /*float: none;*/
 }
 ul.top-menu{
+    padding-right: 4px;
     position:relative;
     z-index: 100;
     text-align: center;
@@ -896,7 +896,16 @@ ul.m-sidebar{
     ::-webkit-input-placeholder {
         color: #C4AAA1;
     }
+    .form-horizontal{
+        .control-label{
+            text-align: left;
+        }
+    }
     .form-sms{
+        padding-top: 20px;
+        .col-sm-offset-3{
+            margin-left: 21%;
+        }
         ul{
             width:750px;
             list-style-type:none;
@@ -930,12 +939,12 @@ ul.m-sidebar{
             border: 1px solid #EDB498;
             height: 30px;
             border-radius: 4px;
-            width: 57.7%;
+            width: 100%;
         }
         textarea { 
             border: 1px solid #EDB498;
             border-radius: 4px;
-            width: 57.7%;
+            width: 100%;
         }
         input:focus, textarea:focus {
             background: #fff; 

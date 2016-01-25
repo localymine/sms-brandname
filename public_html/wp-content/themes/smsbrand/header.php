@@ -53,7 +53,7 @@
         <div class="navbar-wrapper">
             <!-- hotline -->
             <header class="hot-top">
-                <div class="container">
+                <div class="container nopadding">
                     <ul class="top-menu pull-right nopadding">
                         <li>
                             <i class="fa fa-phone fa-2x"></i><span class="hotline">Hotline <?php echo $omw_theme_settings->ct_company_telephone ?></span>
@@ -65,9 +65,9 @@
             <!-- navigator -->
             <header id="header" class="header">
                 <nav id="nav" class="navbar navbar-defaultx navbar-oil">
-                    <div class="container menu-bar">
-                        <div class="row">
-                            <div class="col-md-12 text-center">
+                    <div class="container menu-bar nopadding">
+                        <div class="row nopadding nomargin">
+                            <div class="col-md-12 text-center nopadding">
                                 <div id="logo" class="navbar-header">
                                     <a id="menu-toggle" href="#sidr">
                                         <button class="navbar-toggle collapsed">
