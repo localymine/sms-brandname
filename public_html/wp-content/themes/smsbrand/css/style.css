@@ -935,6 +935,10 @@ ul.m-sidebar {
 .carousel-control.right {
   background-image: none; }
 
+.market-titile {
+  font-size: 42px;
+  padding-bottom: 20px; }
+
 #design {
   background: #F2EEEB;
   padding-top: 30px;
@@ -946,8 +950,10 @@ ul.m-sidebar {
   #design span {
     color: #8F7D76;
     font-size: 16px; }
+  #design .mess-title {
+    font-size: 28px;
+    font-weight: 500; }
   #design .main-text-design {
-    padding-top: 75px;
     padding-left: 12%; }
     #design .main-text-design .title {
       color: #DE9470;

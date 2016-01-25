@@ -21,7 +21,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-12 text-center nopadding" data-wow-delay="0.5s">
                             <h2><?php the_title() ?></h2>
-                            <span><?php echo get_field('sub_title') ?></span>
+                            <span class="mess-title"><?php echo get_field('sub_title') ?></span>
                         </div>
                     </div>
                     <div class="row-gap-big"></div>
@@ -43,7 +43,7 @@
                             ?>
                             <!--<a href="#">-->
                             <article id="item-1" class="item">
-                                <img class="img-responsive pull-right" src="<?php echo $img_size ?>"/>
+                                <img class="img-responsive center-block" src="<?php echo $img_size ?>"/>
                             </article>
                             <!--</a>-->
                         </div>

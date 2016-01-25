@@ -429,7 +429,10 @@ ul.m-sidebar{
         background-image: none;
     }
 }
-
+.market-titile{
+    font-size: 42px;
+    padding-bottom: 20px;
+}
 #design{
     background: $design-bg;
     padding-top: 30px;
@@ -443,8 +446,11 @@ ul.m-sidebar{
         color: #8F7D76;
         font-size: 16px;
     }
+    .mess-title{
+        font-size: 28px;
+        font-weight: 500;
+    }
     .main-text-design{
-        padding-top: 75px;
         padding-left: 12%;
         .title{
             color: #DE9470;
