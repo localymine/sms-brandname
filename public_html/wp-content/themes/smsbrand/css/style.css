@@ -717,7 +717,8 @@ h2 {
   background: #FFFFFF; }
   .header #logo {
     /*transform: translate(100%, 0);*/
-    padding-top: 1.3%; }
+    padding-top: 1.3%;
+    padding-left: 7%; }
     .header #logo #menu-toggle .navbar-toggle {
       border: 1px solid #A79B92; }
       .header #logo #menu-toggle .navbar-toggle:hover {
@@ -729,69 +730,66 @@ h2 {
     .header #logo .navbar-brand {
       margin-left: -80px !important;
       /*float: none;*/ }
-  .header nav {
-    padding-left: 9%;
-    padding-right: 10%; }
-    .header nav.navbar-oil {
-      margin-bottom: 0;
-      background-color: #FFFFFF;
-      border: none;
-      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-      border-radius: 0; }
-    .header nav ul {
+  .header nav.navbar-oil {
+    margin-bottom: 0;
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 0; }
+  .header nav ul {
+    display: inline-block;
+    /*float: right;*/
+    /*display: block;*/
+    float: none;
+    margin: 0px 0 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    z-index: 5; }
+    .header nav ul li.no-hover a.navbar-brand {
+      padding: 0px; }
+    .header nav ul li.no-hover a:before {
+      height: 0; }
+    .header nav ul li {
       display: inline-block;
-      /*float: right;*/
-      /*display: block;*/
-      float: none;
-      margin: 0px 0 0;
-      padding: 0;
-      list-style-type: none;
-      position: relative;
-      z-index: 5; }
-      .header nav ul li.no-hover a.navbar-brand {
-        padding: 0px; }
-      .header nav ul li.no-hover a:before {
-        height: 0; }
-      .header nav ul li {
-        display: inline-block;
-        /*position: relative;*/
-        line-height: 24px; }
-        .header nav ul li a {
+      /*position: relative;*/
+      line-height: 24px; }
+      .header nav ul li a {
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        /*background: $menu-bg;*/
+        font-weight: 500;
+        color: #9B9B9B;
+        font-size: 14px;
+        display: block;
+        padding: 25px 4px; }
+        .header nav ul li a:before {
           -webkit-transition: all 0.3s ease 0s;
           -moz-transition: all 0.3s ease 0s;
           transition: all 0.3s ease 0s;
-          /*background: $menu-bg;*/
-          font-weight: 500;
-          color: #9B9B9B;
-          font-size: 14px;
+          background: #A79B92;
+          bottom: 0;
+          content: "";
           display: block;
-          padding: 25px 4px; }
-          .header nav ul li a:before {
-            -webkit-transition: all 0.3s ease 0s;
-            -moz-transition: all 0.3s ease 0s;
-            transition: all 0.3s ease 0s;
-            background: #A79B92;
-            bottom: 0;
-            content: "";
-            display: block;
-            height: 3px;
-            left: 0;
-            position: absolute;
-            right: 0;
-            width: 0; }
-          .header nav ul li a:hover {
-            text-decoration: none;
-            color: #F83130; }
-          .header nav ul li a.active {
-            color: #F83130; }
-          .header nav ul li a.nav-title {
-            display: block;
-            position: relative;
-            text-transform: uppercase;
-            z-index: 5; }
-          .header nav ul li a span {
-            text-align: center;
-            display: block; }
+          height: 3px;
+          left: 0;
+          position: absolute;
+          right: 0;
+          width: 0; }
+        .header nav ul li a:hover {
+          text-decoration: none;
+          color: #F83130; }
+        .header nav ul li a.active {
+          color: #F83130; }
+        .header nav ul li a.nav-title {
+          display: block;
+          position: relative;
+          text-transform: uppercase;
+          z-index: 5; }
+        .header nav ul li a span {
+          text-align: center;
+          display: block; }
   .header .line-header {
     border-left: #EBEBEB 1px solid;
     height: 11px; }
@@ -802,7 +800,7 @@ h2 {
       border: 1px solid #717477; }
   .header .menu-bar-1 {
     height: 50px !important;
-    padding-right: 5%; }
+    padding-left: 20%; }
 
 /*.menu-holder{
     width: 100%;
@@ -813,6 +811,7 @@ h2 {
   /*float: none;*/ }
 
 ul.top-menu {
+  padding-right: 4px;
   position: relative;
   z-index: 100;
   text-align: center;
@@ -1406,9 +1405,9 @@ ul.m-sidebar {
     color: #73432F;
     padding-bottom: 20px; }
 
-.marketing .odd {
+.marketing.odd {
   background: #fff; }
-.marketing .even {
+.marketing.even {
   background: #F2EEEB; }
 
 #main-bottom {
@@ -1978,7 +1977,10 @@ ul.recent_short {
   display: inline-block;
   width: 62px;
   height: 62px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s; }
   .mico.mico-15 {
     background: url(../images/home/15.png); }
     .mico.mico-15:hover, .mico.mico-15:focus, .mico.mico-15.selected {
@@ -2031,12 +2033,16 @@ ul.recent_short {
 /*==========  Non-Mobile First Method  ==========*/
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .header .affix {
+    padding-top: 12%; }
+    .header .affix #logo button {
+      margin-right: 12%; }
   .header #logo .navbar-brand .img-logo {
-    margin-left: 55px;
+    margin-left: 65px;
     margin-top: 5px; }
   .header #logo button {
     margin-top: 15px;
-    margin-right: -20px; }
+    margin-right: 25px; }
 
   #slider1_container .jssorb21 {
     bottom: 5px; }
@@ -2057,8 +2063,26 @@ ul.recent_short {
     .contact-info .contact-info-form .nopadding-right {
       padding-left: 0; }
 
+  #news-page-body .news-row {
+    padding-right: 16%; }
+  #news-page-body .pr-bar {
+    padding-right: 16%; }
+
+  #news-page .container {
+    padding-right: 10%;
+    padding-left: 10%; }
+
   .newsletter-form-holder .newsletter-form {
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  #footer-wrapper .copyright {
+    padding-right: 32%;
+    padding-top: 20px; }
+  #footer-wrapper .signs-up {
+    padding-top: 20px; }
+    #footer-wrapper .signs-up span {
+      font-size: 22px;
+      padding-left: 26px; } }
 /*==========  Non-Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {

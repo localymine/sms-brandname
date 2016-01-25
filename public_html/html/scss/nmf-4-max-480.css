@@ -1,12 +1,16 @@
 /*==========  Non-Mobile First Method  ==========*/
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .header .affix {
+    padding-top: 12%; }
+    .header .affix #logo button {
+      margin-right: 12%; }
   .header #logo .navbar-brand .img-logo {
-    margin-left: 55px;
+    margin-left: 65px;
     margin-top: 5px; }
   .header #logo button {
     margin-top: 15px;
-    margin-right: -20px; }
+    margin-right: 25px; }
 
   #slider1_container .jssorb21 {
     bottom: 5px; }
@@ -27,7 +31,25 @@
     .contact-info .contact-info-form .nopadding-right {
       padding-left: 0; }
 
+  #news-page-body .news-row {
+    padding-right: 16%; }
+  #news-page-body .pr-bar {
+    padding-right: 16%; }
+
+  #news-page .container {
+    padding-right: 10%;
+    padding-left: 10%; }
+
   .newsletter-form-holder .newsletter-form {
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  #footer-wrapper .copyright {
+    padding-right: 32%;
+    padding-top: 20px; }
+  #footer-wrapper .signs-up {
+    padding-top: 20px; }
+    #footer-wrapper .signs-up span {
+      font-size: 22px;
+      padding-left: 26px; } }
 
 /*# sourceMappingURL=nmf-4-max-480.css.map */

@@ -1,4 +1,4 @@
-<div class="col-xs-12 col-md-12 text-left nopadding">
+<div class="col-xs-11 col-md-12 text-left nopadding">
     <div class="more-news">
         <div class="title_box_category width_common style_02">
             <div class="txt_main_category">
