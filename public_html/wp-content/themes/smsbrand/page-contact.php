@@ -169,8 +169,9 @@ global $omw_theme_settings;
                     </div>
                 </div>
             </div>
-            <div class="col-md-3"></div>
-            <?php get_sidebar('banner') ?>
+            <div class="col-md-6">
+                <?php echo $omw_theme_settings->ct_company_google_map ?>                
+            </div>
             <!-- <div class="col-md-1"></div> -->
         </div>
         <div class="row-gap-big"></div>

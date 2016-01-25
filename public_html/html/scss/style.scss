@@ -1788,6 +1788,7 @@ ul.recent_short{
     width: 62px;
     height: 62px;
     background-repeat: no-repeat;
+    @include transition(0.2s);
     &.mico-15{
         background: url(../images/home/15.png);
         &:hover, &:focus, &.selected{
