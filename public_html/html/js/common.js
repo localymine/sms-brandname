@@ -261,5 +261,10 @@ $(function ($) {
 $(function () {
     $('.ul-diff > li').click(function () {
         $(this).addClass('selected').siblings().removeClass('selected');
+        $('.ul-diff > li article.item').each(function(){
+            $(this).removeClass('selected');
+        });
+        //
+        $('article.item', this).addClass('selected');
     });
 });
