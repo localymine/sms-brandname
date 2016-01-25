@@ -1296,8 +1296,13 @@ ul.m-sidebar {
     color: #C4AAA1; }
   #contact-info ::-webkit-input-placeholder {
     color: #C4AAA1; }
+  #contact-info .form-horizontal .control-label {
+    text-align: left; }
   #contact-info .form-sms {
+    padding-top: 20px;
     /* Button Style */ }
+    #contact-info .form-sms .col-sm-offset-3 {
+      margin-left: 21%; }
     #contact-info .form-sms ul {
       width: 750px;
       list-style-type: none;
@@ -1325,11 +1330,11 @@ ul.m-sidebar {
       border: 1px solid #EDB498;
       height: 30px;
       border-radius: 4px;
-      width: 57.7%; }
+      width: 100%; }
     #contact-info .form-sms textarea {
       border: 1px solid #EDB498;
       border-radius: 4px;
-      width: 57.7%; }
+      width: 100%; }
     #contact-info .form-sms input:focus, #contact-info .form-sms textarea:focus {
       background: #fff;
       border: 1px solid #555;

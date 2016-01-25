@@ -896,7 +896,16 @@ ul.m-sidebar{
     ::-webkit-input-placeholder {
         color: #C4AAA1;
     }
+    .form-horizontal{
+        .control-label{
+            text-align: left;
+        }
+    }
     .form-sms{
+        padding-top: 20px;
+        .col-sm-offset-3{
+            margin-left: 21%;
+        }
         ul{
             width:750px;
             list-style-type:none;
@@ -930,12 +939,12 @@ ul.m-sidebar{
             border: 1px solid #EDB498;
             height: 30px;
             border-radius: 4px;
-            width: 57.7%;
+            width: 100%;
         }
         textarea { 
             border: 1px solid #EDB498;
             border-radius: 4px;
-            width: 57.7%;
+            width: 100%;
         }
         input:focus, textarea:focus {
             background: #fff; 
