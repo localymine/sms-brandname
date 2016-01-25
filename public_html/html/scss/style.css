@@ -1406,9 +1406,9 @@ ul.m-sidebar {
     color: #73432F;
     padding-bottom: 20px; }
 
-.marketing .odd {
+.marketing.odd {
   background: #fff; }
-.marketing .even {
+.marketing.even {
   background: #F2EEEB; }
 
 #main-bottom {
@@ -1978,7 +1978,10 @@ ul.recent_short {
   display: inline-block;
   width: 62px;
   height: 62px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s; }
   .mico.mico-15 {
     background: url(../images/home/15.png); }
     .mico.mico-15:hover, .mico.mico-15:focus, .mico.mico-15.selected {
