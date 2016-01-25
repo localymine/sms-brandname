@@ -1261,7 +1261,8 @@ ul.m-sidebar {
       top: 61%;
       width: 80%; }
   #news-page-body .pr-bar {
-    padding-top: 15px; }
+    padding-top: 15px;
+    margin-left: 8%; }
     #news-page-body .pr-bar .service-title {
       color: #F88010;
       font-size: 20px;
