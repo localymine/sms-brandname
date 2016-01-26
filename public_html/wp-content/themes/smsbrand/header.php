@@ -91,13 +91,13 @@
                                     <ul class="top-menu">
                                         <li><a class="nav-title <?php echo $omw_active_menu['home'] ?>" href="<?php echo home_url() ?>"><span>HOME</span></a></li>
                                         <li><div class="line-header"></div></li>
-                                        <li><a class="nav-title <?php echo $omw_active_menu['sms-brandname'] ?>" href="<?php echo home_url('sms-brandname') ?>"><span>SMS BRANDNAME</span></a></li>
+                                        <li><a class="nav-title <?php echo $omw_active_menu['sms-brandname'] ?>" href="<?php echo home_url('sms-brandname') ?>"><span>BRANDNAME SMS</span></a></li>
                                         <li><div class="line-header"></div></li>
-                                        <li><a class="nav-title <?php echo $omw_active_menu['sms-otp'] ?>" href="<?php echo home_url('sms-otp') ?>"><span>OTP SMS (BRANDNAME)</span></a></li>
+                                        <li><a class="nav-title <?php echo $omw_active_menu['sms-otp'] ?>" href="<?php echo home_url('sms-otp') ?>"><span>OTP SMS</span></a></li>
                                         <li><div class="line-header"></div></li>
-                                        <li><a class="nav-title <?php echo $omw_active_menu['sms-marketing'] ?>" href="<?php echo home_url('sms-marketing') ?>"><span>SMS MARKETING</span></a></li>
+                                        <li><a class="nav-title <?php echo $omw_active_menu['sms-marketing'] ?>" href="<?php echo home_url('sms-marketing') ?>"><span>MARKETING SMS</span></a></li>
                                         <li><div class="line-header"></div></li>
-                                        <li><a class="nav-title <?php echo $omw_active_menu['sms-8x77'] ?>" href="<?php echo home_url('sms-8x77') ?>"><span>SMS ĐẦU SỐ 8X77 (GATEWAY)</span></a></li>
+                                        <li><a class="nav-title <?php echo $omw_active_menu['sms-8x77'] ?>" href="<?php echo home_url('sms-8x77') ?>"><span>SMS ĐẦU SỐ 8x77</span></a></li>
                                         <li><div class="line-header"></div></li>
                                         <li><a class="nav-title <?php echo $omw_active_menu['news'] ?>" href="<?php echo home_url('news') ?>"><span>TIN TỨC</span></a></li>
                                         <li><div class="line-header"></div></li>
@@ -135,16 +135,16 @@
                         <a class="<?php echo $omw_active_menu['home'] ?>" href="<?php echo home_url() ?>"><span>HOME</span></a>
                     </li>
                     <li>
-                        <a class="<?php echo $omw_active_menu['sms-brandname'] ?>" href="<?php echo home_url('sms-brandname') ?>/sms-brandname"><span>SMS BRANDNAME</span></a>
+                        <a class="<?php echo $omw_active_menu['sms-brandname'] ?>" href="<?php echo home_url('sms-brandname') ?>/sms-brandname"><span>BRANDNAME SMS</span></a>
                     </li>
                     <li>
-                        <a class="<?php echo $omw_active_menu['sms-otp'] ?>" href="<?php echo home_url('sms-otp') ?>"><span>OTP SMS (BRANDNAME)</span></a>
+                        <a class="<?php echo $omw_active_menu['sms-otp'] ?>" href="<?php echo home_url('sms-otp') ?>"><span>OTP SMS</span></a>
                     </li>
                     <li>
-                        <a class="<?php echo $omw_active_menu['sms-marketing'] ?>" href="<?php echo home_url('sms-marketing') ?>"><span>SMS MARKETING</span></a>
+                        <a class="<?php echo $omw_active_menu['sms-marketing'] ?>" href="<?php echo home_url('sms-marketing') ?>"><span>MARKETING SMS</span></a>
                     </li>
                     <li>
-                        <a class="<?php echo $omw_active_menu['sms-8x77'] ?>" href="<?php echo home_url('sms-8x77') ?>"><span>SMS ĐẦU SỐ 8X77</span></a>
+                        <a class="<?php echo $omw_active_menu['sms-8x77'] ?>" href="<?php echo home_url('sms-8x77') ?>"><span>SMS ĐẦU SỐ 8x77</span></a>
                     </li>
                     <li>
                         <a class="<?php echo $omw_active_menu['news'] ?>" href="<?php echo home_url('news') ?>"><span>TIN TỨC</span></a>
