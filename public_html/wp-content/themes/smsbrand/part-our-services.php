@@ -28,11 +28,11 @@
                     $img_size = $image['sizes']['medium'];
                     ?>
                     <div class="col-xs-12 col-md-4 text-center wow fadeInUp nopadding" data-wow-delay="0.5s">
-                        <img class="img-responsive center-block" src="<?php echo $img_size ?>"/>
-                        <a href="javascript:void(0)">
+                        <a href="<?php the_permalink() ?>">
+                            <img class="img-responsive center-block" src="<?php echo $img_size ?>"/>
                             <span class="service-title"><?php the_title() ?></span>
-                        </a><br />
-                        <div class="service-content"><?php echo get_field('description') ?></div>
+                            <div class="service-content"><?php echo get_field('description') ?></div>
+                        </a>
                     </div>
                     <?php
                 endwhile;

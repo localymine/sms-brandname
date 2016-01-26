@@ -83,7 +83,7 @@ function cptui_register_my_cpts() {
         "query_var" => true,
         "menu_position" => 26,
         "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h3.png',
-        "supports" => array("title"),
+        "supports" => array("title", "editor"),
     );
     register_post_type("service", $args);
 
