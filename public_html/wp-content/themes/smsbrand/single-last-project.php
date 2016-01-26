@@ -8,7 +8,7 @@ get_header();
 <section>
     <div class="col-xs-12 col-md-12 img-top">
         <div class="row">
-            <img class="img-responsive" src="<?php echo get_banner_message_detail() ?>" />
+            <img class="img-responsive" src="<?php echo get_banner_last_project_detail() ?>" />
         </div>
     </div>
 </section>

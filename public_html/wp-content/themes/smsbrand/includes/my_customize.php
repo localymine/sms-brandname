@@ -43,6 +43,26 @@ function omw_theme_customize_register($wp_customize) {
         'settings' => 'banner_contact',
         'priority' => 1,
     )));
+    
+    $wp_customize->add_setting('banner_message_detail', array(
+        'default' => ''
+    ));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'banner_message_detail_c', array(
+        'label' => __('Banner Message Detail'),
+        'section' => 'general',
+        'settings' => 'banner_message_detail',
+        'priority' => 1,
+    )));
+    
+    $wp_customize->add_setting('banner_last_project_detail', array(
+        'default' => ''
+    ));
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'banner_last_project_detail_c', array(
+        'label' => __('Banner Last Project Detail'),
+        'section' => 'general',
+        'settings' => 'banner_last_project_detail',
+        'priority' => 1,
+    )));
 }
 
 add_action('customize_register', 'omw_theme_customize_register');
@@ -71,4 +91,12 @@ function get_banner_guide() {
 
 function get_banner_contact() {
     return esc_url(get_theme_mod('banner_contact'));
+}
+
+function get_banner_message_detail() {
+    return esc_url(get_theme_mod('banner_message_detail'));
+}
+
+function get_banner_last_project_detail() {
+    return esc_url(get_theme_mod('banner_last_project_detail'));
 }
