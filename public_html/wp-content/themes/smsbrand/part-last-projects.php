@@ -61,7 +61,19 @@
                                     $img_size = $sub_image['sizes']['medium'];
                                     ?>
                                     <div style="display: none;">
-                                        <img data-u="image" src="<?php echo $img_size ?>" />
+                                        <div class="m-last-pj">
+                                            <img data-u="image" src="<?php echo $img_size ?>" />
+                                            <div class="m-o-effect">
+                                                <div class="m-lp-item">
+                                                    <div class="m-lp-row">
+                                                        <a href="<?php the_permalink() ?>">
+                                                            <i class="fa fa-eye fa-2x"></i>
+                                                            <h2><?php the_title() ?></h2>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <?php
                                 endwhile;
