@@ -30,7 +30,7 @@ input::-moz-focus-inner {
   top: 0px;
   left: 0px;
   width: 1830px;
-  height: 630px;
+  height: 690px;
   overflow: hidden; }
   #slider1_container .box-loading {
     position: absolute;
@@ -59,7 +59,7 @@ input::-moz-focus-inner {
     left: 0px;
     top: 0px;
     width: 1830px;
-    height: 630px;
+    height: 690px;
     overflow: hidden; }
 
 #jssor_3 {
@@ -940,9 +940,11 @@ ul.m-sidebar {
   padding-bottom: 20px; }
 
 #design {
-  background: #F2EEEB;
+  background: #363d42;
   padding-top: 30px;
   padding-bottom: 30px; }
+  #design h4, #design h5 {
+    color: #F79A57; }
   #design h2 {
     color: #F79A57;
     font-size: 40px;
@@ -951,7 +953,7 @@ ul.m-sidebar {
     color: #8F7D76;
     font-size: 16px; }
   #design .mess-title {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 500; }
   #design .main-text-design {
     padding-left: 12%; }
@@ -1002,11 +1004,31 @@ ul.m-sidebar {
     font-weight: 500; }
   #service .service-content {
     padding-top: 20px; }
+  #service .read-more {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+
+.module-special {
+  height: 300px;
+  overflow: hidden;
+  text-align: center; }
+  .module-special article {
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s; }
+  .module-special:hover article {
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s; }
+    .module-special:hover article.item {
+      transform: translate(0px, -130px); }
+    .module-special:hover article .img-sim {
+      transform: translate(0px, -320px); }
 
 #project {
   background: #2A2F33; }
   #project h2 {
-    color: #fff;
+    /*color: $white;*/
     font-size: 30px;
     font-weight: 300 !important; }
   #project span {
@@ -1095,6 +1117,8 @@ ul.m-sidebar {
     color: #C6C6C6;
     font-size: 16px;
     padding-bottom: 20px; }
+    #news .service-content p {
+      font-size: 16px; }
   #news .line-news {
     border-left: #E3E3E3 1px solid;
     border-right: #E3E3E3 1px solid;
@@ -1252,7 +1276,6 @@ ul.m-sidebar {
     font-weight: 200 !important; }
   #news-page-body .news-info {
     color: #fff;
-    padding-left: 20%;
     position: relative; }
     #news-page-body .news-info a h4 {
       color: #fff;
@@ -1270,11 +1293,11 @@ ul.m-sidebar {
       background-color: #000;
       border: 1px solid #999;
       height: 29%;
-      left: 20%;
+      left: 0%;
       opacity: 0.3;
       position: absolute;
       top: 61%;
-      width: 80%; }
+      width: 100%; }
   #news-page-body .pr-bar {
     padding-top: 15px;
     margin-left: 8%; }
@@ -1426,6 +1449,8 @@ ul.m-sidebar {
     color: #73432F;
     padding-bottom: 20px; }
 
+.marketing p {
+  font-size: 17px; }
 .marketing.odd {
   background: #fff; }
 .marketing.even {
@@ -1487,22 +1512,24 @@ ul.m-sidebar {
     #footer-wrapper .copyright span {
       color: #606264;
       font-size: 16px;
-      font-weight: 500; }
+      font-weight: 500;
+      padding-right: 6%; }
   #footer-wrapper .signs-up span {
     color: #999B9C;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 300; }
   #footer-wrapper .signs-up .controls {
     padding-right: 18px;
     padding-bottom: 10px;
     border: 1px solid #717477;
-    background-color: #42464A; }
+    background-color: #42464A;
+    border-radius: 18px; }
   #footer-wrapper .signs-up button {
     margin-left: 10px;
     border: 1px solid #717477;
     color: #9A9A9A;
     background-color: #2A2F33;
-    height: 29px;
+    height: 32px;
     padding: 4px 15px 4px 15px;
     margin-top: 8px; }
 
@@ -2022,6 +2049,38 @@ ul.recent_short {
     background: url(../images/home/19.png); }
     .mico.mico-19:hover, .mico.mico-19:focus, .mico.mico-19.selected {
       background: url(../images/home/19-selected.png); }
+
+.m-last-pj {
+  position: relative; }
+  .m-last-pj:hover .m-o-effect {
+    background: rgba(0, 0, 0, 0.15); }
+    .m-last-pj:hover .m-o-effect .m-lp-item {
+      margin-left: 0;
+      margin-top: 0; }
+  .m-last-pj .m-o-effect {
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    position: absolute;
+    background: transparent;
+    width: 400px;
+    height: 100%;
+    top: 0; }
+    .m-last-pj .m-o-effect .m-lp-item {
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      text-align: center;
+      display: table;
+      width: 100%;
+      height: 100%;
+      margin-left: 400px;
+      margin-top: -400px; }
+      .m-last-pj .m-o-effect .m-lp-item .m-lp-row {
+        vertical-align: middle;
+        display: table-cell; }
+        .m-last-pj .m-o-effect .m-lp-item .m-lp-row i, .m-last-pj .m-o-effect .m-lp-item .m-lp-row h2 {
+          color: #F88010; }
 
 /* carousel slider css */
 .carousel-inner .active.left {

@@ -83,7 +83,7 @@ var jssor_last_project = function (jssor_id) {
             $SlideDuration: 160,
             $SlideWidth: 400,
             $SlideSpacing: 0,
-            $Cols: 6,
+            $Cols: 4,
             $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$
             }
