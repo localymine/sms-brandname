@@ -268,3 +268,12 @@ $(function () {
         $('article.item', this).addClass('selected');
     });
 });
+
+$(document).ready(function() {
+    $('.img-tab').click(function(){
+        $('.item-title').parent().find('.item-title').css('display', 'none');
+        var Id = $(this).attr('id');
+        var tabId = 'item-'+Id;
+        $('#' + tabId).parent().find('.item-title').css('display', 'inline');
+    });
+});

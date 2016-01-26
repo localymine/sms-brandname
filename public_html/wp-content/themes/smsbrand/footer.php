@@ -19,7 +19,7 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
                         <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/53.png"></a>
                     </span>
                 </div>
-                <div class="col-xs-12 col-md-5 signs-up">
+                <div class="col-xs-12 col-md-4 signs-up text-center">
                     <span>
                         Sign Up for Our News Letter
                     </span>
@@ -27,7 +27,7 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
                         <input type="text" class="controls"><button class="btn btn-default">Subscribe</button>
                     </form>
                 </div>
-                <div class="col-xs-12 col-md-3 copyright text-right">
+                <div class="col-xs-12 col-md-4 copyright text-right">
                     <span>A product of</span><br />
                     <a class="footer-logo" href="#"><img class="img-responsive pull-right" src="<?php echo $logo->url ?>"/></a>
                 </div>

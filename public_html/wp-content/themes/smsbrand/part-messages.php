@@ -12,6 +12,15 @@
         $selected = 2;
         $countLine = 1;
         ?>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-12 text-center nopadding" data-wow-delay="0.5s">
+                <h2>What makes us different?</h2>
+                <span class="mess-title">loremispum</span>
+            </div>
+        </div>
+        <div class="row-gap-big"></div>
+
         <?php
         if ($loop->have_posts()) :
             while ($loop->have_posts()):
@@ -19,19 +28,14 @@
                 ?>
                 <div id="tabs-<?php the_ID() ?>" <?php echo ($i == $selected) ? ' style="display:block;" aria-hidden="false" ' : '' ?>>
                     <div class="row">
-                        <div class="col-xs-12 col-md-12 text-center nopadding" data-wow-delay="0.5s">
-                            <h2><?php the_title() ?></h2>
-                            <span class="mess-title"><?php echo get_field('sub_title') ?></span>
-                        </div>
-                    </div>
-                    <div class="row-gap-big"></div>
-                    <div class="row">
                         <div class="col-xs-12 col-md-6 main-text-design nopadding" data-wow-delay="1s">
-                            <?php echo get_field('short_content') ?>
+                            <h4><?php the_title() ?></h4>
+                            <h5><?php echo get_field('sub_title') ?></h5>
+                            <p><?php echo get_field('short_content') ?></p>
                             <a href="<?php the_permalink() ?>">
                                 <article id="item-1" class="item">
                                     <span> READ MORE </span>
-                                    <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                                    <span class="fa fa-long-arrow-right" aria-hidden="true"></span>
                                 </article>
                             </a>
                         </div>
@@ -69,7 +73,13 @@
                                 </li>
                             <?php endif; ?>
                             <li class="img-content-tab">
-                                <div class="item-title" id="item-<?php the_ID() ?>" <?php if($i == $selected){echo('style="display: inline;"');}else{echo('style="display: none;"');}?>>
+                                <div class="item-title" id="item-<?php the_ID() ?>" <?php
+                                if ($i == $selected) {
+                                    echo('style="display: inline;"');
+                                } else {
+                                    echo('style="display: none;"');
+                                }
+                                ?>>
                                     <span><?php echo get_field('sub_title') ?></span>
                                 </div>
                             </li>

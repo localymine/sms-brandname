@@ -22,14 +22,24 @@
                     $loop->the_post();
                     $image = get_field('image');
                     ?>
-                    <div class="col-xs-12 col-md-4 text-center <?php if($row_line == 2){echo('line-news');}?> wow fadeInUp" data-wow-delay="0.5s">
-                        <a href="<?php the_permalink() ?>">
-                            <img class="img-responsive center-block" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
-                            <span class="service-title"><?php the_title() ?></span>
-                            <div class="service-content"><?php the_excerpt() ?></div>
-                        </a>
+                    <div class="col-xs-12 col-md-4 text-center <?php if ($row_line == 2) {
+                echo('line-news');
+            } ?> wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="module-special">
+                            <article class="item">
+                                <img class="img-responsive center-block img-sim" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
+                                <span class="service-title"><?php the_title() ?></span>
+                                <div class="service-content"><?php the_excerpt() ?></div>
+                                <div class="read-more">
+                                    <a href="<?php the_permalink() ?>">
+                                        Read More <i class="fa fa-long-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
                     </div>
-                    <?php $row_line++;
+                    <?php
+                    $row_line++;
                 endwhile;
             endif;
             wp_reset_postdata();

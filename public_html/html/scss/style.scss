@@ -447,7 +447,7 @@ ul.m-sidebar{
         font-size: 16px;
     }
     .mess-title{
-        font-size: 28px;
+        font-size: 20px;
         font-weight: 500;
     }
     .main-text-design{
@@ -519,6 +519,30 @@ ul.m-sidebar{
     }
     .service-content{
         padding-top: 20px;
+    }
+    .read-more{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+.module-special{
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+    article{
+        @include transition(0.5s);
+    }
+    &:hover{
+        article{
+            @include transition(0.5s);
+            &.item{
+                transform: translate(0px, -130px);
+            }
+            .img-sim{
+                transform: translate(0px, -320px);
+            }
+        }
     }
 }
 
@@ -640,6 +664,9 @@ ul.m-sidebar{
         color: #C6C6C6;
         font-size: 16px;
         padding-bottom: 20px;
+        p{
+            font-size: 16px;
+        }
     }
     .line-news{
         border-left: #E3E3E3 1px solid;
@@ -912,7 +939,7 @@ ul.m-sidebar{
     :-moz-placeholder {
         color: #C4AAA1;
     }
-     
+
     ::-webkit-input-placeholder {
         color: #C4AAA1;
     }
@@ -1008,7 +1035,7 @@ ul.m-sidebar{
             -moz-box-shadow: 0 0 10px 5px #356b0b inset;
             -ms-box-shadow: 0 0 10px 5px #356b0b inset;
             -o-box-shadow: 0 0 10px 5px #356b0b inset;
-             
+
         }
     }
 }
@@ -1154,7 +1181,7 @@ ul.m-sidebar{
     .signs-up{
         span{
             color: #999B9C;
-            font-size: 30px;
+            font-size: 25px;
             font-weight: 300;
         }
         .controls{

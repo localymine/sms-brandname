@@ -97,7 +97,7 @@
                                         <li><div class="line-header"></div></li>
                                         <li><a class="nav-title <?php echo $omw_active_menu['sms-marketing'] ?>" href="<?php echo home_url('sms-marketing') ?>"><span>MARKETING SMS</span></a></li>
                                         <li><div class="line-header"></div></li>
-                                        <li><a class="nav-title <?php echo $omw_active_menu['sms-8x77'] ?>" href="<?php echo home_url('sms-8x77') ?>"><span>SMS ĐẦU SỐ 8x77</span></a></li>
+                                        <li><a class="nav-title <?php echo $omw_active_menu['sms-8x77'] ?>" href="<?php echo home_url('sms-8x77') ?>"><span>ĐẦU SỐ 8x77</span></a></li>
                                         <li><div class="line-header"></div></li>
                                         <li><a class="nav-title <?php echo $omw_active_menu['news'] ?>" href="<?php echo home_url('news') ?>"><span>TIN TỨC</span></a></li>
                                         <li><div class="line-header"></div></li>
@@ -144,7 +144,7 @@
                         <a class="<?php echo $omw_active_menu['sms-marketing'] ?>" href="<?php echo home_url('sms-marketing') ?>"><span>MARKETING SMS</span></a>
                     </li>
                     <li>
-                        <a class="<?php echo $omw_active_menu['sms-8x77'] ?>" href="<?php echo home_url('sms-8x77') ?>"><span>SMS ĐẦU SỐ 8x77</span></a>
+                        <a class="<?php echo $omw_active_menu['sms-8x77'] ?>" href="<?php echo home_url('sms-8x77') ?>"><span>ĐẦU SỐ 8x77</span></a>
                     </li>
                     <li>
                         <a class="<?php echo $omw_active_menu['news'] ?>" href="<?php echo home_url('news') ?>"><span>TIN TỨC</span></a>
