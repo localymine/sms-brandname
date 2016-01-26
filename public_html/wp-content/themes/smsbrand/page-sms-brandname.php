@@ -56,8 +56,7 @@ if ($loop->have_posts()):
                                             <img class="img-responsive pull-left" src="<?php echo $image['url'] ?>"/>
                                         </div>
                                         <div class="col-xs-12 col-md-6 text-left wow fadeInRight" data-wow-delay="0.5s">
-                                            <h2><?php echo get_sub_field('sub_title') ?></h2>
-                                            <?php echo get_sub_field('content') ?>
+                                            <p><?php echo get_sub_field('content') ?></p>
                                         </div>
                                     </div>
                                     <div class="row-gap-big"></div>
@@ -83,8 +82,7 @@ if ($loop->have_posts()):
                                             <h2 class="market-titile"><?php echo get_sub_field('sub_title') ?></h2>
                                         </div>
                                         <div class="col-xs-12 col-md-6 text-left wow fadeInRight" data-wow-delay="0.5s">
-                                            <h2><?php echo get_sub_field('sub_title') ?></h2>
-                                            <?php echo get_sub_field('content') ?>
+                                            <p><?php echo get_sub_field('content') ?></p>
                                         </div>
                                         <div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-delay="0.5s">
                                             <img class="img-responsive pull-left" src="<?php echo $image['url'] ?>"/>

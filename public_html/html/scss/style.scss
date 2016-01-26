@@ -971,7 +971,6 @@ ul.m-sidebar{
     }
     .news-info{
         color: #fff;
-        padding-left: 20%;
         position: relative;
         a{
             h4{
@@ -991,11 +990,11 @@ ul.m-sidebar{
                 background-color: #000;
                 border:1px solid #999;
                 height: 29%;
-                left: 20%;
+                left: 0%;
                 opacity: 0.3;
                 position: absolute;
                 top: 61%;
-                width: 80%;
+                width: 100%;
             }
         }
     }
@@ -1198,6 +1197,9 @@ ul.m-sidebar{
 }
 
 .marketing{
+    p{
+        font-size: 17px;
+    }
     &.odd{
         background: $white;
     }
@@ -1284,12 +1286,13 @@ ul.m-sidebar{
             color: #606264;
             font-size: 16px;
             font-weight: 500;
+            padding-right: 6%;
         }
     }
     .signs-up{
         span{
             color: #999B9C;
-            font-size: 25px;
+            font-size: 26px;
             font-weight: 300;
         }
         .controls{
@@ -1297,13 +1300,14 @@ ul.m-sidebar{
             padding-bottom: 10px;
             border: 1px solid #717477;
             background-color: #42464A;
+            border-radius: 18px;
         }
         button{
             margin-left: 10px;
             border: 1px solid #717477;
             color: #9A9A9A;
             background-color: #2A2F33;
-            height: 29px;
+            height: 32px;
             padding: 4px 15px 4px 15px;
             margin-top: 8px;
         }

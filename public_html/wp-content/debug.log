@@ -14217,3 +14217,285 @@
 [26-Jan-2016 06:45:04 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 90
 [26-Jan-2016 06:45:04 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 135
 [26-Jan-2016 06:45:04 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[26-Jan-2016 13:11:54] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:11:54] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 90
+[26-Jan-2016 13:11:54] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 135
+[26-Jan-2016 13:11:55] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:11:55] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:11:55] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 90
+[26-Jan-2016 13:11:55] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 135
+[26-Jan-2016 13:11:56] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:33:27] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:33:27] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:33:27] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:33:28] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:33:28] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:33:28] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:33:28] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:33:28] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:33:29] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:33:29] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:33:29] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:33:29] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:33:39] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:33:39] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:33:39] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:33:39] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:33:39] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:33:39] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:33:39] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:33:39] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:33:45] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:33:45] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:33:45] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:33:45] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:33:45] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:33:45] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:33:45] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:33:46] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:33:46] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:33:46] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:33:46] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:33:46] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:38:08] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:38:08] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:38:08] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:38:09] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:38:09] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:38:09] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:38:09] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:38:10] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:38:41] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:38:41] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:38:41] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:38:41] PHP Warning:  array_map() [<a href='function.array-map'>function.array-map</a>]: Argument #2 should be an array in C:\xampp\htdocs\sms-brandname\public_html\wp-includes\query.php on line 2667
+[26-Jan-2016 13:38:41] PHP Warning:  implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed in C:\xampp\htdocs\sms-brandname\public_html\wp-includes\query.php on line 2667
+[26-Jan-2016 13:38:41] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND ( 
+  wp_posts.ID NOT IN (
+				SELECT object_id
+				FROM wp_term_relation' at line 1 for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.ID NOT IN () AND ( 
+  wp_posts.ID NOT IN (
+				SELECT object_id
+				FROM wp_term_relationships
+				WHERE term_taxonomy_id IN (6,13)
+			)
+) AND wp_posts.post_type = 'news' AND (wp_posts.post_status = 'publish') GROUP BY wp_posts.ID ORDER BY wp_posts.menu_order, wp_posts.post_date DESC LIMIT 0, 6 made by require('C:\xampp\htdocs\sms-brandname\public_html\wp-blog-header.php'), require_once('C:\xampp\htdocs\sms-brandname\public_html\wp-includes\template-loader.php'), include('C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\single-news.php'), WP_Query->__construct, WP_Query->query, WP_Query->get_posts
+[26-Jan-2016 13:38:41] PHP Warning:  array_map() [<a href='function.array-map'>function.array-map</a>]: Argument #2 should be an array in C:\xampp\htdocs\sms-brandname\public_html\wp-includes\query.php on line 2667
+[26-Jan-2016 13:38:41] PHP Warning:  implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed in C:\xampp\htdocs\sms-brandname\public_html\wp-includes\query.php on line 2667
+[26-Jan-2016 13:38:41] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND ( 
+  wp_term_relationships.term_taxonomy_id IN (11) 
+  AND 
+  wp_posts.ID ' at line 1 for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  INNER JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id) WHERE 1=1  AND wp_posts.ID NOT IN () AND ( 
+  wp_term_relationships.term_taxonomy_id IN (11) 
+  AND 
+  wp_posts.ID NOT IN (
+				SELECT object_id
+				FROM wp_term_relationships
+				WHERE term_taxonomy_id IN (6,13)
+			)
+) AND wp_posts.post_type = 'news' AND (wp_posts.post_status = 'publish') GROUP BY wp_posts.ID ORDER BY wp_posts.menu_order, wp_posts.post_date DESC LIMIT 0, 6 made by require('C:\xampp\htdocs\sms-brandname\public_html\wp-blog-header.php'), require_once('C:\xampp\htdocs\sms-brandname\public_html\wp-includes\template-loader.php'), include('C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\single-news.php'), get_sidebar, locate_template, load_template, require_once('C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\sidebar-news-right.php'), WP_Query->__construct, WP_Query->query, WP_Query->get_posts
+[26-Jan-2016 13:38:41] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:38:41] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:38:41] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:38:41] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:38:42] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:38:45] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:38:45] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:38:45] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:38:46] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:38:46] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:38:46] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:38:46] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:38:46] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:40:20] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:40:20] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:40:20] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:40:21] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:40:21] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:40:21] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:40:21] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:40:22] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:41:56] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:41:56] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:41:56] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:41:57] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:41:57] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:41:57] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:41:57] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:41:57] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:46:08] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:46:08] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:46:08] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:46:08] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:46:08] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:46:08] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:46:08] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:46:09] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:46:54] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:46:54] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:46:54] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:46:55] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:46:55] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:46:55] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:46:55] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:46:55] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:48:07] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:48:07] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:48:07] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:48:07] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:48:07] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:48:07] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:48:07] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:48:08] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:49:59] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:49:59] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:49:59] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:50:00] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:50:00] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:50:00] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:50:00] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:50:00] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:51:05] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:51:05] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:51:05] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:51:05] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:51:05] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:51:05] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:51:05] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:51:06] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:51:31] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:51:31] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:51:31] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:51:31] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:51:31] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:51:31] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:51:31] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:51:32] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:51:36] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:51:36] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:51:36] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:51:36] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:51:37] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:51:37] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:51:37] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:51:37] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:53:52] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:53:52] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:53:52] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:53:52] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:53:53] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:53:53] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:53:53] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:53:53] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:55:18] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:55:18] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:55:18] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:55:18] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:55:19] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:55:19] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:55:19] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:55:20] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:58:06] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:58:06] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:58:06] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:58:06] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:58:06] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:58:06] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:58:06] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:58:07] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:58:51] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:58:51] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:58:51] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:58:51] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:58:51] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:58:51] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:58:51] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:58:52] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:58:58] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:58:58] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:58:58] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:58:59] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:58:59] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:58:59] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:58:59] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:58:59] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:59:02] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:59:02] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:59:02] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:59:02] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:59:02] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:59:02] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:59:02] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:59:03] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:59:07] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:59:07] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:59:07] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:59:07] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 13:59:08] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 13:59:08] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 13:59:08] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 13:59:08] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:00:27] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:00:27] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:00:27] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:00:28] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:00:28] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:00:28] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:00:28] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:00:28] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:04:16] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:04:16] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:04:16] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:04:17] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:04:17] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:04:17] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:04:17] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:04:17] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:05:18] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:05:18] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:05:18] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:05:18] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:05:18] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:05:18] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:05:18] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:05:19] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:07:51] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:07:51] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:07:51] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:07:51] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:07:51] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:07:51] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:07:51] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:07:52] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:08:22] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:08:22] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:08:22] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:08:22] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:08:22] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:08:22] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:08:22] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:08:23] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:09:36] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:09:36] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:09:36] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:09:37] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:09:37] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:09:37] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:09:37] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:09:37] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:10:01] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:10:01] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:10:01] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:10:02] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:10:02] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:10:02] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:10:02] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:10:03] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:11:15] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:11:15] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:11:15] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:11:16] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
+[26-Jan-2016 14:11:16] PHP Notice:  Undefined property: stdClass::$ct_use_css in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 43
+[26-Jan-2016 14:11:16] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 96
+[26-Jan-2016 14:11:16] PHP Notice:  Undefined index: sms-otp in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\header.php on line 141
+[26-Jan-2016 14:11:16] PHP Notice:  Undefined property: stdClass::$ct_use_script in C:\xampp\htdocs\sms-brandname\public_html\wp-content\themes\smsbrand\footer.php on line 60
