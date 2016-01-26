@@ -92,7 +92,7 @@ var jssor_last_project = function (jssor_id) {
         var jssor_slider = new $JssorSlider$(jssor_id, jssor_options);
         //responsive code begin
         //you can remove responsive code if you don't want the slider scales while window resizing
-        var ScaleSliderLastProject = function() {
+        var ScaleSliderLastProject = function () {
             var refSize = jssor_slider.$Elmt.parentNode.clientWidth;
             if (refSize) {
                 refSize = Math.min(refSize, 1920);
@@ -215,7 +215,7 @@ jQuery(document).ready(function ($) {
 /* ---------------------------------------------------------------- jssor end */
 $(function () {
     $("#tabs").tabs();
-    $("#tabs-design").tabs();
+//    $("#tabs-design").tabs();
 });
 /* -------------------------------------------------- product carousel slider */
 $(function () {
@@ -223,19 +223,19 @@ $(function () {
         interval: 10000
     });
 
-    $('.carousel .item').each(function () {
-        var next = $(this).next();
-        if (!next.length) {
-            next = $(this).siblings(':first');
-        }
-        next.children(':first-child').clone().appendTo($(this));
-
-        if (next.next().length > 0) {
-            next.next().children(':first-child').clone().appendTo($(this));
-        } else {
-            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-        }
-    });
+//    $('.carousel .item').each(function () {
+//        var next = $(this).next();
+//        if (!next.length) {
+//            next = $(this).siblings(':first');
+//        }
+//        next.children(':first-child').clone().appendTo($(this));
+//
+//        if (next.next().length > 0) {
+//            next.next().children(':first-child').clone().appendTo($(this));
+//        } else {
+//            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+//        }
+//    });
 });
 
 /* -------------------------------------------------------------- back to top */
@@ -258,22 +258,22 @@ $(function ($) {
     });
 });
 
-$(function () {
-    $('.ul-diff > li').click(function () {
-        $(this).addClass('selected').siblings().removeClass('selected');
-        $('.ul-diff > li article.item').each(function(){
-            $(this).removeClass('selected');
-        });
-        //
-        $('article.item', this).addClass('selected');
-    });
-});
+//$(function () {
+//    $('.ul-diff > li').click(function () {
+//        $(this).addClass('selected').siblings().removeClass('selected');
+//        $('.ul-diff > li article.item').each(function () {
+//            $(this).removeClass('selected');
+//        });
+//        //
+//        $('article.item', this).addClass('selected');
+//    });
+//});
 
-$(document).ready(function() {
-    $('.img-tab').click(function(){
-        $('.item-title').parent().find('.item-title').css('display', 'none');
-        var Id = $(this).attr('id');
-        var tabId = 'item-'+Id;
-        $('#' + tabId).parent().find('.item-title').css('display', 'inline');
-    });
-});
+//$(document).ready(function () {
+//    $('.img-tab').click(function () {
+//        $('.item-title').parent().find('.item-title').css('display', 'none');
+//        var Id = $(this).attr('id');
+//        var tabId = 'item-' + Id;
+//        $('#' + tabId).parent().find('.item-title').css('display', 'inline');
+//    });
+//});
