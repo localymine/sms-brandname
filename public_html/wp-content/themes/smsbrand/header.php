@@ -58,6 +58,12 @@
                         <li>
                             <i class="fa fa-phone fa-2x"></i><span class="hotline">Hotline <?php echo $omw_theme_settings->ct_company_telephone ?></span>
                         </li>
+                        <li>
+                            <a class="login-menu" href="javascript:void(0)"><i class="fa fa-user"></i><span class=""> Sender</span></a>
+                        </li>
+                        <li>
+                            <a class="login-menu" href="javascript:void(0)"><i class="fa fa-user"></i><span class=""> Client</span></a>
+                        </li>
                     </ul>
                 </div>
             </header>
