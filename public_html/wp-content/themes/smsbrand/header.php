@@ -105,7 +105,6 @@
                                         <!--
                                         <li class="menu-search">
                                             <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/b-search.png" alt="Search" />
->>>>>>> master
                                             <form class="nav-form">
                                                 <input type="text" name="name"/>
                                             </form>
