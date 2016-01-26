@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-xs-12 col-md-12 text-center nopadding" data-wow-delay="0.5s">
                 <h2>What makes us different?</h2>
-                <span class="mess-title">loremispum</span>
+                <span class="mess-title">Mang lại trãi nghiệm người dùng là cơ hội để chúng tôi bức phá</span>
             </div>
         </div>
         <div class="row-gap-big"></div>
@@ -80,7 +80,7 @@
                                     echo('style="display: none;"');
                                 }
                                 ?>>
-                                    <span><?php echo get_field('sub_title') ?></span>
+                                    <span><?php the_title() ?></span>
                                 </div>
                             </li>
                             <li class="img-tab" id="<?php the_ID() ?>">

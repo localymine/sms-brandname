@@ -107,7 +107,7 @@ function cptui_register_my_cpts() {
         "query_var" => true,
         "menu_position" => 26,
         "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h4.png',
-        "supports" => array("title"),
+        "supports" => array("title", "editor", "excerpt"),
     );
     register_post_type("last-project", $args);
 
@@ -452,38 +452,12 @@ if (function_exists("register_field_group")) {
         'fields' => array(
             array(
                 'key' => 'field_569d7f94a3342',
-                'label' => 'Images',
-                'name' => 'images',
-                'type' => 'repeater',
-                'sub_fields' => array(
-                    array(
-                        'key' => 'field_569d7fb5a3343',
-                        'label' => 'Image',
-                        'name' => 'image',
-                        'type' => 'image',
-                        'column_width' => '',
-                        'save_format' => 'object',
-                        'preview_size' => 'thumbnail',
-                        'library' => 'all',
-                    ),
-                    array(
-                        'key' => 'field_569d810c50b1c',
-                        'label' => 'Url',
-                        'name' => 'url',
-                        'type' => 'text',
-                        'column_width' => '',
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'formatting' => 'none',
-                        'maxlength' => '',
-                    ),
-                ),
-                'row_min' => '',
-                'row_limit' => '',
-                'layout' => 'table',
-                'button_label' => 'Add Row',
+                'label' => 'Image',
+                'name' => 'image',
+                'type' => 'image',
+                'save_format' => 'object',
+                'preview_size' => 'thumbnail',
+                'library' => 'all',
             ),
         ),
         'location' => array(
