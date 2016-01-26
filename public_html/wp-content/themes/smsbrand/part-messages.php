@@ -21,7 +21,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-12 text-center nopadding" data-wow-delay="0.5s">
                             <h2><?php the_title() ?></h2>
-                            <span><?php echo get_field('sub_title') ?></span>
+                            <span class="mess-title"><?php echo get_field('sub_title') ?></span>
                         </div>
                     </div>
                     <div class="row-gap-big"></div>
@@ -43,7 +43,7 @@
                             ?>
                             <!--<a href="#">-->
                             <article id="item-1" class="item">
-                                <img class="img-responsive pull-right" src="<?php echo $img_size ?>"/>
+                                <img class="img-responsive center-block" src="<?php echo $img_size ?>"/>
                             </article>
                             <!--</a>-->
                         </div>
@@ -54,8 +54,7 @@
             endwhile;
         endif;
         ?>
-        <div class="row-gap-big"></div>
-        <div class="row">
+        <div class="row tab-item">
             <div class="col-xs-12 col-md-12 text-center wow fadeInUp" data-wow-delay="0.5s">
                 <ul class="list-inline ul-diff">
                     <?php
@@ -69,7 +68,12 @@
                                     <div class='middle-item'></div>
                                 </li>
                             <?php endif; ?>
-                            <li>
+                            <li class="img-content-tab">
+                                <div class="item-title" id="item-<?php the_ID() ?>" <?php if($i == $selected){echo('style="display: inline;"');}else{echo('style="display: none;"');}?>>
+                                    <span><?php echo get_field('sub_title') ?></span>
+                                </div>
+                            </li>
+                            <li class="img-tab" id="<?php the_ID() ?>">
                                 <a href="#tabs-<?php the_ID() ?>">
                                     <article id="item-<?php the_ID() ?>" class="item mico mico-<?php echo get_field('icon_style') ?> <?php echo ($i == $selected) ? ' selected ' : '' ?>"></article>
                                 </a>

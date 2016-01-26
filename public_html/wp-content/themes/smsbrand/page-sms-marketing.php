@@ -30,7 +30,6 @@ if ($loop->have_posts()):
                 </div>
             </div>
         </section>
-
         <!-- content -->
         <?php
         $counter = 0;
@@ -44,11 +43,13 @@ if ($loop->have_posts()):
                         while (have_rows('set_image_left')): the_row();
                             $image = get_sub_field('image');
                             ?>
-
                             <div id="marketing-<?php the_ID() ?>" class="marketing <?php echo $class ?>">
                                 <div class="container">
                                     <div class="row-gap-big"></div>
                                     <div class="row">
+                                        <div class="col-xs-12 col-md-12 text-center wow fadeInDown" data-wow-delay="0.5s">
+                                            <h2 class="market-titile"><?php echo get_sub_field('sub_title') ?></h2>
+                                        </div>
                                         <div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-delay="0.5s">
                                             <img class="img-responsive pull-left" src="<?php echo $image['url'] ?>"/>
                                         </div>
@@ -60,24 +61,22 @@ if ($loop->have_posts()):
                                     <div class="row-gap-big"></div>
                                 </div>
                             </div>
-
                             <?php
                         endwhile;
                     endif;
-
                 else:
-
                     if (have_rows('set_image_right')):
                         while (have_rows('set_image_right')): the_row();
                             $image = get_sub_field('image');
                             ?>
-
                             <div id="marketing-<?php the_ID() ?>" class="marketing <?php echo $class ?>">
                                 <div class="container">
                                     <div class="row-gap-big"></div>
                                     <div class="row">
+                                        <div class="col-xs-12 col-md-12 text-center wow fadeInDown" data-wow-delay="0.5s">
+                                            <h2 class="market-titile"><?php echo get_sub_field('sub_title') ?></h2>
+                                        </div>
                                         <div class="col-xs-12 col-md-6 text-left wow fadeInRight" data-wow-delay="0.5s">
-                                            <h2><?php echo get_sub_field('sub_title') ?></h2>
                                             <?php echo get_sub_field('content') ?>
                                         </div>
                                         <div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-delay="0.5s">
@@ -87,11 +86,9 @@ if ($loop->have_posts()):
                                     <div class="row-gap-big"></div>
                                 </div>
                             </div>
-
                             <?php
                         endwhile;
                     endif;
-
                 endif;
                 //
                 $counter++;
@@ -99,7 +96,6 @@ if ($loop->have_posts()):
         endif;
         ?>
         <!-- content end -->
-
         <?php
     endwhile;
 endif;

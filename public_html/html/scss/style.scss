@@ -429,7 +429,10 @@ ul.m-sidebar{
         background-image: none;
     }
 }
-
+.market-titile{
+    font-size: 42px;
+    padding-bottom: 20px;
+}
 #design{
     background: $design-bg;
     padding-top: 30px;
@@ -443,8 +446,11 @@ ul.m-sidebar{
         color: #8F7D76;
         font-size: 16px;
     }
+    .mess-title{
+        font-size: 28px;
+        font-weight: 500;
+    }
     .main-text-design{
-        padding-top: 75px;
         padding-left: 12%;
         .title{
             color: #DE9470;
@@ -476,6 +482,20 @@ ul.m-sidebar{
         li{
             padding-right: 0px !important;
             padding-left: 0px !important;
+        }
+    }
+    .tab-item{
+        padding-top: 50px;
+        position: relative;
+        .img-content-tab{
+            height: 100px;
+        }
+        .item-title{
+            display: none;
+            span{
+                position: absolute;
+                font-weight: 500;
+            }
         }
     }
 }
@@ -1127,14 +1147,14 @@ ul.m-sidebar{
         }
         span{
             color: #606264;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 500;
         }
     }
     .signs-up{
         span{
             color: #999B9C;
-            font-size: 32px;
+            font-size: 30px;
             font-weight: 300;
         }
         .controls{

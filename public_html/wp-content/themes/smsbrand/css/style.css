@@ -935,6 +935,10 @@ ul.m-sidebar {
 .carousel-control.right {
   background-image: none; }
 
+.market-titile {
+  font-size: 42px;
+  padding-bottom: 20px; }
+
 #design {
   background: #F2EEEB;
   padding-top: 30px;
@@ -946,8 +950,10 @@ ul.m-sidebar {
   #design span {
     color: #8F7D76;
     font-size: 16px; }
+  #design .mess-title {
+    font-size: 28px;
+    font-weight: 500; }
   #design .main-text-design {
-    padding-top: 75px;
     padding-left: 12%; }
     #design .main-text-design .title {
       color: #DE9470;
@@ -969,6 +975,16 @@ ul.m-sidebar {
   #design .list-inline li {
     padding-right: 0px !important;
     padding-left: 0px !important; }
+  #design .tab-item {
+    padding-top: 50px;
+    position: relative; }
+    #design .tab-item .img-content-tab {
+      height: 100px; }
+    #design .tab-item .item-title {
+      display: none; }
+      #design .tab-item .item-title span {
+        position: absolute;
+        font-weight: 500; }
 
 #service {
   background: #fff;
@@ -1470,11 +1486,11 @@ ul.m-sidebar {
         display: inline-block; }
     #footer-wrapper .copyright span {
       color: #606264;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 500; }
   #footer-wrapper .signs-up span {
     color: #999B9C;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 300; }
   #footer-wrapper .signs-up .controls {
     padding-right: 18px;
