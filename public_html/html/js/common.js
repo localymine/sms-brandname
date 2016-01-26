@@ -100,7 +100,7 @@ var jssor_last_project = function (jssor_id) {
             } else {
                 window.setTimeout(ScaleSliderLastProject, 30);
             }
-        }
+        };
         ScaleSliderLastProject();
         $(window).bind("load", ScaleSliderLastProject);
         $(window).bind("resize", ScaleSliderLastProject);
