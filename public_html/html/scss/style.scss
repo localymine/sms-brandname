@@ -484,6 +484,20 @@ ul.m-sidebar{
             padding-left: 0px !important;
         }
     }
+    .tab-item{
+        padding-top: 50px;
+        position: relative;
+        .img-content-tab{
+            height: 100px;
+        }
+        .item-title{
+            display: none;
+            span{
+                position: absolute;
+                font-weight: 500;
+            }
+        }
+    }
 }
 
 #service{
@@ -1133,14 +1147,14 @@ ul.m-sidebar{
         }
         span{
             color: #606264;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 500;
         }
     }
     .signs-up{
         span{
             color: #999B9C;
-            font-size: 32px;
+            font-size: 30px;
             font-weight: 300;
         }
         .controls{

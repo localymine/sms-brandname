@@ -54,8 +54,7 @@
             endwhile;
         endif;
         ?>
-        <div class="row-gap-big"></div>
-        <div class="row">
+        <div class="row tab-item">
             <div class="col-xs-12 col-md-12 text-center wow fadeInUp" data-wow-delay="0.5s">
                 <ul class="list-inline ul-diff">
                     <?php
@@ -69,7 +68,12 @@
                                     <div class='middle-item'></div>
                                 </li>
                             <?php endif; ?>
-                            <li>
+                            <li class="img-content-tab">
+                                <div class="item-title" id="item-<?php the_ID() ?>" <?php if($i == $selected){echo('style="display: inline;"');}else{echo('style="display: none;"');}?>>
+                                    <span><?php echo get_field('sub_title') ?></span>
+                                </div>
+                            </li>
+                            <li class="img-tab" id="<?php the_ID() ?>">
                                 <a href="#tabs-<?php the_ID() ?>">
                                     <article id="item-<?php the_ID() ?>" class="item mico mico-<?php echo get_field('icon_style') ?> <?php echo ($i == $selected) ? ' selected ' : '' ?>"></article>
                                 </a>

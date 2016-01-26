@@ -975,6 +975,16 @@ ul.m-sidebar {
   #design .list-inline li {
     padding-right: 0px !important;
     padding-left: 0px !important; }
+  #design .tab-item {
+    padding-top: 50px;
+    position: relative; }
+    #design .tab-item .img-content-tab {
+      height: 100px; }
+    #design .tab-item .item-title {
+      display: none; }
+      #design .tab-item .item-title span {
+        position: absolute;
+        font-weight: 500; }
 
 #service {
   background: #fff;
@@ -1476,11 +1486,11 @@ ul.m-sidebar {
         display: inline-block; }
     #footer-wrapper .copyright span {
       color: #606264;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 500; }
   #footer-wrapper .signs-up span {
     color: #999B9C;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 300; }
   #footer-wrapper .signs-up .controls {
     padding-right: 18px;
