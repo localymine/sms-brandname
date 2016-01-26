@@ -137,40 +137,49 @@ global $omw_theme_settings;
                         </span>
                     </div>
                     <div>
-                        <form class="form-sms" action="<?php echo home_url('contact') ?>" method="post" name="contact_form">
-                            <ul>
-                                <li>
-                                    <label for="name">Name:</label>
-                                    <input type="text" name="re_name" placeholder=""/>
-                                </li>
-                                <li>
-                                    <label for="email">Email:</label>
-                                    <input type="text" name="re_email" placeholder="example@domain"/>
-                                </li>
-                                <li>
-                                    <label for="website">Website:</label>
-                                    <input type="text" name="re_website" placeholder="www.example.com"/>
-                                </li>
-                                <li>
-                                    <label for="website">Nội Dung:</label>
-                                    <textarea name="re_content" rows="10" cols="30" placeholder=""></textarea>
-                                </li>
-                                <li>
-                                    <div class="center-block" style="width: 50%;    ">
-                                        <div class="g-recaptcha" data-sitekey="<?php echo $omw_theme_settings->ct_recaptcha_public_key ?>"></div>
-                                        <div id="catpcha"></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <button class="submit" type="submit">GỬI NỘI DUNG</button>
-                                </li>
-                            </ul>
+                        <form class="form-horizontal form-sms" action="<?php echo home_url('contact') ?>" method="post" name="contact_form" role="form">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="name">Name:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="re_name" class="form-control" id="name" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="email">Email:</label>
+                                <div class="col-sm-10">
+                                    <input type="email" name="re_email" class="form-control" id="email" placeholder="example@domain">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="name">Website:</label>
+                                <div class="col-sm-10">
+                                    <input type="website" name="re_website" class="form-control" id="website" placeholder="www.example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="name">Nội Dung:</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" name="re_content" rows="10" cols="30" placeholder=""></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group"> 
+                                <div class="center-block" style="width: 21%;">
+                                    <div class="g-recaptcha" data-sitekey="<?php echo $omw_theme_settings->ct_recaptcha_public_key ?>"></div>
+                                    <div id="catpcha"></div>
+                                </div>
+                            </div>
+                            <div class="form-group"> 
+                                <div class="col-sm-offset-3 col-sm-12">
+                                    <button type="submit" class="submit btn btn-default">GỬI NỘI DUNG</button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3"></div>
-            <?php get_sidebar('banner') ?>
+            <div class="col-md-6">
+                <?php echo $omw_theme_settings->ct_company_google_map ?>                
+            </div>
             <!-- <div class="col-md-1"></div> -->
         </div>
         <div class="row-gap-big"></div>

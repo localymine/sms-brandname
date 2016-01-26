@@ -43,7 +43,7 @@ get_header();
                         $posts__id[] = get_the_ID();
                         $image = get_field('image');
                         ?>
-                        <div class="col-xs-12 col-md-6 text-center">
+                        <div class="col-xs-12 col-md-6 news-row text-center nopadding">
                             <div class="news-info">
                                 <a href="<?php the_permalink() ?>">
                                     <h4><?php the_title() ?></h4>

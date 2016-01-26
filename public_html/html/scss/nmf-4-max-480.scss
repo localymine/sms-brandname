@@ -4,16 +4,24 @@
 @media only screen and (max-width : 480px) {
     
     .header{
+        .affix{
+            padding-top: 12%;
+            #logo{
+                button{
+                    margin-right: 12%;
+                }
+            }
+        }
         #logo{
             .navbar-brand{
                 .img-logo{
-                    margin-left: 55px;
+                    margin-left: 65px;
                     margin-top: 5px;
                 }
             }
             button{
                 margin-top: 15px;
-                margin-right: -20px;
+                margin-right: 25px;
             }
         }
     }
@@ -46,10 +54,36 @@
             }
         }
     }
-    
+    #news-page-body{
+        .news-row{
+            padding-right: 16%;
+        }
+        .pr-bar{
+            padding-right: 16%;
+        }
+    }
+    #news-page{
+        .container{
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+    }
     .newsletter-form-holder{
         .newsletter-form{
             margin-top: 0;
+        }
+    }
+    #footer-wrapper{
+        .copyright{
+            padding-right: 32%;
+            padding-top: 20px;
+        }
+        .signs-up{
+            padding-top: 20px;
+            span{
+                font-size: 22px;
+                padding-left: 26px;
+            }
         }
     }
 }
