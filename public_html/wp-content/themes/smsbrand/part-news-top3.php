@@ -23,7 +23,7 @@
                     ?>
                     <div class="col-xs-12 col-md-4 text-center nopadding">
                         <img class="img-responsive center-block" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
-                        <a href="#">
+                        <a href="javascript:void(0);">
                             <span class="service-title"><?php the_title() ?></span>
                         </a><br />
                         <div class="service-content"><?php the_excerpt() ?></div>
