@@ -490,7 +490,7 @@ ul.m-sidebar{
             /*padding-left: 0px !important;*/
         }
     }
-    .tab-item{
+    .indicators-item{
         padding-top: 50px;
         position: relative;
         .img-content-tab{
@@ -564,7 +564,7 @@ ul.m-sidebar{
             display: inline-block;
             .c-anchor{
                 position: relative;
-                z-index: 10;
+                z-index: 5;
             }
         }
     }

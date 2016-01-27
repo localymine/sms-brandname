@@ -219,9 +219,9 @@ $(function () {
 });
 /* -------------------------------------------------- product carousel slider */
 $(function () {
-    $('#myCarousel').carousel({
-        interval: 10000
-    });
+//    $('#myCarousel').carousel({
+//        interval: 10000
+//    });
 
 //    $('.carousel .item').each(function () {
 //        var next = $(this).next();
@@ -236,6 +236,7 @@ $(function () {
 //            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
 //        }
 //    });
+
 });
 
 /* -------------------------------------------------------------- back to top */

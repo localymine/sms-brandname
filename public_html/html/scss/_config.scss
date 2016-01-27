@@ -1,12 +1,28 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=latin,vietnamese);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=latin,vietnamese);*/
+/*@import url(https://fonts.googleapis.com/css?family=Lora:400,700);*/
 /*@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin,vietnamese);*/
 
-/*@font-face{
+@font-face{
     font-family: 'WebFont';
-    src: url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=latin,vietnamese);
-}*/
-
+    src: url('../fonts/sites/VIE-HandelGothic Medium.otf');
+}
+@font-face{
+    font-family: 'WebFont';
+    src: url('../fonts/sites/VIE-HandelGothic-Bold.otf');
+    font-weight: bold;
+}
+@font-face{
+    font-family: 'WebFont';
+    src: url('../fonts/sites/VIE-HandelGothic-BoldItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'WebFont';
+    src: url('../fonts/sites/VIE-HandelGothic-MediumItal.otf');
+    font-weight: 500;
+    font-style: italic;
+}
 /*
 font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
 */
@@ -14,7 +30,7 @@ font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
 @mixin main-font{
     font:{
         /*family: 'Open Sans', sans-serif;*/
-        family: 'Roboto', sans-serif;
+        family: 'WebFont', sans-serif;
         /*size: 100%;*/
         weight: normal;
     }
@@ -22,7 +38,7 @@ font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
 
 @mixin phone-number($size, $weight){
     font:{
-        family: 'Lora', serif;
+        /*family: 'Lora', serif;*/
         size: $size;
         weight: $weight;
     }
