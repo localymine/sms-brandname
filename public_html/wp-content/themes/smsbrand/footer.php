@@ -6,7 +6,7 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
 <div id="footer-wrapper">
     <div class="footer-wrapper-inner">
         <div id="copyright">
-            <div class="row-gap-big"></div>
+            <div class="row-gap-medium"></div>
             <div class="container">
                 <div class="col-xs-12 col-md-4 copyright">
                     <span><i class="fa fa-map-marker"></i> <?php echo $omw_theme_settings->ct_company_address ?></span><br/>
@@ -21,10 +21,10 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
                 </div>
                 <div class="col-xs-12 col-md-4 signs-up text-center">
                     <span>
-                        Sign Up for Our News Letter
+                        Đăng ký để nhận ưu đãi
                     </span>
                     <form class="text-center">
-                        <input type="text" class="controls"><button class="btn btn-default">Subscribe</button>
+                        <input type="text" class="controls" placeholer="email"><button class="btn btn-default">Subscribe</button>
                     </form>
                 </div>
                 <div class="col-xs-12 col-md-4 copyright text-right">
@@ -32,7 +32,7 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
                     <a class="footer-logo" href="#"><img class="img-responsive pull-right" src="<?php echo $logo->url ?>"/></a>
                 </div>
             </div>
-            <div class="row-gap-big"></div>
+            <div class="row-gap-medium"></div>
         </div>
     </div>
 </div>

@@ -4,7 +4,7 @@
         <div class="row-gap-big"></div>
         <div class="row">
             <div class="col-xs-12 col-md-12 text-center wow fadeInUp" data-wow-delay="0.5s">
-                <h2>Our Services</h2>
+                <h2>Chúng tôi có</h2>
             </div>
         </div>
         <div class="row-gap-big"></div>

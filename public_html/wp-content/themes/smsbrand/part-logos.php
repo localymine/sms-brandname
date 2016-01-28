@@ -1,7 +1,7 @@
 <!-- sliderLogo -->
 <div id="sliderLogo">
     <div class="container">
-        <div class="row-gap-huge"></div>
+        <div class="row-gap-big"></div>
         <div class="row">
             <div class="col-xs-12 col-md-12 text-center wow fadeInUp" data-wow-delay="0.5s">
                 <ul class="list-inline ul-diff">
@@ -32,7 +32,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row-gap-huge"></div>
+        <div class="row-gap-big"></div>
     </div>
 </div>
 <!-- sliderLogo end -->
