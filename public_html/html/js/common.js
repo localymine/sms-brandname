@@ -81,8 +81,8 @@ var jssor_last_project = function (jssor_id) {
             $AutoPlay: true,
             $AutoPlaySteps: 1,
             $SlideDuration: 160,
-            $SlideWidth: 400,
-            $SlideSpacing: 0,
+            $SlideWidth: 450,
+            $SlideSpacing: 3,
             $Cols: 4,
             $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$
@@ -258,6 +258,15 @@ $(function ($) {
         $('#header').scrollTo();
     });
 });
+
+$(document).ready(function() {
+    $('.img-tab').click(function(){
+        $('.item-title').parent().find('.item-title').css('display', 'none');
+        var Id = $(this).attr('id');
+        var tabId = 'item-'+Id;
+        $('#' + tabId).parent().find('.item-title').css('display', 'inline');
+    });
+}); 
 
 //$(function () {
 //    $('.ul-diff > li').click(function () {
