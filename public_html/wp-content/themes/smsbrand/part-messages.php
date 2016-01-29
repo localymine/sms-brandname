@@ -4,7 +4,7 @@
         <div class="row-gap-big"></div>
         <div class="row">
             <div class="col-xs-12 col-md-12 text-center nopadding" data-wow-delay="0.5s">
-                <h2>What makes us different?</h2>
+                <h2>Điều gì làm chúng tôi khác biệt</h2>
                 <span class="mess-title">Mang lại trãi nghiệm người dùng là cơ hội để chúng tôi bức phá</span>
             </div>
         </div>
@@ -14,6 +14,8 @@
         $args = array(
             'post_type' => 'message',
             'posts_per_page' => 5,
+            'orderby' => 'id',
+            'order'   => 'ASC',
         );
         $loop = new WP_Query($args);
         $i = 0;

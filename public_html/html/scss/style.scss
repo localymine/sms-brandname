@@ -133,7 +133,7 @@ $paddings: (xs: 0.5rem, sm: 1rem, md: 1.5rem, lg: 2rem, xl: 2.5rem, xxl: 3rem);
     }
     .fa-phone{
         font-size: 20px;
-        color: #474747;
+        color: #F7100D;
         padding-right: 3px;
     }
 }
@@ -274,6 +274,9 @@ $paddings: (xs: 0.5rem, sm: 1rem, md: 1.5rem, lg: 2rem, xl: 2.5rem, xxl: 3rem);
     .menu-bar-1{
         height: 50px !important;
         padding-left: 20%;
+        .dauSo{
+            text-transform: none;
+        }
     }
 }
 
@@ -402,6 +405,9 @@ ul.m-sidebar{
             }
         }
     }
+    .dauSo{
+        text-transform: none;
+    }
 }
 .sidr{
     background: $menu-bg;
@@ -453,7 +459,7 @@ ul.m-sidebar{
         font-size: 16px;
     }
     .mess-title{
-        font-size: 20px;
+        font-size: 16px;
         font-weight: bold;
     }
     .main-text-design{
@@ -635,7 +641,7 @@ ul.m-sidebar{
 }
 
 .module-special{
-    height: 300px;
+    height: 264px;
     overflow: hidden;
     text-align: center;
     article{
@@ -663,6 +669,7 @@ ul.m-sidebar{
     }
     span{
         color: $white;
+        font-size: 16px;
     }
     .menu-tab-pro{
         ul{
@@ -1198,7 +1205,7 @@ ul.m-sidebar{
 
 .marketing{
     p{
-        font-size: 17px;
+        font-size: 20px;
     }
     &.odd{
         background: $white;
@@ -1298,7 +1305,7 @@ ul.m-sidebar{
         .controls{
             padding-right: 18px;
             padding-bottom: 10px;
-            border: 1px solid #717477;
+            border: 3px solid #FFFFFF;
             background-color: #42464A;
             border-radius: 18px;
         }

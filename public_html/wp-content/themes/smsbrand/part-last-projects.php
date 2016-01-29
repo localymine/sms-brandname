@@ -4,8 +4,8 @@
         <div class="row-gap-huge"></div>
         <div class="row">
             <div class="col-xs-12 col-md-12 text-center wow fadeInUp" data-wow-delay="0.5s">
-                <h2>Latest Projects</h2><br />
-                <span>Test demo Test demo, Test demo Test demo Test demo</span>
+                <h2>Chúng tôi hành động</h2><br />
+                <span>“Giá trị giữ vững niềm tin”.</span>
             </div>
         </div>
         <?php
@@ -34,8 +34,8 @@
                 ?>
                 <!--<div class="row-gap-medium"></div>-->
                 <div id="tabs-<?php echo $term->slug ?>" class="col-xs-12 col-md-12 text-center nopadding" style="margin-top: 2em;">
-                    <div id="<?php echo $jssor_id ?>" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1840px; height: 250px; overflow: hidden; visibility: hidden;">
-                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1840px; height: 250px; overflow: hidden;">
+                    <div id="<?php echo $jssor_id ?>" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1840px; height: 195px; overflow: hidden; visibility: hidden;">
+                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1840px; height: 195px; overflow: hidden;">
                             <?php
                             $args = array(
                                 'post_type' => 'last-project',

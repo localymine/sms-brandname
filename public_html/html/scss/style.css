@@ -1,10 +1,23 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=latin,vietnamese);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=latin,vietnamese);*/
+/*@import url(https://fonts.googleapis.com/css?family=Lora:400,700);*/
 /*@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin,vietnamese);*/
-/*@font-face{
-    font-family: 'WebFont';
-    src: url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&subset=latin,vietnamese);
-}*/
+@font-face {
+  font-family: 'WebFont';
+  src: url("../fonts/sites/VIE-HandelGothic Medium.otf"); }
+@font-face {
+  font-family: 'WebFont';
+  src: url("../fonts/sites/VIE-HandelGothic-Bold.otf");
+  font-weight: bold; }
+@font-face {
+  font-family: 'WebFont';
+  src: url("../fonts/sites/VIE-HandelGothic-BoldItalic.otf");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: 'WebFont';
+  src: url("../fonts/sites/VIE-HandelGothic-MediumItal.otf");
+  font-weight: 500;
+  font-style: italic; }
 /*
 font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
 */
@@ -489,7 +502,7 @@ input::-moz-focus-inner {
 
 body {
   /*family: 'Open Sans', sans-serif;*/
-  font-family: 'Roboto', sans-serif;
+  font-family: 'WebFont', sans-serif;
   /*size: 100%;*/
   font-weight: normal;
   background: #f6f6f6;
@@ -687,7 +700,7 @@ h2 {
       .hot-top ul li i {
         vertical-align: middle; }
       .hot-top ul li .hotline {
-        font-family: 'Lora', serif;
+        /*family: 'Lora', serif;*/
         font-size: 20px;
         font-weight: 300;
         vertical-align: middle;
@@ -695,7 +708,7 @@ h2 {
         color: #E37D63; }
   .hot-top .fa-phone {
     font-size: 20px;
-    color: #474747;
+    color: #F7100D;
     padding-right: 3px; }
 
 #nav.affix {
@@ -801,6 +814,8 @@ h2 {
   .header .menu-bar-1 {
     height: 50px !important;
     padding-left: 20%; }
+    .header .menu-bar-1 .dauSo {
+      text-transform: none; }
 
 /*.menu-holder{
     width: 100%;
@@ -911,6 +926,8 @@ ul.m-sidebar {
       ul.m-sidebar li a span {
         text-align: center;
         display: block; }
+  ul.m-sidebar .dauSo {
+    text-transform: none; }
 
 .sidr {
   background: #FFFFFF;
@@ -943,6 +960,8 @@ ul.m-sidebar {
   background: #363d42;
   padding-top: 30px;
   padding-bottom: 30px; }
+  #design .bg-item {
+    background: #363d42; }
   #design h4, #design h5 {
     color: #F79A57; }
   #design h2 {
@@ -953,8 +972,8 @@ ul.m-sidebar {
     color: #8F7D76;
     font-size: 16px; }
   #design .mess-title {
-    font-size: 20px;
-    font-weight: 500; }
+    font-size: 16px;
+    font-weight: bold; }
   #design .main-text-design {
     padding-left: 12%; }
     #design .main-text-design .title {
@@ -975,18 +994,91 @@ ul.m-sidebar {
     margin-right: -5px;
     margin-left: -5px; }
   #design .list-inline li {
-    padding-right: 0px !important;
-    padding-left: 0px !important; }
-  #design .tab-item {
+    /*padding-right: 0px !important;*/
+    /*padding-left: 0px !important;*/ }
+  #design .indicators-item {
     padding-top: 50px;
     position: relative; }
-    #design .tab-item .img-content-tab {
+    #design .indicators-item .img-content-tab {
       height: 100px; }
-    #design .tab-item .item-title {
-      display: none; }
-      #design .tab-item .item-title span {
-        position: absolute;
+    #design .indicators-item .item-title {
+      left: 50%;
+      position: absolute;
+      top: -30px;
+      transform: translate(-50%, 0px); }
+      #design .indicators-item .item-title span {
         font-weight: 500; }
+  #design .carousel-indicators {
+    position: static;
+    width: 100%;
+    margin: 0 auto; }
+    #design .carousel-indicators span.item-title {
+      opacity: 0; }
+    #design .carousel-indicators .active span.item-title {
+      opacity: 1; }
+    #design .carousel-indicators .active .mico.mico-15 {
+      background: url(../images/home/15-selected.png); }
+    #design .carousel-indicators .active .mico.mico-16 {
+      background: url(../images/home/16-selected.png); }
+    #design .carousel-indicators .active .mico.mico-17 {
+      background: url(../images/home/17-selected.png); }
+    #design .carousel-indicators .active .mico.mico-18 {
+      background: url(../images/home/18-selected.png); }
+    #design .carousel-indicators .active .mico.mico-19 {
+      background: url(../images/home/19-selected.png); }
+    #design .carousel-indicators li {
+      background: transparent none repeat scroll 0 0;
+      border: 0 none;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      text-indent: 0;
+      white-space: nowrap;
+      width: 12%; }
+      #design .carousel-indicators li:before {
+        background: #ceccca;
+        content: "";
+        display: block;
+        height: 1px;
+        width: 110%;
+        bottom: 33px;
+        position: absolute;
+        z-index: 0; }
+  #design ol.ul-diff li {
+    display: inline-block; }
+    #design ol.ul-diff li .c-anchor {
+      position: relative;
+      z-index: 5; }
+
+.mico {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s; }
+  .mico.mico-15 {
+    background: url(../images/home/15.png); }
+    .mico.mico-15:hover, .mico.mico-15:focus, .mico.mico-15.selected {
+      background: url(../images/home/15-selected.png); }
+  .mico.mico-16 {
+    background: url(../images/home/16.png); }
+    .mico.mico-16:hover, .mico.mico-16:focus, .mico.mico-16.selected {
+      background: url(../images/home/16-selected.png); }
+  .mico.mico-17 {
+    background: url(../images/home/17.png); }
+    .mico.mico-17:hover, .mico.mico-17:focus, .mico.mico-17.selected {
+      background: url(../images/home/17-selected.png); }
+  .mico.mico-18 {
+    background: url(../images/home/18.png); }
+    .mico.mico-18:hover, .mico.mico-18:focus, .mico.mico-18.selected {
+      background: url(../images/home/18-selected.png); }
+  .mico.mico-19 {
+    background: url(../images/home/19.png); }
+    .mico.mico-19:hover, .mico.mico-19:focus, .mico.mico-19.selected {
+      background: url(../images/home/19-selected.png); }
 
 #service {
   background: #fff;
@@ -1009,7 +1101,7 @@ ul.m-sidebar {
     margin-bottom: 5px; }
 
 .module-special {
-  height: 300px;
+  height: 264px;
   overflow: hidden;
   text-align: center; }
   .module-special article {
@@ -1032,7 +1124,8 @@ ul.m-sidebar {
     font-size: 30px;
     font-weight: 300 !important; }
   #project span {
-    color: #fff; }
+    color: #fff;
+    font-size: 16px; }
   #project .menu-tab-pro ul {
     display: inline-block;
     /*float: right;*/
@@ -1450,7 +1543,7 @@ ul.m-sidebar {
     padding-bottom: 20px; }
 
 .marketing p {
-  font-size: 17px; }
+  font-size: 20px; }
 .marketing.odd {
   background: #fff; }
 .marketing.even {
@@ -1521,7 +1614,7 @@ ul.m-sidebar {
   #footer-wrapper .signs-up .controls {
     padding-right: 18px;
     padding-bottom: 10px;
-    border: 1px solid #717477;
+    border: 3px solid #FFFFFF;
     background-color: #42464A;
     border-radius: 18px; }
   #footer-wrapper .signs-up button {
@@ -2021,35 +2114,6 @@ ul.recent_short {
     -ms-border-radius: 0;
     border-radius: 0; }
 
-.mico {
-  display: inline-block;
-  width: 62px;
-  height: 62px;
-  background-repeat: no-repeat;
-  -webkit-transition: all 0.2s ease 0s;
-  -moz-transition: all 0.2s ease 0s;
-  transition: all 0.2s ease 0s; }
-  .mico.mico-15 {
-    background: url(../images/home/15.png); }
-    .mico.mico-15:hover, .mico.mico-15:focus, .mico.mico-15.selected {
-      background: url(../images/home/15-selected.png); }
-  .mico.mico-16 {
-    background: url(../images/home/16.png); }
-    .mico.mico-16:hover, .mico.mico-16:focus, .mico.mico-16.selected {
-      background: url(../images/home/16-selected.png); }
-  .mico.mico-17 {
-    background: url(../images/home/17.png); }
-    .mico.mico-17:hover, .mico.mico-17:focus, .mico.mico-17.selected {
-      background: url(../images/home/17-selected.png); }
-  .mico.mico-18 {
-    background: url(../images/home/18.png); }
-    .mico.mico-18:hover, .mico.mico-18:focus, .mico.mico-18.selected {
-      background: url(../images/home/18-selected.png); }
-  .mico.mico-19 {
-    background: url(../images/home/19.png); }
-    .mico.mico-19:hover, .mico.mico-19:focus, .mico.mico-19.selected {
-      background: url(../images/home/19-selected.png); }
-
 .m-last-pj {
   position: relative; }
   .m-last-pj:hover .m-o-effect {
@@ -2178,7 +2242,7 @@ ul.recent_short {
       .hot-top ul li i {
         vertical-align: middle; }
       .hot-top ul li .hotline {
-        font-family: 'Lora', serif;
+        /*family: 'Lora', serif;*/
         font-size: 16px;
         font-weight: 300;
         vertical-align: middle; }
@@ -2196,6 +2260,10 @@ ul.recent_short {
     padding: 20px; }
 
   .newsletter-form-holder .newsletter-form {
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  #design ul.ul-diff li {
+    padding: 0;
+    margin: 0 -10px; } }
 
 /*# sourceMappingURL=style.css.map */
