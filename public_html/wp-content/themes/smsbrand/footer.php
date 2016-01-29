@@ -24,7 +24,7 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
                         Đăng ký để nhận ưu đãi
                     </span>
                     <form class="text-center">
-                        <input type="text" class="controls" placeholer="email"><button class="btn btn-default">Subscribe</button>
+                        <input type="text" class="controls" placeholder="Email"><button class="btn btn-default"><i class="fa fa-check"></i></button>
                     </form>
                 </div>
                 <div class="col-xs-12 col-md-4 copyright text-right">

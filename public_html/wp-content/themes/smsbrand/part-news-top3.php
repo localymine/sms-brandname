@@ -1,6 +1,6 @@
 <div id="news-page">
     <div class="container">
-        <div class="row-gap-huge"></div>
+        <div class="row-gap-big"></div>
         <div class="row">
             <?php
             $args = array(

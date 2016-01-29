@@ -2,7 +2,7 @@
     <div class="more-news">
         <div class="title_box_category width_common style_02">
             <div class="txt_main_category">
-                <span class="news-rel-title">Xem thêm</span>
+                <span class="news-rel-title">Có thể bạn chưa xem</span>
             </div>
         </div>
         <div class="content_box_category width_common">

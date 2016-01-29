@@ -390,7 +390,7 @@ input::-moz-focus-inner {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  background: url("../images/a17.png") no-repeat;
+  background: url("../images/a63.png") no-repeat;
   overflow: hidden; }
 
 .jssora05l {
@@ -705,7 +705,7 @@ h2 {
         font-weight: 300;
         vertical-align: middle;
         font-size: 16px;
-        color: #E37D63; }
+        color: #F88010; }
   .hot-top .fa-phone {
     font-size: 20px;
     color: #F7100D;
@@ -813,7 +813,7 @@ h2 {
       border: 1px solid #717477; }
   .header .menu-bar-1 {
     height: 50px !important;
-    padding-left: 20%; }
+    padding-left: 31%; }
     .header .menu-bar-1 .dauSo {
       text-transform: none; }
 
@@ -831,6 +831,10 @@ ul.top-menu {
   z-index: 100;
   text-align: center;
   margin: 0 auto; }
+  ul.top-menu .line-header {
+    border-left: #EBEBEB 1px solid;
+    height: 20px;
+    padding-top: 22px; }
   ul.top-menu li {
     position: relative;
     vertical-align: middle; }
@@ -955,6 +959,9 @@ ul.m-sidebar {
 .market-titile {
   font-size: 42px;
   padding-bottom: 20px; }
+
+.market-content {
+  font-size: 18px; }
 
 #design {
   background: #363d42;
@@ -1101,7 +1108,7 @@ ul.m-sidebar {
     margin-bottom: 5px; }
 
 .module-special {
-  height: 264px;
+  height: 255px;
   overflow: hidden;
   text-align: center; }
   .module-special article {
@@ -1409,7 +1416,7 @@ ul.m-sidebar {
     #contact-info .contact-header span {
       font-size: 32px;
       font-weight: 700;
-      color: #1A1A1A; }
+      color: #F88010; }
   #contact-info .detail-company {
     padding-top: 20px;
     padding-bottom: 20px; }
@@ -1418,12 +1425,11 @@ ul.m-sidebar {
   #contact-info .adv-info span {
     padding-left: 20px; }
   #contact-info .contact-form {
-    padding-top: 50px;
     border-bottom: 1px dotted #1A1A1A; }
     #contact-info .contact-form span {
-      font-size: 32px;
+      font-size: 22px;
       font-weight: 700;
-      color: #1A1A1A; }
+      color: #F88010; }
   #contact-info :-moz-placeholder {
     color: #C4AAA1; }
   #contact-info ::-webkit-input-placeholder {
@@ -1448,56 +1454,42 @@ ul.m-sidebar {
       width: 80px;
       display: inline-block;
       float: left;
-      padding: 5px; }
+      padding-top: 15px;
+      padding-right: 0px; }
     #contact-info .form-sms input {
       height: 20px;
       width: 220px;
-      padding: 5px 8px; }
+      padding: 5px 8px;
+      border-style: none none solid none;
+      border-bottom: 1px solid #E1E4E6;
+      height: 30px;
+      width: 100%; }
+    #contact-info .form-sms input:hover {
+      border-bottom: 2px solid #FF7F21; }
+    #contact-info .form-sms input:focus {
+      border-bottom: 2px solid #FF7F21; }
     #contact-info .form-sms textarea {
       padding: 8px;
       width: 300px; }
     #contact-info .form-sms button {
       margin-left: 50%; }
-    #contact-info .form-sms input {
-      border: 1px solid #EDB498;
-      height: 30px;
-      border-radius: 4px;
-      width: 100%; }
     #contact-info .form-sms textarea {
       border: 1px solid #EDB498;
       border-radius: 4px;
       width: 100%; }
-    #contact-info .form-sms input:focus, #contact-info .form-sms textarea:focus {
-      background: #fff;
-      border: 1px solid #555;
-      box-shadow: 0 0 3px #EDB498; }
     #contact-info .form-sms button.submit {
       background-color: #F88010;
-      background: -webkit-gradient(linear, left top, left bottom, from(#F88010), to(#FF8E32));
-      background: -webkit-linear-gradient(top, #F88010, #FF8E32);
-      background: -moz-linear-gradient(top, #F88010, #FF8E32);
-      background: -ms-linear-gradient(top, #F88010, #FF8E32);
-      background: -o-linear-gradient(top, #F88010, #FF8E32);
-      background: linear-gradient(top, #F88010, #FF8E32);
       border: 1px solid #F88010;
       border-bottom: 1px solid #F88010;
-      border-radius: 3px;
-      -webkit-border-radius: 20px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      -o-border-radius: 3px;
-      box-shadow: 0 3px 0 #030303;
-      -webkit-box-shadow: 0 3px 0 #030303;
-      -moz-box-shadow: 0 3px 0 #030303;
-      -ms-box-shadow: 0 3px 0 #030303;
-      -o-box-shadow: 0 3px 0 #030303;
+      border-radius: 30px;
       color: white;
       font-weight: bold;
       padding: 6px 20px;
+      margin-top: 30px;
       text-align: center; }
     #contact-info .form-sms button.submit:hover {
-      opacity: .85;
-      cursor: pointer; }
+      color: #F88010;
+      background-color: white; }
     #contact-info .form-sms button.submit:active {
       border: 1px solid #20911e;
       box-shadow: 0 0 10px 5px #356b0b inset;
@@ -1505,6 +1497,8 @@ ul.m-sidebar {
       -moz-box-shadow: 0 0 10px 5px #356b0b inset;
       -ms-box-shadow: 0 0 10px 5px #356b0b inset;
       -o-box-shadow: 0 0 10px 5px #356b0b inset; }
+    #contact-info .form-sms .star {
+      color: #FF7F21; }
 
 .more-news {
   color: #fff;
@@ -1592,7 +1586,7 @@ ul.m-sidebar {
     #footer-wrapper .copyright h5 {
       color: #fff; }
     #footer-wrapper .copyright a {
-      color: #fff; }
+      color: #606260; }
     #footer-wrapper .copyright .priv {
       text-align: center;
       display: inline-block;
@@ -1606,7 +1600,7 @@ ul.m-sidebar {
       color: #606264;
       font-size: 16px;
       font-weight: 500;
-      padding-right: 6%; }
+      padding-right: 4%; }
   #footer-wrapper .signs-up span {
     color: #999B9C;
     font-size: 26px;
@@ -1619,12 +1613,38 @@ ul.m-sidebar {
     border-radius: 18px; }
   #footer-wrapper .signs-up button {
     margin-left: 10px;
-    border: 1px solid #717477;
+    border: 3px solid #FFFFFF;
     color: #9A9A9A;
-    background-color: #2A2F33;
-    height: 32px;
-    padding: 4px 15px 4px 15px;
-    margin-top: 8px; }
+    background-color: #42464A;
+    height: 36px;
+    padding: 3px 8px 4px 10px;
+    margin-top: 8px;
+    border-radius: 50%; }
+    #footer-wrapper .signs-up button i {
+      color: #FFFFFF; }
+  #footer-wrapper .signs-up *::-webkit-input-placeholder {
+    color: #FFFFFF;
+    padding-left: 18px;
+    padding-top: 3px;
+    font-size: 16px; }
+  #footer-wrapper .signs-up *:-moz-placeholder {
+    /* FF 4-18 */
+    color: #FFFFFF;
+    padding-left: 18px;
+    padding-top: 3px;
+    font-size: 16px; }
+  #footer-wrapper .signs-up *::-moz-placeholder {
+    /* FF 19+ */
+    color: #FFFFFF;
+    margin-left: 18px;
+    padding-top: 3px;
+    font-size: 16px; }
+  #footer-wrapper .signs-up *:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #FFFFFF;
+    padding-left: 18px;
+    padding-top: 3px;
+    font-size: 16px; }
 
 #back-top {
   bottom: 90px;
@@ -1656,7 +1676,7 @@ ul.m-sidebar {
 .login-menu {
   color: #fff; }
   .login-menu:hover {
-    color: #fff; }
+    color: #F7100D; }
 
 .prodcut-detail ul.thumb-list-side {
   background: #f3f3f3;

@@ -43,9 +43,9 @@ wp_reset_postdata();
 
         <!--#region Arrow Navigator Skin Begin -->
         <!-- Arrow Left -->
-        <span data-u="arrowleft" class="jssora05l" style="top:0px;left:10%;width:45px;height:45px;" data-autocenter="2"></span>
+        <span data-u="arrowleft" class="jssora05l" style="top:0px;left:2%;width:45px;height:45px;" data-autocenter="2"></span>
         <!-- Arrow Right -->
-        <span data-u="arrowright" class="jssora05r" style="top:0px;right:10%;width:45px;height:45px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora05r" style="top:0px;right:2%;width:45px;height:45px;" data-autocenter="2"></span>
         <!--#endregion Arrow Navigator Skin End -->
     </div>
     <!-- Jssor Slider End -->
