@@ -8,8 +8,8 @@
         <meta content="" name="description">
         <meta content="" name="author">
 
-        <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/images/fav/favicon.png">
-        <meta name="theme-color" content="#ffffff">
+        <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri() ?>/images/fav/favicon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri() ?>/images/fav/favicon_32.png">
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/font-awesome.min.css"/>

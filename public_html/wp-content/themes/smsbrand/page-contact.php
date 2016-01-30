@@ -170,6 +170,9 @@ global $omw_theme_settings;
                         </i>
                         <span><?php echo $omw_theme_settings->ct_company_fax ?></span>
                     </p>
+                    <p>
+                        <?php echo $omw_theme_settings->ct_company_google_map ?>
+                    </p>
                 </div>
             </div>
             <!-- <div class="col-md-1"></div> -->
