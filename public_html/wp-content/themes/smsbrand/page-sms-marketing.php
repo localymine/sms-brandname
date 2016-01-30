@@ -5,6 +5,7 @@
  */
 get_header();
 ?>
+<?php get_template_part('part-home-slider') ?>
 <?php
 $args = array(
     'post_type' => array('sms'),
@@ -22,14 +23,6 @@ if ($loop->have_posts()):
     while ($loop->have_posts()): $loop->the_post();
         $banner_image = get_field('banner_image');
         ?>
-
-        <section>
-            <div class="col-xs-12 col-md-12 img-top">
-                <div class="row">
-                    <img class="img-responsive nopadding" src="<?php echo $banner_image['url'] ?>" />
-                </div>
-            </div>
-        </section>
         <!-- content -->
         <?php
         $counter = 0;

@@ -88,97 +88,89 @@ global $omw_theme_settings;
 <div id="contact-info">
     <div class="container">
         <div class="row-gap-big"></div>
-        <div class="row nopadding nomargin">
-            <div class="col-xs-12 col-md-6">
-                <div class="col-xs-12 col-md-12 text-left">
-                    <div class="contact-header">
-                        <span>
-                            <i class="fa">
-                                <img class="img-responsive nopadding" src="<?php echo get_template_directory_uri() ?>/images/contact-2.png" />
-                            </i>
-                            <span>COMPANY</span>
-                        </span>
-                    </div>
-                    <p class="detail-company"><span><?php echo $omw_theme_settings->ct_company_name ?></span></p>
-                    <div class="adv-info">
-                        <p>
-                            <i class="fa">
-                                <img class="img-responsive nopadding" src="<?php echo get_template_directory_uri() ?>/images/contact-3.png" />
-                            </i>
-                            <span><?php echo $omw_theme_settings->ct_company_address ?></span>
-                        </p>
-                        <p>
-                            <i class="fa">
-                                <img class="img-responsive nopadding" src="<?php echo get_template_directory_uri() ?>/images/contact-4.png" />
-                            </i>
-                            <span><?php echo $omw_theme_settings->ct_company_email ?></span>
-                        </p>
-                        <p>
-                            <i class="fa">
-                                <img class="img-responsive nopadding" src="<?php echo get_template_directory_uri() ?>/images/contact-5.png" />
-                            </i>
-                            <span><?php echo $omw_theme_settings->ct_company_telephone ?></span>
-                        </p>
-                        <p>
-                            <i class="fa">
-                                <img class="img-responsive nopadding" src="<?php echo get_template_directory_uri() ?>/images/contact-6.png" />
-                            </i>
-                            <span><?php echo $omw_theme_settings->ct_company_fax ?></span>
-                        </p>
-                    </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-8 text-left nopadding">
+                <div class="contact-form">
+                    <span>
+                        <span>Contact Form</span>
+                    </span>
                 </div>
-                <div class="col-xs-12 col-md-12 text-left">
-                    <div class="contact-form">
-                        <span>
-                            <i class="fa">
-                                <img class="img-responsive nopadding" src="<?php echo get_template_directory_uri() ?>/images/contact-7.png" />
-                            </i>
-                            <span>CONTACT</span>
-                        </span>
-                    </div>
-                    <div>
-                        <form class="form-horizontal form-sms" action="<?php echo home_url('contact') ?>" method="post" name="contact_form" role="form">
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="name">Name:</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="re_name" class="form-control" id="name" placeholder="">
-                                </div>
+                <div>
+                    <form class="form-horizontal form-sms" action="<?php echo home_url('contact') ?>" method="post" name="contact_form" role="form">
+                        <div class="form-group">
+                            <div class="col-sm-7 nopaddingl">
+                                <input type="text" name="re_name" class="" id="name" placeholder="">
                             </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="email">Email:</label>
-                                <div class="col-sm-10">
-                                    <input type="email" name="re_email" class="form-control" id="email" placeholder="example@domain">
-                                </div>
+                            <label class="control-label col-sm-2" for="name">Name <span class="star">*</span></label>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-7 nopaddingl">
+                                <input type="email" name="re_email" class="" id="email" placeholder="example@domain">
                             </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="name">Website:</label>
-                                <div class="col-sm-10">
-                                    <input type="website" name="re_website" class="form-control" id="website" placeholder="www.example.com">
-                                </div>
+                            <label class="control-label col-sm-2" for="email">Email <span class="star">*</span></label>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-7 nopaddingl">
+                                <input type="website" name="re_website" class="" id="website" placeholder="www.example.com">
                             </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="name">Nội Dung:</label>
-                                <div class="col-sm-10">
-                                    <textarea class="form-control" name="re_content" rows="10" cols="30" placeholder=""></textarea>
-                                </div>
+                            <label class="control-label col-sm-2" for="name">Website <span class="star">*</span></label>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <textarea class="form-control" name="re_content" rows="10" cols="30" placeholder=""></textarea>
                             </div>
-                            <div class="form-group"> 
-                                <div class="center-block" style="width: 21%;">
-                                    <div class="g-recaptcha" data-sitekey="<?php echo $omw_theme_settings->ct_recaptcha_public_key ?>"></div>
-                                    <div id="catpcha"></div>
-                                </div>
+                        </div>
+                        <!-- <div class="form-group"> 
+                            <div class="center-block" style="width: 21%;">
+                                <div class="g-recaptcha" data-sitekey="<?php echo $omw_theme_settings->ct_recaptcha_public_key ?>"></div>
+                                <div id="catpcha"></div>
                             </div>
-                            <div class="form-group"> 
-                                <div class="col-sm-offset-3 col-sm-12">
-                                    <button type="submit" class="submit btn btn-default">GỬI NỘI DUNG</button>
-                                </div>
+                        </div> -->
+                        <div class="form-group"> 
+                            <div class="col-sm-12 text-right">
+                                <button type="submit" class="submit btn btn-default">GỬI NỘI DUNG</button>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="col-md-6">
-                <?php echo $omw_theme_settings->ct_company_google_map ?>                
+            <div class="col-md-1"></div>
+            <div class="col-xs-12 col-md-3 text-left">
+                <div class="contact-header">
+                    <span>
+                        <i class="fa">
+                            <img class="img-responsive nopadding" src="<?php echo get_template_directory_uri() ?>/images/contact-2.png" />
+                        </i>
+                        <span>COMPANY</span>
+                    </span>
+                </div>
+                <p class="detail-company"><span><?php echo $omw_theme_settings->ct_company_name ?></span></p>
+                <div class="adv-info">
+                    <p>
+                        <i class="fa">
+                            <img class="img-responsive nopadding" src="<?php echo get_template_directory_uri() ?>/images/contact-3.png" />
+                        </i>
+                        <span><?php echo $omw_theme_settings->ct_company_address ?></span>
+                    </p>
+                    <p>
+                        <i class="fa">
+                            <img class="img-responsive nopadding" src="<?php echo get_template_directory_uri() ?>/images/contact-4.png" />
+                        </i>
+                        <span><?php echo $omw_theme_settings->ct_company_email ?></span>
+                    </p>
+                    <p>
+                        <i class="fa">
+                            <img class="img-responsive nopadding" src="<?php echo get_template_directory_uri() ?>/images/contact-5.png" />
+                        </i>
+                        <span><?php echo $omw_theme_settings->ct_company_telephone ?></span>
+                    </p>
+                    <p>
+                        <i class="fa">
+                            <img class="img-responsive nopadding" src="<?php echo get_template_directory_uri() ?>/images/contact-6.png" />
+                        </i>
+                        <span><?php echo $omw_theme_settings->ct_company_fax ?></span>
+                    </p>
+                </div>
             </div>
             <!-- <div class="col-md-1"></div> -->
         </div>

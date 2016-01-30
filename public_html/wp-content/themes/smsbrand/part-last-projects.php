@@ -82,8 +82,8 @@
                             ?>
                         </div>
                         <!-- Arrow Navigator -->
-                        <span data-u="arrowleft" class="jssora06l" style="top:0px;left:200px;width:45px;height:45px;" data-autocenter="2"></span>
-                        <span data-u="arrowright" class="jssora06r" style="top:0px;right:200px;width:45px;height:45px;" data-autocenter="2"></span>
+                        <span data-u="arrowleft" class="jssora05l" style="top:0px;left:2%;width:45px;height:45px;" data-autocenter="2"></span>
+                        <span data-u="arrowright" class="jssora05r" style="top:0px;right:2%;width:45px;height:45px;" data-autocenter="2"></span>
                     </div>
                 </div>
                 <?php
