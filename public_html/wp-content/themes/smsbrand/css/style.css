@@ -1424,6 +1424,9 @@ ul.m-sidebar {
       font-size: 18px; }
   #contact-info .adv-info span {
     padding-left: 20px; }
+  #contact-info .adv-info p {
+    border-bottom: 1px dotted #1A1A1A;
+    padding-top: 20px; }
   #contact-info .contact-form {
     border-bottom: 1px dotted #1A1A1A; }
     #contact-info .contact-form span {
@@ -1478,18 +1481,18 @@ ul.m-sidebar {
       border-radius: 4px;
       width: 100%; }
     #contact-info .form-sms button.submit {
-      background-color: #F88010;
+      background-color: #fff;
       border: 1px solid #F88010;
       border-bottom: 1px solid #F88010;
       border-radius: 30px;
-      color: white;
+      color: #F88010;
       font-weight: bold;
       padding: 6px 20px;
       margin-top: 30px;
       text-align: center; }
     #contact-info .form-sms button.submit:hover {
-      color: #F88010;
-      background-color: white; }
+      color: #fff;
+      background-color: #F88010; }
     #contact-info .form-sms button.submit:active {
       border: 1px solid #20911e;
       box-shadow: 0 0 10px 5px #356b0b inset;
@@ -1499,6 +1502,40 @@ ul.m-sidebar {
       -o-box-shadow: 0 0 10px 5px #356b0b inset; }
     #contact-info .form-sms .star {
       color: #FF7F21; }
+  #contact-info .contact-links ul {
+    text-align: center; }
+  #contact-info .contact-links li {
+    display: inline-block; }
+  #contact-info .contact-links a {
+    border: 2px solid #c0cdd1;
+    border-radius: 50%;
+    color: #c0cdd1;
+    font-size: 0;
+    height: 45px;
+    padding: 0;
+    position: relative;
+    width: 45px; }
+  #contact-info .contact-links a:after {
+    font-family: FontAwesome;
+    font-size: 16px;
+    height: 100%;
+    line-height: 45px;
+    text-align: center;
+    width: 100%; }
+  #contact-info .contact-links a:hover {
+    background: transparent none repeat scroll 0 0;
+    border-color: #F88010;
+    color: #F88010; }
+  #contact-info .contact-links a.facebook:after {
+    content: "\f09a"; }
+  #contact-info .contact-links a.google-plus:after {
+    content: "\f0d5"; }
+  #contact-info .contact-links a.twitter:after {
+    content: "\f099"; }
+  #contact-info .contact-links a.youtube:after {
+    content: "\f167"; }
+  #contact-info .contact-links a.pinterest:after {
+    content: "\f0d3"; }
 
 .more-news {
   color: #fff;
@@ -1606,8 +1643,7 @@ ul.m-sidebar {
     font-size: 26px;
     font-weight: 300; }
   #footer-wrapper .signs-up .controls {
-    padding-right: 18px;
-    padding-bottom: 10px;
+    padding: 6px 10px 8px 10px;
     border: 3px solid #FFFFFF;
     background-color: #42464A;
     border-radius: 18px; }
@@ -1624,26 +1660,18 @@ ul.m-sidebar {
       color: #FFFFFF; }
   #footer-wrapper .signs-up *::-webkit-input-placeholder {
     color: #FFFFFF;
-    padding-left: 18px;
-    padding-top: 3px;
     font-size: 16px; }
   #footer-wrapper .signs-up *:-moz-placeholder {
     /* FF 4-18 */
     color: #FFFFFF;
-    padding-left: 18px;
-    padding-top: 3px;
     font-size: 16px; }
   #footer-wrapper .signs-up *::-moz-placeholder {
     /* FF 19+ */
     color: #FFFFFF;
-    margin-left: 18px;
-    padding-top: 3px;
     font-size: 16px; }
   #footer-wrapper .signs-up *:-ms-input-placeholder {
     /* IE 10+ */
     color: #FFFFFF;
-    padding-left: 18px;
-    padding-top: 3px;
     font-size: 16px; }
 
 #back-top {

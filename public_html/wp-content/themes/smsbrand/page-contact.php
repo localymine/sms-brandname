@@ -91,9 +91,7 @@ global $omw_theme_settings;
         <div class="row">
             <div class="col-xs-12 col-md-8 text-left nopadding">
                 <div class="contact-form">
-                    <span>
-                        <span>Contact Form</span>
-                    </span>
+                    <span>Contact Form</span>
                 </div>
                 <div>
                     <form class="form-horizontal form-sms" action="<?php echo home_url('contact') ?>" method="post" name="contact_form" role="form">
@@ -136,15 +134,15 @@ global $omw_theme_settings;
             </div>
             <div class="col-md-1"></div>
             <div class="col-xs-12 col-md-3 text-left">
-                <div class="contact-header">
-                    <span>
-                        <i class="fa">
-                            <img class="img-responsive nopadding" src="<?php echo get_template_directory_uri() ?>/images/contact-2.png" />
-                        </i>
-                        <span>COMPANY</span>
-                    </span>
+                <div class="contact-form">
+                    <span>COMPANY</span>
                 </div>
-                <p class="detail-company"><span><?php echo $omw_theme_settings->ct_company_name ?></span></p>
+                <p><span>Demo test Demo test Demo test</span></p>
+                <!-- <p class="detail-company"><span><?php echo $omw_theme_settings->ct_company_name ?></span></p> -->
+                <div class="row-gap-medium"></div>
+                <div class="contact-form">
+                    <span>Contact</span>
+                </div>
                 <div class="adv-info">
                     <p>
                         <i class="fa">
@@ -170,6 +168,30 @@ global $omw_theme_settings;
                         </i>
                         <span><?php echo $omw_theme_settings->ct_company_fax ?></span>
                     </p>
+                </div>
+                <div class="row-gap-medium"></div>
+                <div class="contact-form">
+                    <span>Links</span>
+                </div>
+                <div class="row-gap-medium"></div>
+                <div class="navbar-collapse collapse nopadding contact-links">
+                    <ul class="nav nav-stacked nopadding">
+                        <li>
+                            <a class="facebook" href="#"> facebook </a>
+                        </li>
+                        <li>
+                            <a class="google-plus" href="#"> google plus </a>
+                        </li>
+                        <li>
+                            <a class="twitter" href="#"> twitter </a>
+                        </li>
+                        <li>
+                            <a class="youtube" href="#"> youtube </a>
+                        </li>
+                        <li>
+                            <a class="pinterest" href="#"> pinterest </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <!-- <div class="col-md-1"></div> -->
