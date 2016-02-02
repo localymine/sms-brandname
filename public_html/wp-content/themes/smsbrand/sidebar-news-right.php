@@ -1,6 +1,7 @@
 <div class="col-xs-12 col-md-3 pr-bar nopadding">
     <span class="service-title">TIN TỨC LIÊN QUAN</span>
     <div class="border-titile"></div>
+    <img class="img-responsive banner-news" src="<?php echo get_template_directory_uri(); ?>/images/prod-p1.jpg" alt="vietnam" />
     <?php
     global $posts__id;
     $arr_terms = array();
@@ -53,12 +54,15 @@
         while ($loop->have_posts()): $loop->the_post();
             $image = get_field('image');
             ?>
-            <div class="col-xs-12">
-                <div class="news-info">
+            <div class="col-xs-12 nopadding news-slide-row">
+                <div class="col-xs-12 col-md-5 nopadding">
+                    <a href="<?php the_permalink() ?>">
+                        <img class="img-responsive" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-7 nopadding">
                     <a href="<?php the_permalink() ?>">
                         <h4><?php the_title() ?></h4>
-                        <span class="news-overlay"></span>
-                        <img class="img-responsive" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
                     </a>
                 </div>
             </div>
@@ -67,4 +71,7 @@
     endif;
     wp_reset_postdata();
     ?>
+    <img class="img-responsive banner-news" src="<?php echo get_template_directory_uri(); ?>/images/prod-p3.jpg" alt="vietnam" />
+    <img class="img-responsive banner-news" src="<?php echo get_template_directory_uri(); ?>/images/prod-p2.jpg" alt="vietnam" />
+    <img class="img-responsive banner-news" src="<?php echo get_template_directory_uri(); ?>/images/prod-p1.jpg" alt="vietnam" />
 </div>

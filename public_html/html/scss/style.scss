@@ -932,6 +932,9 @@ ul.m-sidebar{
         font-size: 20px;
         font-weight: 400 !important;
     }
+    .service-title:hover{
+        color: #F88010;
+    }
     .service-content{
         color: #202020;
         font-size: 16px;
@@ -943,13 +946,21 @@ ul.m-sidebar{
 
 #news-page-body{
     background: $white;
-    img{
-        padding-bottom: 20px;
-        padding-top: 20px;
+    .news-slide-row{
+        padding-top: 15px;
+        h4{
+            padding: 10px 10px 10px 15px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        h4:hover{
+            color: #F88010;
+            font-weight: 500;
+        }
     }
     #content-detail{
         h2{
-            font-size: 42px;
+            font-size: 24px;
             font-weight: 500;
         }
         .time{
@@ -987,6 +998,9 @@ ul.m-sidebar{
     .news-info{
         color: #fff;
         position: relative;
+        h4:hover{
+            color: #F88010;
+        }
         a{
             h4{
                 color: #fff;
@@ -1016,6 +1030,10 @@ ul.m-sidebar{
     .pr-bar{
         padding-top: 15px;
         margin-left: 8%;
+        .banner-news{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
         .service-title{
             color: #F88010;
             font-size: 20px;
@@ -1238,6 +1256,11 @@ ul.m-sidebar{
             color: #969696;
             font-size: 16px;
         }
+    }
+}
+.single-news{
+    .more-news{
+        padding-left: 0%;
     }
 }
 
