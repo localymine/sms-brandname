@@ -48,7 +48,6 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/common.js"></script>
 <script>
-    
     //
     $.each(jssor_last_project_ids, function (key, value) {
         if ($('#' + value).length > 0) {

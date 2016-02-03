@@ -982,6 +982,30 @@ ul.m-sidebar{
         .content-right{
             padding-left: 80%;
         }
+        .fa-facebook{
+            font-size: 20px;
+            border: 2px solid #3B5998;
+            border-radius: 50%;
+            background-color: #3B5998;
+            padding: 6px 11px 6px 11px;
+            color: $white;
+        }
+        .fa-facebook:hover{
+            background-color: $white;
+            color: #3B5998;
+        }
+        .fa-twitter{
+            font-size: 20px;
+            border: 2px solid #00ACED;
+            border-radius: 50%;
+            background-color: #00ACED;
+            padding: 6px 7px 6px 7px;
+            color: $white;
+        }
+        .fa-twitter:hover{
+            background-color: $white;
+            color: #00ACED;
+        }
     }
     .service-title{
         color: #1A1A1A;
@@ -1042,6 +1066,14 @@ ul.m-sidebar{
         .border-titile{
             padding-top: 5px;
             border-bottom: 1px solid #DEDEDE;
+        }
+    }
+    .sns{
+        ul{
+            display: inline-block;
+        }
+        li{
+            display: inline-block;
         }
     }
 }
