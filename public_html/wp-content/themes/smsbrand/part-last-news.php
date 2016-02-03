@@ -4,7 +4,7 @@
         <div class="row-gap-huge"></div>
         <div class="row">
             <div class="col-xs-12 col-md-12 text-center" data-wow-delay="0.5s">
-                <h2>News</h2>
+                <h2>Tin Tức</h2>
             </div>
         </div>
         <div class="row-gap-big"></div>
