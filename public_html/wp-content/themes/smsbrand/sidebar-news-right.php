@@ -71,7 +71,4 @@
     endif;
     wp_reset_postdata();
     ?>
-    <img class="img-responsive banner-news" src="<?php echo get_template_directory_uri(); ?>/images/prod-p3.jpg" alt="vietnam" />
-    <img class="img-responsive banner-news" src="<?php echo get_template_directory_uri(); ?>/images/prod-p2.jpg" alt="vietnam" />
-    <img class="img-responsive banner-news" src="<?php echo get_template_directory_uri(); ?>/images/prod-p1.jpg" alt="vietnam" />
 </div>

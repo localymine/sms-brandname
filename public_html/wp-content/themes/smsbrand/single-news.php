@@ -34,27 +34,9 @@ if ($terms && !is_wp_error($terms)) {
                 <section id="content-detail" class="text-left">
                     <h2><?php the_title() ?></h2>
                     <div class="time"><span><i class="fa fa-star"></i> <?php echo $on_draught ?></span> | <?php the_date('H:i, d/m/Y', '<span>', '</span>', true) ?></div>
-                    <!--<div class="social-network"><span>facebook-twister</span></div>-->
-                    <div class="sns">
-                        <ul class="clearfix">
-                            <li>
-                                <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&amp;t=<?php the_title(); ?>"onClick="window.open(encodeURI(decodeURI(this.href)), 'sharewindow', 'width=0, height=0, personalbar=0, toolbar=0, scrollbars=1, resizable=!'); return false;">
-                                    <!-- <img src="http://eva-blog.evolable.asia/wp-content/uploads/2014/11/share.jpg" alt="share" > -->
-                                    <i class="fa fa-facebook" alt="share"></i>
-                                </a>
-                            </li>
-                            <li> 
-                                <a href="https://twitter.com/share" data-count="vertical" data-via="" data-url="<?php the_permalink(); ?>" data-text="<?php the_title(); ?>">
-                                    <i class="fa fa-twitter" alt="share"></i>
-                                </a>
-                                <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                            </li>
-                            <li>
-                                <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-                                <g:plusone size="standard(none)" href="<?php the_permalink(); ?>"><i class="fa fa-google" alt="share"></i></g:plusone>
-                            </li>
-                        </ul>
-                    </div>
+                    <!-- social network -->
+                    <?php get_template_part('part-social-share') ?>
+                    <!-- social network end -->
                     <div class="content">
                         <?php if (have_posts()) : ?>
                             <?php while (have_posts()) : the_post(); ?>
