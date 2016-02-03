@@ -932,6 +932,9 @@ ul.m-sidebar{
         font-size: 20px;
         font-weight: 400 !important;
     }
+    .service-title:hover{
+        color: #F88010;
+    }
     .service-content{
         color: #202020;
         font-size: 16px;
@@ -943,13 +946,21 @@ ul.m-sidebar{
 
 #news-page-body{
     background: $white;
-    img{
-        padding-bottom: 20px;
-        padding-top: 20px;
+    .news-slide-row{
+        padding-top: 15px;
+        h4{
+            padding: 10px 10px 10px 15px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        h4:hover{
+            color: #F88010;
+            font-weight: 500;
+        }
     }
     #content-detail{
         h2{
-            font-size: 42px;
+            font-size: 24px;
             font-weight: 500;
         }
         .time{
@@ -987,6 +998,9 @@ ul.m-sidebar{
     .news-info{
         color: #fff;
         position: relative;
+        h4:hover{
+            color: #F88010;
+        }
         a{
             h4{
                 color: #fff;
@@ -1016,6 +1030,10 @@ ul.m-sidebar{
     .pr-bar{
         padding-top: 15px;
         margin-left: 8%;
+        .banner-news{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
         .service-title{
             color: #F88010;
             font-size: 20px;
@@ -1047,6 +1065,10 @@ ul.m-sidebar{
     .adv-info{
         span{
             padding-left: 20px;
+        }
+        p{
+            border-bottom: 1px dotted #1A1A1A;
+            padding-top: 20px;
         }
     }
     .contact-form{
@@ -1121,7 +1143,7 @@ ul.m-sidebar{
         }
         /* Button Style */
         button.submit {
-            background-color: #F88010;
+            background-color: $white;
             // background: -webkit-gradient(linear, left top, left bottom, from(#F88010), to(#FF8E32));
             // background: -webkit-linear-gradient(top, #F88010, #FF8E32);
             // background: -moz-linear-gradient(top, #F88010, #FF8E32);
@@ -1140,15 +1162,15 @@ ul.m-sidebar{
             // -moz-box-shadow: 0 3px 0 #030303;
             // -ms-box-shadow: 0 3px 0 #030303;
             // -o-box-shadow: 0 3px 0 #030303;
-            color: white;
+            color: #F88010;
             font-weight: bold;
             padding: 6px 20px;
             margin-top: 30px;
             text-align: center;
         }
         button.submit:hover {
-            color: #F88010;
-            background-color: white;
+            color: $white;
+            background-color: #F88010;
         }
         button.submit:active {
             border: 1px solid #20911e;
@@ -1161,6 +1183,52 @@ ul.m-sidebar{
         }
         .star{
             color: #FF7F21;
+        }
+    }
+    .contact-links{
+        ul{
+            text-align: center;
+        }
+        li{
+            display: inline-block;
+        }
+        a{
+            border: 2px solid #c0cdd1;
+            border-radius: 50%;
+            color: #c0cdd1;
+            font-size: 0;
+            height: 45px;
+            padding: 0;
+            position: relative;
+            width: 45px;
+        }
+        a:after {
+            font-family: FontAwesome;
+            font-size: 16px;
+            height: 100%;
+            line-height: 45px;
+            text-align: center;
+            width: 100%;
+        }
+        a:hover{
+            background: transparent none repeat scroll 0 0;
+            border-color: #F88010;
+            color: #F88010;
+        }
+        a.facebook:after {
+            content: "\f09a";
+        }
+        a.google-plus:after {
+            content: "\f0d5";
+        }
+        a.twitter:after {
+            content: "\f099";
+        }
+        a.youtube:after {
+            content: "\f167";
+        }
+        a.pinterest:after {
+            content: "\f0d3";
         }
     }
 }
@@ -1188,6 +1256,11 @@ ul.m-sidebar{
             color: #969696;
             font-size: 16px;
         }
+    }
+}
+.single-news{
+    .more-news{
+        padding-left: 0%;
     }
 }
 
@@ -1314,8 +1387,7 @@ ul.m-sidebar{
             font-weight: 300;
         }
         .controls{
-            padding-right: 18px;
-            padding-bottom: 10px;
+            padding: 6px 10px 8px 10px;
             border: 3px solid #FFFFFF;
             background-color: #42464A;
             border-radius: 18px;
@@ -1335,29 +1407,21 @@ ul.m-sidebar{
         }
         *::-webkit-input-placeholder {
             color: #FFFFFF;
-            padding-left: 18px;
-            padding-top: 3px;
             font-size: 16px;
         }
         *:-moz-placeholder {
             /* FF 4-18 */
             color: #FFFFFF;
-            padding-left: 18px;
-            padding-top: 3px;
             font-size: 16px;
         }
         *::-moz-placeholder {
             /* FF 19+ */
             color: #FFFFFF;
-            margin-left: 18px;
-            padding-top: 3px;
             font-size: 16px;
         }
         *:-ms-input-placeholder {
             /* IE 10+ */
             color: #FFFFFF;
-            padding-left: 18px;
-            padding-top: 3px;
             font-size: 16px;
         }
     }

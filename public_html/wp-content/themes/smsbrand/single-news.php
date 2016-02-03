@@ -11,10 +11,6 @@ get_header();
     </div>
 </div>
 
-<!-- news -->
-<?php get_template_part('part-news-top3') ?>
-<!-- news end -->
-
 <?php
 $terms = get_the_terms($post->ID, 'news-cat');
 if ($terms && !is_wp_error($terms)) {
@@ -31,15 +27,20 @@ if ($terms && !is_wp_error($terms)) {
 <!-- list news -->
 <div id="news-page-body">
     <div class="container">
+        <div class="row-gap-big"></div>
         <div class="row">
-            <div class="col-xs-12 col-md-8 text-center nopadding">
+            <div class="col-xs-12 col-md-8 text-center nopadding single-news">
                 <!-- content detail -->
                 <section id="content-detail" class="text-left">
                     <h2><?php the_title() ?></h2>
                     <div class="time"><span><i class="fa fa-star"></i> <?php echo $on_draught ?></span> | <?php the_date('H:i, d/m/Y', '<span>', '</span>', true) ?></div>
                     <!--<div class="social-network"><span>facebook-twister</span></div>-->
                     <div class="content">
-                        <?php the_content() ?>
+                        <?php if (have_posts()) : ?>
+                            <?php while (have_posts()) : the_post(); ?>
+                                <?php the_content(); ?>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
                     </div>
                 </section>
                 <!-- content detail end -->
@@ -73,7 +74,7 @@ if ($terms && !is_wp_error($terms)) {
                             <div class="news-info">
                                 <a href="<?php the_permalink() ?>">
                                     <h4><?php the_title() ?></h4>
-                                    <span class="news-overlay"></span>
+                                    <span class="news-overlay"><?php the_content() ?>wer</span>
                                     <img class="img-responsive" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
                                 </a>
                             </div>
