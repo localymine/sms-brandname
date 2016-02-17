@@ -755,7 +755,7 @@ h2 {
     /*display: block;*/
     float: none;
     margin: 0px 0 0;
-    padding: 0;
+    padding: 6px 0 0;
     list-style-type: none;
     position: relative;
     z-index: 5; }
@@ -1108,7 +1108,7 @@ ul.m-sidebar {
     margin-bottom: 5px; }
 
 .module-special {
-  height: 255px;
+  height: 220px;
   overflow: hidden;
   text-align: center; }
   .module-special article {
@@ -1223,6 +1223,8 @@ ul.m-sidebar {
     border-left: #E3E3E3 1px solid;
     border-right: #E3E3E3 1px solid;
     height: 100%; }
+  #news .module-special {
+    height: 225px; }
 
 .information .module-info header {
   -moz-border-bottom-colors: none;
@@ -1676,8 +1678,7 @@ ul.m-sidebar {
     #footer-wrapper .copyright span {
       color: #606264;
       font-size: 16px;
-      font-weight: 500;
-      padding-right: 4%; }
+      font-weight: 500; }
   #footer-wrapper .signs-up span {
     color: #999B9C;
     font-size: 26px;
@@ -1687,17 +1688,20 @@ ul.m-sidebar {
     border: 3px solid #FFFFFF;
     background-color: #42464A;
     border-radius: 18px; }
+  #footer-wrapper .signs-up form {
+    padding-top: 10px; }
   #footer-wrapper .signs-up button {
     margin-left: 10px;
     border: 3px solid #FFFFFF;
     color: #9A9A9A;
     background-color: #42464A;
-    height: 36px;
-    padding: 3px 8px 4px 10px;
-    margin-top: 8px;
+    height: 42px;
+    width: 42px;
+    padding: 10px 20px 24px 10px;
     border-radius: 50%; }
     #footer-wrapper .signs-up button i {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      font-size: 18px; }
   #footer-wrapper .signs-up *::-webkit-input-placeholder {
     color: #FFFFFF;
     font-size: 16px; }
