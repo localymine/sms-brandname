@@ -48,13 +48,14 @@ if ($loop->have_posts()):
                                 <div class="container">
                                     <div class="row-gap-big"></div>
                                     <div class="row">
-                                        <div class="text-center" data-mercury="froala" data-content-name="second_headline">
-                                            <div class="col-xs-12 col-md-12 text-center wow fadeInDown" data-wow-delay="0.5s">
-                                                <h2 class="market-titile"><?php echo get_sub_field('sub_title') ?></h2>
-                                            </div>
-                                            <div class="col-xs-12 col-md-12 text-center wow fadeInRight market-content" data-wow-delay="0.5s">
-                                                <p><?php echo get_sub_field('content') ?></p>
-                                            </div>
+                                        <div class="col-xs-12 col-md-12 text-center wow fadeInDown" data-wow-delay="0.5s">
+                                            <h2 class="market-titile"><?php echo get_sub_field('sub_title') ?></h2>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-delay="0.5s">
+                                            <img class="img-responsive pull-left" src="<?php echo $image['url'] ?>"/>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6 text-left wow fadeInRight market-content" data-wow-delay="0.5s">
+                                            <?php echo get_sub_field('content') ?>
                                         </div>
                                     </div>
                                     </div>
@@ -66,7 +67,7 @@ if ($loop->have_posts()):
                         endwhile;
                     endif;
 
-                else:
+                elseif (get_sub_field('set_position') == 1):
 
                     if (have_rows('set_image_right')):
                         while (have_rows('set_image_right')): the_row();
@@ -86,6 +87,33 @@ if ($loop->have_posts()):
                                         <div class="col-xs-12 col-md-6 wow fadeInLeft" data-wow-delay="0.5s">
                                             <img class="img-responsive pull-left" src="<?php echo $image['url'] ?>"/>
                                         </div>
+                                    </div>
+                                    <div class="row-gap-big"></div>
+                                </div>
+                            </div>
+
+                            <?php
+                        endwhile;
+                    endif;
+
+                else:
+
+                    if (have_rows('set_center')):
+                        while (have_rows('set_center')): the_row();                            
+                            ?>
+                            <div id="marketing-<?php the_ID() ?>" class="marketing <?php echo $class ?>">
+                                <div class="container">
+                                    <div class="row-gap-big"></div>
+                                    <div class="row">
+                                        <div class="text-center" data-mercury="froala" data-content-name="second_headline">
+                                            <div class="col-xs-12 col-md-12 text-center wow fadeInDown" data-wow-delay="0.5s">
+                                                <h2 class="market-titile"><?php echo get_sub_field('sub_title') ?></h2>
+                                            </div>
+                                            <div class="col-xs-12 col-md-12 text-center wow fadeInRight market-content" data-wow-delay="0.5s">
+                                                <p><?php echo get_sub_field('content') ?></p>
+                                            </div>
+                                        </div>
+                                    </div>
                                     </div>
                                     <div class="row-gap-big"></div>
                                 </div>

@@ -9,6 +9,7 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
             <div class="row-gap-medium"></div>
             <div class="container">
                 <div class="col-xs-12 col-md-4 copyright">
+                    <span>Contact Us</span><br/>
                     <span><i class="fa fa-map-marker"></i> <?php echo $omw_theme_settings->ct_company_address ?></span><br/>
                     <span><i class="fa fa-phone"></i> <?php echo $omw_theme_settings->ct_company_telephone ?></span><br/>
                     <span><i class="fa fa-envelope-o"></i> <a href="mailto:<?php echo $omw_theme_settings->ct_company_email ?>">

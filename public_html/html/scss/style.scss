@@ -195,7 +195,7 @@ $paddings: (xs: 0.5rem, sm: 1rem, md: 1.5rem, lg: 2rem, xl: 2.5rem, xxl: 3rem);
             /*display: block;*/
             float: none;
             margin: 0px 0 0;
-            padding: 0;
+            padding: 6px 0 0;
             list-style-type: none;
             position: relative;
             z-index: 5;
@@ -664,7 +664,7 @@ ul.m-sidebar{
 }
 
 .module-special{
-    height: 255px;
+    height: 220px;
     overflow: hidden;
     text-align: center;
     article{
@@ -687,7 +687,7 @@ ul.m-sidebar{
     background: #2A2F33;
     h2{
         /*color: $white;*/
-        font-size: 30px;
+        font-size: 36px;
         font-weight: 300 !important;
     }
     span{
@@ -810,6 +810,9 @@ ul.m-sidebar{
         border-left: #E3E3E3 1px solid;
         border-right: #E3E3E3 1px solid;
         height: 100%;
+    }
+    .module-special{
+        height: 225px;
     }
 }
 .information{
@@ -1424,7 +1427,6 @@ ul.m-sidebar{
             color: #606264;
             font-size: 16px;
             font-weight: 500;
-            padding-right: 4%;
         }
     }
     .signs-up{
@@ -1439,17 +1441,21 @@ ul.m-sidebar{
             background-color: #42464A;
             border-radius: 18px;
         }
+        form{
+            padding-top: 10px;
+        }
         button{
             margin-left: 10px;
             border: 3px solid #FFFFFF;
             color: #9A9A9A;
             background-color: #42464A;
-            height: 36px;
-            padding: 3px 8px 4px 10px;
-            margin-top: 8px;
+            height: 42px;
+            width: 42px;
+            padding: 10px 20px 24px 10px;
             border-radius: 50%;
             i{
                 color: #FFFFFF;
+                font-size: 18px;
             }
         }
         *::-webkit-input-placeholder {

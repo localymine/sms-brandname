@@ -1,7 +1,6 @@
 <!-- design -->
 <div id="design">
     <div class="container">
-        <div class="row-gap-big"></div>
         <div class="row">
             <div class="col-xs-12 col-md-12 text-center nopadding" data-wow-delay="0.5s">
                 <h2>Điều gì làm chúng tôi khác biệt</h2>

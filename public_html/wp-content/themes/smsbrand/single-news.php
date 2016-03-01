@@ -86,6 +86,15 @@ if ($terms && !is_wp_error($terms)) {
                 endif;
                 wp_reset_postdata();
                 ?>
+                <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1405479576355526";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>  
+                <fb:comments href="<?php the_permalink(); ?>"></fb:comments>
                 <!-- more relation news -->
                 <?php get_template_part('part-news-more') ?>
             </div>
