@@ -1024,15 +1024,20 @@ ul.m-sidebar {
     #design .carousel-indicators .active span.item-title {
       opacity: 1; }
     #design .carousel-indicators .active .mico.mico-15 {
-      background: url(../images/home/15-selected.png); }
+      background: url(../images/home/15-selected.png);
+      background-repeat: no-repeat; }
     #design .carousel-indicators .active .mico.mico-16 {
-      background: url(../images/home/16-selected.png); }
+      background: url(../images/home/16-selected.png);
+      background-repeat: no-repeat; }
     #design .carousel-indicators .active .mico.mico-17 {
-      background: url(../images/home/17-selected.png); }
+      background: url(../images/home/17-selected.png);
+      background-repeat: no-repeat; }
     #design .carousel-indicators .active .mico.mico-18 {
-      background: url(../images/home/18-selected.png); }
+      background: url(../images/home/18-selected.png);
+      background-repeat: no-repeat; }
     #design .carousel-indicators .active .mico.mico-19 {
-      background: url(../images/home/19-selected.png); }
+      background: url(../images/home/19-selected.png);
+      background-repeat: no-repeat; }
     #design .carousel-indicators li {
       background: transparent none repeat scroll 0 0;
       border: 0 none;
@@ -1060,31 +1065,41 @@ ul.m-sidebar {
 
 .mico {
   display: inline-block;
-  width: 62px;
-  height: 62px;
+  width: 60px;
+  height: 60px;
   background-repeat: no-repeat;
   -webkit-transition: all 0.2s ease 0s;
   -moz-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s; }
   .mico.mico-15 {
-    background: url(../images/home/15.png); }
+    background: url(../images/home/15.png);
+    background-repeat: no-repeat; }
     .mico.mico-15:hover, .mico.mico-15:focus, .mico.mico-15.selected {
+      background-repeat: no-repeat;
       background: url(../images/home/15-selected.png); }
   .mico.mico-16 {
+    background-repeat: no-repeat;
     background: url(../images/home/16.png); }
     .mico.mico-16:hover, .mico.mico-16:focus, .mico.mico-16.selected {
+      background-repeat: no-repeat;
       background: url(../images/home/16-selected.png); }
   .mico.mico-17 {
+    background-repeat: no-repeat;
     background: url(../images/home/17.png); }
     .mico.mico-17:hover, .mico.mico-17:focus, .mico.mico-17.selected {
+      background-repeat: no-repeat;
       background: url(../images/home/17-selected.png); }
   .mico.mico-18 {
+    background-repeat: no-repeat;
     background: url(../images/home/18.png); }
     .mico.mico-18:hover, .mico.mico-18:focus, .mico.mico-18.selected {
+      background-repeat: no-repeat;
       background: url(../images/home/18-selected.png); }
   .mico.mico-19 {
+    background-repeat: no-repeat;
     background: url(../images/home/19.png); }
     .mico.mico-19:hover, .mico.mico-19:focus, .mico.mico-19.selected {
+      background-repeat: no-repeat;
       background: url(../images/home/19-selected.png); }
 
 #service {
@@ -1128,7 +1143,7 @@ ul.m-sidebar {
   background: #2A2F33; }
   #project h2 {
     /*color: $white;*/
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 300 !important; }
   #project span {
     color: #fff;
