@@ -28,7 +28,7 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
                         <input type="text" class="controls" placeholder="Email"><button class="btn btn-default"><i class="fa fa-check"></i></button>
                     </form>
                 </div>
-                <div class="col-xs-12 col-md-4 copyright text-center">
+                <div class="col-xs-12 col-md-4 copyright text-right">
                     <span>A product of</span><br />
                     <a class="footer-logo" href="#"><img class="img-responsive pull-right" src="<?php echo $logo->url ?>"/></a>
                 </div>

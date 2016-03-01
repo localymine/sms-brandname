@@ -535,18 +535,23 @@ ul.m-sidebar{
             .mico{
                 &.mico-15{
                     background: url(../images/home/15-selected.png);
+                    background-repeat: no-repeat;
                 }
                 &.mico-16{
                     background: url(../images/home/16-selected.png);
+                    background-repeat: no-repeat;
                 }
                 &.mico-17{
                     background: url(../images/home/17-selected.png);
+                    background-repeat: no-repeat;
                 }
                 &.mico-18{
                     background: url(../images/home/18-selected.png);
+                    background-repeat: no-repeat;
                 }
                 &.mico-19{
                     background: url(../images/home/19-selected.png);
+                    background-repeat: no-repeat;
                 }
             }
         }
@@ -586,37 +591,47 @@ ul.m-sidebar{
 
 .mico{
     display: inline-block;
-    width: 62px;
-    height: 62px;
+    width: 60px;
+    height: 60px;
     background-repeat: no-repeat;
     @include transition(0.2s);
     &.mico-15{
         background: url(../images/home/15.png);
+        background-repeat: no-repeat;
         &:hover, &:focus, &.selected{
+            background-repeat: no-repeat;
             background: url(../images/home/15-selected.png);
         }
     }
     &.mico-16{
+        background-repeat: no-repeat;
         background: url(../images/home/16.png);
         &:hover, &:focus, &.selected{
+            background-repeat: no-repeat;
             background: url(../images/home/16-selected.png);
         }
     }
     &.mico-17{
+        background-repeat: no-repeat;
         background: url(../images/home/17.png);
         &:hover, &:focus, &.selected{
+            background-repeat: no-repeat;
             background: url(../images/home/17-selected.png);
         }
     }
     &.mico-18{
+        background-repeat: no-repeat;
         background: url(../images/home/18.png);
         &:hover, &:focus, &.selected{
+            background-repeat: no-repeat;
             background: url(../images/home/18-selected.png);
         }
     }
     &.mico-19{
+        background-repeat: no-repeat;
         background: url(../images/home/19.png);
         &:hover, &:focus, &.selected{
+            background-repeat: no-repeat;
             background: url(../images/home/19-selected.png);
         }
     }
