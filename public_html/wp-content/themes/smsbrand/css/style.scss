@@ -195,7 +195,7 @@ $paddings: (xs: 0.5rem, sm: 1rem, md: 1.5rem, lg: 2rem, xl: 2.5rem, xxl: 3rem);
             /*display: block;*/
             float: none;
             margin: 0px 0 0;
-            padding: 4px 0 0;
+            padding: 6px 0 0;
             list-style-type: none;
             position: relative;
             z-index: 5;
@@ -674,14 +674,10 @@ ul.m-sidebar{
         article{
             @include transition(0.5s);
             &.item{
-                transform: translate(0px, -170px);
-            }
-            .item-author{
-                opacity: 0;
+                transform: translate(0px, -130px);
             }
             .img-sim{
                 transform: translate(0px, -320px);
-                opacity: 0;
             }
         }
     }
@@ -693,11 +689,10 @@ ul.m-sidebar{
         /*color: $white;*/
         font-size: 36px;
         font-weight: 300 !important;
-        color:  #999b9c;
     }
     span{
         color: $white;
-        font-size: 17px;
+        font-size: 16px;
     }
     .menu-tab-pro{
         ul{
@@ -817,7 +812,7 @@ ul.m-sidebar{
         height: 100%;
     }
     .module-special{
-        height: 235px;
+        height: 225px;
     }
 }
 .information{
@@ -1051,28 +1046,26 @@ ul.m-sidebar{
         a{
             h4{
                 color: #fff;
-                display: block;
+                display: inline-block;
                 font-size: 14px;
-                left: 0;
-                /*opacity: 1;*/
+                left: 17%;
+                opacity: 1;
                 position: absolute;
                 text-align: center;
-                /*top: 69%;*/
-                /*vertical-align: middle;*/
-                width: 100%;
+                top: 69%;
+                vertical-align: middle;
+                width: 80%;
                 z-index: 9;
-                bottom: 6px;
             }
             .news-overlay{
-                background: rgba(0,0,0,0.75);
-                display: block;
-                /*border:1px solid #999;*/
-                height: 50px;
-                left: 0;
+                background-color: #000;
+                border:1px solid #999;
+                height: 29%;
+                left: 0%;
+                opacity: 0.3;
                 position: absolute;
-                /*top: 61%;*/
+                top: 61%;
                 width: 100%;
-                bottom: 0;
             }
         }
     }
@@ -1434,7 +1427,6 @@ ul.m-sidebar{
             color: #606264;
             font-size: 16px;
             font-weight: 500;
-            padding-right: 6%;
         }
     }
     .signs-up{
@@ -1457,9 +1449,9 @@ ul.m-sidebar{
             border: 3px solid #FFFFFF;
             color: #9A9A9A;
             background-color: #42464A;
-            height: 40px;
-            width: 40px;
-            padding: 8px 20px 24px 8px;
+            height: 42px;
+            width: 42px;
+            padding: 10px 20px 24px 10px;
             border-radius: 50%;
             i{
                 color: #FFFFFF;
@@ -2140,7 +2132,7 @@ ul.recent_short{
         @include transition(0.2s);
         position: absolute;
         background: rgba(0,0,0,0);
-        width: 100%;
+        width: 400px;
         height: 100%;
         top: 0;
         .m-lp-item{

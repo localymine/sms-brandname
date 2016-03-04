@@ -20041,3 +20041,129 @@
 [01-Mar-2016 06:59:28 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
 [01-Mar-2016 06:59:28 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
 [01-Mar-2016 06:59:28 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[02-Mar-2016 01:32:36 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[02-Mar-2016 01:32:36 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[02-Mar-2016 01:32:36 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[02-Mar-2016 01:32:36 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[02-Mar-2016 01:32:46 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[02-Mar-2016 01:32:46 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[02-Mar-2016 01:32:46 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[02-Mar-2016 01:32:46 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[02-Mar-2016 01:32:48 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[02-Mar-2016 01:32:48 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[02-Mar-2016 01:32:48 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[02-Mar-2016 01:32:49 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[02-Mar-2016 01:32:50 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[02-Mar-2016 01:32:50 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[02-Mar-2016 01:32:50 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[02-Mar-2016 01:32:50 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[02-Mar-2016 01:32:52 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[02-Mar-2016 01:32:52 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[02-Mar-2016 01:32:52 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[02-Mar-2016 01:32:52 UTC] PHP Warning:  array_map(): Argument #2 should be an array in /var/www/sms-brandname/public_html/wp-includes/query.php on line 2667
+[02-Mar-2016 01:32:52 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/sms-brandname/public_html/wp-includes/query.php on line 2667
+[02-Mar-2016 01:32:52 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND ( 
+  wp_posts.ID NOT IN (
+				SELECT object_id
+				FROM wp_term_relationsh' at line 1 for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  WHERE 1=1  AND wp_posts.ID NOT IN () AND ( 
+  wp_posts.ID NOT IN (
+				SELECT object_id
+				FROM wp_term_relationships
+				WHERE term_taxonomy_id IN (6,13)
+			)
+) AND wp_posts.post_type = 'news' AND (wp_posts.post_status = 'publish') GROUP BY wp_posts.ID ORDER BY wp_posts.menu_order, wp_posts.post_date DESC LIMIT 0, 6 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/smsbrand/single-news.php'), WP_Query->__construct, WP_Query->query, WP_Query->get_posts
+[02-Mar-2016 01:32:52 UTC] PHP Warning:  array_map(): Argument #2 should be an array in /var/www/sms-brandname/public_html/wp-includes/query.php on line 2667
+[02-Mar-2016 01:32:52 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/sms-brandname/public_html/wp-includes/query.php on line 2667
+[02-Mar-2016 01:32:52 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND ( 
+  wp_term_relationships.term_taxonomy_id IN (11) 
+  AND 
+  wp_posts.ID ' at line 1 for query SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  INNER JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id) WHERE 1=1  AND wp_posts.ID NOT IN () AND ( 
+  wp_term_relationships.term_taxonomy_id IN (11) 
+  AND 
+  wp_posts.ID NOT IN (
+				SELECT object_id
+				FROM wp_term_relationships
+				WHERE term_taxonomy_id IN (6,13)
+			)
+) AND wp_posts.post_type = 'news' AND (wp_posts.post_status = 'publish') GROUP BY wp_posts.ID ORDER BY wp_posts.menu_order, wp_posts.post_date DESC LIMIT 0, 6 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/smsbrand/single-news.php'), get_sidebar, locate_template, load_template, require_once('/themes/smsbrand/sidebar-news-right.php'), WP_Query->__construct, WP_Query->query, WP_Query->get_posts
+[02-Mar-2016 01:32:52 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[02-Mar-2016 06:41:44 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[02-Mar-2016 06:41:44 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[02-Mar-2016 06:41:44 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[02-Mar-2016 06:41:44 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[02-Mar-2016 07:32:24 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[02-Mar-2016 07:32:24 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[02-Mar-2016 07:32:24 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[02-Mar-2016 07:32:24 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[02-Mar-2016 07:57:53 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[02-Mar-2016 07:57:53 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[02-Mar-2016 07:57:53 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[02-Mar-2016 07:57:53 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[02-Mar-2016 07:57:59 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[02-Mar-2016 07:57:59 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[02-Mar-2016 07:57:59 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[02-Mar-2016 07:57:59 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:06:33 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:06:33 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:06:33 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:06:33 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:18:00 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:18:00 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:18:00 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:18:00 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:18:30 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:18:30 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:18:30 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:18:31 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:21:13 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:21:13 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:21:13 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:21:13 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:21:22 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:22:18 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:22:18 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:22:18 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:22:18 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:22:31 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:22:31 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:22:31 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:22:31 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:40:17 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:40:17 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:40:17 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:40:17 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:44:33 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:44:33 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:44:33 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:44:33 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
+[04-Mar-2016 09:46:24 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_css in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 43
+[04-Mar-2016 09:46:24 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 101
+[04-Mar-2016 09:46:24 UTC] PHP Notice:  Undefined index: sms-otp in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/header.php on line 154
+[04-Mar-2016 09:46:24 UTC] PHP Notice:  Undefined property: stdClass::$ct_use_script in /var/www/sms-brandname/public_html/wp-content/themes/smsbrand/footer.php on line 60
