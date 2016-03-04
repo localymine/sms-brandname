@@ -48,7 +48,7 @@ get_header();
                                 <a href="<?php the_permalink() ?>">
                                     <h4><?php the_title() ?></h4>
                                     <span class="news-overlay"></span>
-                                    <img class="img-responsive" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
+                                    <img class="img-responsive" src="<?php echo $image['sizes']['large'] ?>"/>
                                 </a>
                             </div>
                         </div>

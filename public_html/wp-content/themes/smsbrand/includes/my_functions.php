@@ -369,3 +369,19 @@ function omw_guid($opt = true, $convert_case = true) {       //  Set to true/fal
         return $uuid;
     }
 }
+
+function omw_get_related_author_posts($post_type) {
+    global $authordata, $post;
+
+    $authors_posts = get_posts(array('author' => $authordata->ID, 'post__not_in' => array($post->ID), 'post_type' => $post_type, 'posts_per_page' => 5, 'orderby' => 'rand',));
+
+    return $authors_posts;
+}
+
+function omw_get_author_posts($post_type) {
+    global $authordata, $post;
+
+    $authors_posts = get_posts(array('author' => $authordata->ID, 'post__in' => array($post->ID), 'post_type' => $post_type, 'posts_per_page' => 1, 'order' => 'DESC', 'orderby' => 'post_date',));
+
+    return $authors_posts;
+}

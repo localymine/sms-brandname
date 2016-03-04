@@ -674,10 +674,14 @@ ul.m-sidebar{
         article{
             @include transition(0.5s);
             &.item{
-                transform: translate(0px, -130px);
+                transform: translate(0px, -170px);
+            }
+            .item-author{
+                opacity: 0;
             }
             .img-sim{
                 transform: translate(0px, -320px);
+                opacity: 0;
             }
         }
     }
@@ -812,7 +816,7 @@ ul.m-sidebar{
         height: 100%;
     }
     .module-special{
-        height: 225px;
+        height: 235px;
     }
 }
 .information{
@@ -1046,26 +1050,28 @@ ul.m-sidebar{
         a{
             h4{
                 color: #fff;
-                display: inline-block;
+                display: block;
                 font-size: 14px;
-                left: 17%;
-                opacity: 1;
+                left: 0;
+                /*opacity: 1;*/
                 position: absolute;
                 text-align: center;
-                top: 69%;
-                vertical-align: middle;
-                width: 80%;
+                /*top: 69%;*/
+                /*vertical-align: middle;*/
+                width: 100%;
                 z-index: 9;
+                bottom: 6px;
             }
             .news-overlay{
-                background-color: #000;
-                border:1px solid #999;
-                height: 29%;
-                left: 0%;
-                opacity: 0.3;
+                background: rgba(0,0,0,0.75);
+                display: block;
+                /*border:1px solid #999;*/
+                height: 50px;
+                left: 0;
                 position: absolute;
-                top: 61%;
+                /*top: 61%;*/
                 width: 100%;
+                bottom: 0;
             }
         }
     }
@@ -2132,7 +2138,7 @@ ul.recent_short{
         @include transition(0.2s);
         position: absolute;
         background: rgba(0,0,0,0);
-        width: 400px;
+        width: 100%;
         height: 100%;
         top: 0;
         .m-lp-item{

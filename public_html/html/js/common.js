@@ -81,8 +81,9 @@ var jssor_last_project = function (jssor_id) {
             $AutoPlay: true,
             $AutoPlaySteps: 1,
             $SlideDuration: 160,
-            $SlideWidth: 450,
-            $SlideSpacing: 3,
+            $SlideWidth: 460,
+            $SlideHeight: 330,
+            $SlideSpacing: 0,
             $Cols: 4,
             $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$

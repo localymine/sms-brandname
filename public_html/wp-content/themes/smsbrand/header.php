@@ -84,7 +84,7 @@
                                             <span class="icon-bar"></span>
                                         </button>
                                     </a>
-                                    <a class="navbar-brand nopadding img-a-logo">
+                                    <a href="<?php echo home_url() ?>" class="navbar-brand nopadding img-a-logo">
                                         <img class="img-logo img-responsive" src="<?php echo $logo->url ?>" alt="<?php echo $omw_theme_settings->ct_company_name ?>" />
                                     </a>
                                 </div>

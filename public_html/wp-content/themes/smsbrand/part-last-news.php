@@ -29,6 +29,9 @@
                             <article class="item">
                                 <img class="img-responsive center-block img-sim" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
                                 <span class="service-title"><?php the_title() ?></span>
+                                <div class="item-author">
+                                    <i class="fa fa-user"></i> <?php echo ucfirst(get_the_author()) ?>
+                                </div>
                                 <div class="service-content"><?php the_excerpt() ?></div>
                                 <div class="read-more">
                                     <a href="<?php the_permalink() ?>">

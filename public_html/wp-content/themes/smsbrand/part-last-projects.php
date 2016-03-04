@@ -25,6 +25,7 @@
                     <li><a href="#tabs-<?php echo $term->slug ?>"><?php echo $term->name ?></a></li>
                 <?php endforeach; ?>
             </ul>
+            <div class="tabs_for_all">
             <?php
             $i = 1;
             foreach ($terms as $term):
@@ -34,8 +35,8 @@
                 ?>
                 <!--<div class="row-gap-medium"></div>-->
                 <div id="tabs-<?php echo $term->slug ?>" class="col-xs-12 col-md-12 text-center nopadding" style="margin-top: 2em;">
-                    <div id="<?php echo $jssor_id ?>" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1840px; height: 195px; overflow: hidden; visibility: hidden;">
-                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1840px; height: 195px; overflow: hidden;">
+                    <div id="<?php echo $jssor_id ?>" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1840px; height: 330px; overflow: hidden; visibility: hidden;">
+                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1840px; height: 330px; overflow: hidden;">
                             <?php
                             $args = array(
                                 'post_type' => 'last-project',
@@ -58,11 +59,12 @@
                                     <?php
                                     //
                                     $sub_image = get_field('image');
-                                    $img_size = $sub_image['sizes']['medium'];
+//                                    $img_size = $sub_image['sizes']['large'];
+                                    $img_size = $sub_image['url'];
                                     ?>
                                     <div style="display: none;">
                                         <div class="m-last-pj">
-                                            <img data-u="image" src="<?php echo $img_size ?>" />
+                                            <img data-u="image" src="<?php echo $img_size ?>" class="center-block" />
                                             <div class="m-o-effect">
                                                 <div class="m-lp-item">
                                                     <div class="m-lp-row">
@@ -90,7 +92,9 @@
                 $i++;
             endforeach;
             ?>
+            </div>
         </div>
+        <div class="clearfix"></div>
     </div>
 </div>
 <!-- project end -->
