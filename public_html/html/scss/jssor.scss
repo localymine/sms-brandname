@@ -1,6 +1,5 @@
-$slider-width: 1830px;
-$slider-height: 690px;
-/*$slider-height: 975px;*/
+$slider-width: 1920px;
+$slider-height: 800px;
 $slider-border-color: #519044;
 
 #slider1_container{
@@ -353,18 +352,18 @@ $carousel-height: 150px;
     display: block;
     position: absolute;
     /* size of arrow element */
-    width: 40px;
-    height: 40px;
+    width: 75px;
+    height: 70px;
     cursor: pointer;
     background: url('../images/a63.png') no-repeat;
     overflow: hidden;
 }
 .jssora05l { background-position: -10px -40px; }
 .jssora05r { background-position: -70px -40px; }
-.jssora05l:hover { background-position: -130px -40px; }
-.jssora05r:hover { background-position: -190px -40px; }
-.jssora05l.jssora05ldn { background-position: -250px -40px; }
-.jssora05r.jssora05rdn { background-position: -310px -40px; }
+.jssora05l:hover { background-position: -165px -40px; }
+.jssora05r:hover { background-position: -226px -40px; }
+.jssora05l.jssora05ldn { background-position: -165px -40px; }
+.jssora05r.jssora05rdn { background-position: -226px -40px; }
 .jssora06l, .jssora06r {
     display: block;
     position: absolute;

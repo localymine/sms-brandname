@@ -1,7 +1,6 @@
 <!-- news -->
-<div id="news">
+<div id="news" class="lst-pj">
     <div class="container nopadding">
-        <div class="row-gap-huge"></div>
         <div class="row">
             <div class="col-xs-12 col-md-12 text-center" data-wow-delay="0.5s">
                 <h2>Tin Tức</h2>
@@ -30,6 +29,7 @@
                                 <img class="img-responsive center-block img-sim" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
                                 <span class="service-title"><?php the_title() ?></span>
                                 <div class="item-author">
+                                    <i class="fa fa-calendar"></i> <?php the_date('M jS', '<span>', '</span>', true) ?>
                                     <i class="fa fa-user"></i> <?php echo ucfirst(get_the_author()) ?>
                                 </div>
                                 <div class="service-content"><?php the_excerpt() ?></div>

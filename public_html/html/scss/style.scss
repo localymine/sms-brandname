@@ -455,15 +455,15 @@ ul.m-sidebar{
         background: $design-bg;
     }
     h4, h5{
-        color: #F79A57;
+        color: $title-color;
     }
     h2{
-        color: #F79A57;
+        color: $title-color;
         font-size: 40px;
         font-weight: 300 !important;
     }
     span{
-        color: #8F7D76;
+        color: $sub-title;
         font-size: 16px;
     }
     .mess-title{
@@ -471,7 +471,7 @@ ul.m-sidebar{
         font-weight: bold;
     }
     .main-text-design{
-        padding-left: 12%;
+        padding-left: 10%;
         .title{
             color: #DE9470;
             padding-bottom: 10px;
@@ -482,14 +482,14 @@ ul.m-sidebar{
                 &.item{
                     position: relative;
                     span{
-                        color: #DE9470; 
+                        color: $title-color; 
                     }
                 }
             }
         }
     }
     .main-img-design{
-        padding-right: 12%;
+        padding-right: 10%;
     }
     .middle-item{
         border-top: solid 1px #CECCCA;
@@ -515,6 +515,7 @@ ul.m-sidebar{
             position: absolute;
             top: -30px;
             transform: translate(-50%, 0px);
+            color: $title-color;
             span{
                 font-weight: 500;
             }
@@ -564,13 +565,13 @@ ul.m-sidebar{
             position: relative;
             text-indent: 0;
             white-space: nowrap;
-            width: 12%;
+            width: 15%;
             &:before{
-                background: #ceccca;
+                background: $title-color;
                 content: "";
                 display: block;
                 height: 1px;
-                width: 110%;
+                width: 100%;
                 bottom: 33px;
                 position: absolute;
                 z-index: 0;
@@ -579,11 +580,25 @@ ul.m-sidebar{
     }
 
     ol.ul-diff{
+        &:before{
+            background: $title-color;
+            content: "";
+            display: block;
+            height: 1px;
+            margin-top: 31px;
+            position: absolute;
+            width: 60%;
+            margin-left: 15%;
+        }
         li{
             display: inline-block;
             .c-anchor{
                 position: relative;
                 z-index: 5;
+            }
+            &:before, &:after{
+                padding: 0;
+                margin: 0;
             }
         }
     }
@@ -642,9 +657,14 @@ ul.m-sidebar{
     padding-top: 30px;
     padding-bottom: 30px;
     h2{
-        color: #383838;
+        color: $title-color;
         font-size: 40px;
         font-weight: 300 !important;
+    }
+    span.mess-title{
+        font-size: 16px;
+        font-weight: bold;
+        color: $sub-title;
     }
     img{
         padding-bottom: 20px;
@@ -690,10 +710,9 @@ ul.m-sidebar{
 #project{
     background: #2A2F33;
     h2{
-        /*color: $white;*/
         font-size: 36px;
         font-weight: 300 !important;
-        color:  #999b9c;
+        color: $title-color;
     }
     span{
         color: $white;
@@ -748,7 +767,7 @@ ul.m-sidebar{
                         text-decoration: none;
                         color: #F88010;
                         // border: solid 2px #EE7C12;
-                        border-radius: 15px;
+                        border-radius: 25px;
                         box-shadow: 0 0 0 2px #EE7C12 inset;
                     }
                     // &.active:before, &:hover:before{
@@ -758,7 +777,7 @@ ul.m-sidebar{
                     &.active{
                         color: #F88010;
                         // border: solid 2px #EE7C12;
-                        border-radius: 15px;
+                        border-radius: 25px;
                         box-shadow: 0 0 0 2px #EE7C12 inset;
                     }
                     &.nav-title{
@@ -776,6 +795,9 @@ ul.m-sidebar{
         }
     }
 }
+.lst-pj{
+    padding-top: 30px;
+}
 
 #sliderLogo{
     background: #F2EEEB;
@@ -784,7 +806,7 @@ ul.m-sidebar{
 #news{
     background: $white;
     h2{
-        color: #1A1A1A;
+        color: $title-color;
         font-size: 40px;
         font-weight: 300 !important;
     }
@@ -1005,30 +1027,6 @@ ul.m-sidebar{
         .content-right{
             padding-left: 80%;
         }
-        .fa-facebook{
-            font-size: 20px;
-            border: 2px solid #3B5998;
-            border-radius: 50%;
-            background-color: #3B5998;
-            padding: 6px 11px 6px 11px;
-            color: $white;
-        }
-        .fa-facebook:hover{
-            background-color: $white;
-            color: #3B5998;
-        }
-        .fa-twitter{
-            font-size: 20px;
-            border: 2px solid #00ACED;
-            border-radius: 50%;
-            background-color: #00ACED;
-            padding: 6px 7px 6px 7px;
-            color: $white;
-        }
-        .fa-twitter:hover{
-            background-color: $white;
-            color: #00ACED;
-        }
     }
     .service-title{
         color: #1A1A1A;
@@ -1093,15 +1091,63 @@ ul.m-sidebar{
             border-bottom: 1px solid #DEDEDE;
         }
     }
-    .sns{
-        ul{
-            display: inline-block;
-        }
+}
+
+.sns{
+    ul{
+        margin : 0;
+        padding: 0;
+        display: inline-block;
         li{
             display: inline-block;
+            a{
+                .fa-facebook{
+                    @include transition(0.2s);
+                    font-size: 20px;
+                    border: 1px solid $border-color-2;
+                    border-radius: 50%;
+                    background-color: $white;
+                    padding: 6px 11px 6px 11px;
+                    color: $border-color-2;
+                }
+                .fa-facebook:hover{
+                    background-color: $white;
+                    color: $title-color;
+                    border-color: $title-color;
+                }
+                .fa-twitter{
+                    @include transition(0.2s);
+                    font-size: 20px;
+                    border: 1px solid $border-color-2;
+                    border-radius: 50%;
+                    background-color: $white;
+                    padding: 6px 7px 6px 7px;
+                    color: $border-color-2;
+                }
+                .fa-twitter:hover{
+                    background-color: $white;
+                    color: $title-color;
+                    border-color: $title-color;
+                }
+                .fa-google{
+                    @include transition(0.2s);
+                    font-size: 20px;
+                    border: 1px solid $border-color-2;
+                    border-radius: 50%;
+                    background-color: $white;
+                    padding: 6px 9px 6px 9px;
+                    color: $border-color-2;
+                }
+                .fa-google:hover{
+                    background-color: $white;
+                    color: $title-color;
+                    border-color: $title-color;
+                }
+            }
         }
     }
 }
+
 #contact-info{
     background-color: white;
     .contact-header{
@@ -1347,6 +1393,12 @@ ul.m-sidebar{
 .marketing{
     p{
         font-size: 20px;
+        line-height: 1.35em;
+    }
+    ul{
+        li{
+            margin-top: 0.5em;
+        }
     }
     &.odd{
         background: $white;
@@ -1434,7 +1486,7 @@ ul.m-sidebar{
             color: #606264;
             font-size: 16px;
             font-weight: 500;
-            padding-right: 6%;
+            padding-right: 10%;
         }
     }
     .signs-up{
@@ -1445,21 +1497,22 @@ ul.m-sidebar{
         }
         .controls{
             padding: 6px 10px 8px 10px;
-            border: 3px solid #FFFFFF;
+            border: 1px solid #FFFFFF;
             background-color: #42464A;
             border-radius: 18px;
+            width: 70%;
         }
         form{
             padding-top: 10px;
         }
         button{
             margin-left: 10px;
-            border: 3px solid #FFFFFF;
+            border: 1px solid #FFFFFF;
             color: #9A9A9A;
             background-color: #42464A;
             height: 40px;
             width: 40px;
-            padding: 8px 20px 24px 8px;
+            padding: 10px 20px 24px 10px;
             border-radius: 50%;
             i{
                 color: #FFFFFF;
@@ -2127,24 +2180,31 @@ ul.recent_short{
 
 .m-last-pj{
     position: relative;
-    &:hover{
+    &:hover, &.active{
         .m-o-effect{
-            background: rgba(0,0,0,0.15);
+            transform: translate(-17%, -31%) rotate(90deg);
+            opacity: 1;
             .m-lp-item{
+                /*transform: translate(400px, -300px);*/
+                transform: translate(0px, 0px) rotate(-90deg);
                 margin-left: 0;
                 margin-top: 0;
             }
         }
     }
     .m-o-effect{
-        @include transition(0.2s);
+        transition: all 0.2s ease-in-out 0s;
+        transform: translate(265px, 145px) rotate(45deg);
         position: absolute;
-        background: rgba(0,0,0,0);
-        width: 100%;
-        height: 100%;
+        background: rgba(0,0,0,0.75);
+        opacity: 0;
+        width: 150%;
+        height: 250%;
         top: 0;
+        cursor: pointer;
         .m-lp-item{
-            @include transition(0.3s);
+            /*@include transition(0.3s);*/
+            transition: all 0.2s ease-in-out 0s;
             text-align: center;
             display: table;
             width: 100%;
@@ -2154,12 +2214,18 @@ ul.recent_short{
             .m-lp-row{
                 vertical-align: middle;
                 display: table-cell;
-                i, h2{
-                    color: #F88010;
+                h2{
+                    color: $white !important;
                 }
             }
         }
     }
+}
+.m-circle{
+    color: $white;
+    background: $title-color;
+    border-radius: 50%;
+    padding: 10px;
 }
 
 /* carousel slider css */
@@ -2170,6 +2236,60 @@ ul.recent_short{
 .carousel-control.left        { background-image: none; }
 .carousel-control.right       { background-image: none; }
 .carousel-inner .item         { background: transparent;      }
+
+.list-comments{
+    margin: 0;
+    li{
+        list-style-type: none;
+    }
+}
+.children{
+    li{
+        list-style-type: none;
+    }
+}
+
+.hstag{
+    text-align: left;
+    li{
+        list-style-type: none;
+        display: inline-block !important;
+        background: #ccc;
+        padding: 5px 5px;
+        margin: 0px 5px;
+        border-radius: 3px;
+        a{
+            color: #000 !important;
+            font-size: 12px !important;
+        }
+    }
+}
+
+.comment-respond{
+    input.inputtext{
+        height: 30px;
+        padding: 5px 8px;
+        width: 100%;
+        border-style: none none solid;
+        &:focus{
+            border-bottom: 2 solid #ff2f21;
+        }
+    }
+    textarea{
+        border: 1px solid #edb498;
+        border-radius: 4px;
+        width: 100%;
+    }
+    .submit{
+        background-color: #fff;
+        border: 1px solid #f88010;
+        border-radius: 30px;
+        color: #f88010;
+        font-weight: bold;
+        padding: 6px 20px;
+        text-align: center;
+    }
+}
 
 @import "nmf-1-max-1200.scss";
 @import "nmf-2-max-992.scss";

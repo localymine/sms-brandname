@@ -1,14 +1,15 @@
 <!-- project -->
-<div id="project">
+<div id="project" class="lst-pj">
     <div class="container-fluid">
         <div class="row-gap-medium"></div>
         <div class="row">
             <div class="col-xs-12 col-md-12 text-center wow fadeInUp" data-wow-delay="0.5s">
                 <h2>Chúng tôi hành động</h2><br />
-                <span>“Giá trị giữ vững niềm tin”.</span>
+                <span>“Giá trị tạo lập niềm tin”.</span>
             </div>
         </div>
         <?php
+        $lst_i = 0;
         $args = array(
             'hide_empty' => 1
         );
@@ -22,7 +23,8 @@
         <div id="tabs" class="row menu-tab-pro text-center nopadding">
             <ul class="list-inline">
                 <?php foreach ($terms as $term) : ?>
-                    <li><a href="#tabs-<?php echo $term->slug ?>"><?php echo $term->name ?></a></li>
+                    <li><a class="lst_active <?php echo ($lst_i == 0) ? 'active' : '' ?>" href="#tabs-<?php echo $term->slug ?>"><?php echo $term->name ?></a></li>
+                    <?php $lst_i++ ?>
                 <?php endforeach; ?>
             </ul>
             <div class="tabs_for_all">
@@ -69,7 +71,7 @@
                                                 <div class="m-lp-item">
                                                     <div class="m-lp-row">
                                                         <a href="<?php the_permalink() ?>">
-                                                            <i class="fa fa-eye fa-2x"></i>
+                                                            <i class="fa fa-eye fa-2x m-circle"></i>
                                                             <h2><?php the_title() ?></h2>
                                                         </a>
                                                     </div>
@@ -84,8 +86,8 @@
                             ?>
                         </div>
                         <!-- Arrow Navigator -->
-                        <span data-u="arrowleft" class="jssora05l" style="top:0px;left:2%;width:45px;height:45px;" data-autocenter="2"></span>
-                        <span data-u="arrowright" class="jssora05r" style="top:0px;right:2%;width:45px;height:45px;" data-autocenter="2"></span>
+                        <span data-u="arrowleft" class="jssora05l" style="top:0px;left:2%;width:75px;height:70px;" data-autocenter="2"></span>
+                        <span data-u="arrowright" class="jssora05r" style="top:0px;right:2%;width:75px;height:70px;" data-autocenter="2"></span>
                     </div>
                 </div>
                 <?php

@@ -33,7 +33,17 @@ if ($terms && !is_wp_error($terms)) {
                 <!-- content detail -->
                 <section id="content-detail" class="text-left">
                     <h2><?php the_title() ?></h2>
-                    <div class="time"><span><i class="fa fa-star"></i> <?php echo $on_draught ?></span> | <?php the_date('H:i, d/m/Y', '<span>', '</span>', true) ?></div>
+                    <div class="time">
+                        <span><i class="fa fa-star"></i> <?php echo $on_draught ?></span> | <?php the_date('H:i, d/m/Y', '<span>', '</span>', true) ?>
+                        <span>
+                            <i class="fa fa-user"></i> 
+                            <?php if (have_posts()) : ?>
+                                <?php while (have_posts()) : the_post(); ?>
+                                    <?php echo ucfirst(get_the_author()) ?>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
+                        </span>
+                    </div>
                     <!-- social network -->
                     <?php get_template_part('part-social-share') ?>
                     <!-- social network end -->
@@ -46,7 +56,29 @@ if ($terms && !is_wp_error($terms)) {
                     </div>
                 </section>
                 <!-- content detail end -->
-                
+
+                <hr/>
+                <?php
+                if (get_the_tag_list()) {
+                    echo get_the_tag_list('<ul class="hstag"><li>', '</li><li>', '</li></ul>');
+                }
+                ?>
+
+                <hr/>
+                <div class="col-md-12" style="text-align: left;">
+                    <table>
+                        <?php comments_template('', true); ?>
+                    </table>
+                </div>
+
+                <hr/>
+                <div class="comments">
+                    <ul class="list-comments" style="text-align: left;list-style-type: none;">
+                        <?php wp_list_comments(array('style' => 'ul')); ?> 
+                    </ul>
+                </div>
+
+                <hr/>
                 <?php
                 global $post__id;
                 $post__id[] = $post->ID;
@@ -87,13 +119,15 @@ if ($terms && !is_wp_error($terms)) {
                 wp_reset_postdata();
                 ?>
                 <div id="fb-root"></div>
-                <script>(function(d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1405479576355526";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>  
+                <script>(function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id))
+                            return;
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1405479576355526";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>  
                 <fb:comments href="<?php the_permalink(); ?>"></fb:comments>
                 <!-- more relation news -->
                 <?php get_template_part('part-news-more') ?>

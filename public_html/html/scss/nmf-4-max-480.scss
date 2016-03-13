@@ -2,10 +2,10 @@
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-    
+
     .header{
         .affix{
-            padding-top: 12%;
+            /*padding-top: 12%;*/
             #logo{
                 button{
                     margin-right: 12%;
@@ -83,6 +83,23 @@
             span{
                 font-size: 22px;
                 padding-left: 26px;
+            }
+        }
+    }
+
+    #project {
+        .menu-tab-pro ul li a{
+            font-size: 10px;
+            padding: 0;
+        }
+    }
+
+    .hot-top {
+        ul {
+            li {
+                .hotline{
+                    font-size: 13px !important;
+                }
             }
         }
     }

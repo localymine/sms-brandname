@@ -174,21 +174,10 @@ function redirect_post_type_taxonomy() {
  * @param type $q
  * @return type
  */
-function add_custom_posts_per_page(&$q) {
+function add_custom_posts_per_page(&$query) {
     if (!is_admin()) {
-        global $custom_post_types;
-
-        $custom_post_types = array('health');
-
-        if ($q->is_archive) { // any archive
-            if (isset($q->query_vars['post_type'])) {
-                if (in_array($q->query_vars['post_type'], $custom_post_types)) {
-                    $q->set('posts_per_page', 12);
-                }
-            }
-        }
         //
-        return $q;
+        return $query;
     }
 }
 
@@ -385,3 +374,25 @@ function omw_get_author_posts($post_type) {
 
     return $authors_posts;
 }
+
+function remove_comment_fields($fields) {
+    unset($fields['url']);
+    return $fields;
+}
+
+add_filter('comment_form_default_fields', 'remove_comment_fields');
+
+function my_post_queries(&$query) {
+    // do not alter the query on wp-admin pages and only alter it if it's the main query
+    if (!is_admin() && $query->is_main_query()) {
+
+        // alter the query for the home and category pages 
+//        if (is_tag()) {
+        $query->set('posts_per_page', 2);
+//        }
+
+        return $query;
+    }
+}
+
+add_action('pre_get_posts', 'my_post_queries');

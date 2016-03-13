@@ -28,6 +28,7 @@ get_header();
                     'post_type' => array('news'),
                     'order' => 'DESC',
                     'orderby' => 'post_date',
+                    'paged' => $paged,
                     'tax_query' => array(
                         array(
                             'taxonomy' => 'news-cat',
@@ -37,18 +38,18 @@ get_header();
                         ),
                     ),
                 );
-                $loop = new WP_Query($args);
-                if ($loop->have_posts()):
-                    while ($loop->have_posts()): $loop->the_post();
+                $wp_query = new WP_Query($args);
+                if ($wp_query->have_posts()):
+                    while ($wp_query->have_posts()): $wp_query->the_post();
                         $posts__id[] = get_the_ID();
                         $image = get_field('image');
                         ?>
-                        <div class="col-xs-12 col-md-6 news-row text-center">
-                            <div class="news-info">
+                        <div class="col-xs-12 col-md-6 news-row text-center" style="margin-top: 20px;">
+                            <div class="news-info" style="min-height: 200px;">
                                 <a href="<?php the_permalink() ?>">
                                     <h4><?php the_title() ?></h4>
                                     <span class="news-overlay"></span>
-                                    <img class="img-responsive" src="<?php echo $image['sizes']['large'] ?>"/>
+                                    <img class="img-responsive center-block" height="250" src="<?php echo $image['sizes']['large'] ?>"/>
                                 </a>
                             </div>
                         </div>
@@ -57,6 +58,11 @@ get_header();
                 endif;
                 wp_reset_postdata();
                 ?>
+                <div class="col-xs-12 clear-fix">
+                    <?php
+                    wpbeginner_numeric_posts_nav();
+                    ?>
+                </div>
                 <!-- more relation news -->
                 <?php get_template_part('part-news-more') ?>
             </div>

@@ -217,6 +217,10 @@ jQuery(document).ready(function ($) {
 $(function () {
     $("#tabs").tabs();
 //    $("#tabs-design").tabs();
+    $('.lst_active').on('click', function(){
+        $('.lst_active').parent().find('.lst_active').removeClass('active');
+        $(this).addClass('active');
+    });
 });
 /* -------------------------------------------------- product carousel slider */
 $(function () {
