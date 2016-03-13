@@ -209,6 +209,30 @@ function cptui_register_my_cpts() {
     );
     register_post_type("sms", $args);
 
+    $labels = array(
+        "name" => "News Banner",
+        "singular_name" => "News Banner",
+    );
+
+    $args = array(
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "show_ui" => true,
+        "has_archive" => false,
+        "show_in_menu" => true,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => array("slug" => "news-banner", "with_front" => true),
+        "query_var" => true,
+        "menu_position" => 26,
+        "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h9.png',
+        "supports" => array("title"),
+    );
+    register_post_type("news-banner", $args);
+
 // End of cptui_register_my_cpts()
 }
 
@@ -545,26 +569,36 @@ if (function_exists("register_field_group")) {
         'title' => 'Information Slider',
         'fields' => array(
             array(
-                'key' => 'field_569fd359f04da',
-                'label' => 'Images',
-                'name' => 'images',
-                'type' => 'repeater',
-                'sub_fields' => array(
-                    array(
-                        'key' => 'field_569fd362f04db',
-                        'label' => 'Image',
-                        'name' => 'image',
-                        'type' => 'image',
-                        'column_width' => '',
-                        'save_format' => 'object',
-                        'preview_size' => 'thumbnail',
-                        'library' => 'all',
-                    ),
-                ),
-                'row_min' => '',
-                'row_limit' => '',
-                'layout' => 'table',
-                'button_label' => 'Add Row',
+                'key' => 'field_56e5b92475bdc',
+                'label' => 'Avatar',
+                'name' => 'avatar',
+                'type' => 'image',
+                'save_format' => 'object',
+                'preview_size' => 'thumbnail',
+                'library' => 'all',
+            ),
+            array(
+                'key' => 'field_56e5b98775bdd',
+                'label' => 'Info',
+                'name' => 'info',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+            array(
+                'key' => 'field_56e5ba1a75bde',
+                'label' => 'Quote',
+                'name' => 'quote',
+                'type' => 'textarea',
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'formatting' => 'br',
             ),
         ),
         'location' => array(
@@ -844,6 +878,66 @@ if (function_exists("register_field_group")) {
                     'param' => 'post_type',
                     'operator' => '==',
                     'value' => 'sms',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array(
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array(
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+
+    register_field_group(array(
+        'id' => 'acf_news-banner',
+        'title' => 'News Banner',
+        'fields' => array(
+            array(
+                'key' => 'field_56e5c422bdf13',
+                'label' => 'Banner',
+                'name' => 'banner',
+                'type' => 'repeater',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'field_56e5c50a902b3',
+                        'label' => 'Image',
+                        'name' => 'image',
+                        'type' => 'image',
+                        'column_width' => '',
+                        'save_format' => 'object',
+                        'preview_size' => 'thumbnail',
+                        'library' => 'all',
+                    ),
+                    array(
+                        'key' => 'field_56e5c51e902b4',
+                        'label' => 'Url',
+                        'name' => 'url',
+                        'type' => 'text',
+                        'column_width' => '',
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'formatting' => 'none',
+                        'maxlength' => '',
+                    ),
+                ),
+                'row_min' => '',
+                'row_limit' => '',
+                'layout' => 'table',
+                'button_label' => 'Add Row',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'news-banner',
                     'order_no' => 0,
                     'group_no' => 0,
                 ),
