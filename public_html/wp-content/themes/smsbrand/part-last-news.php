@@ -32,7 +32,7 @@
                                     <i class="fa fa-calendar"></i> <?php the_date('M jS', '<span>', '</span>', true) ?>
                                     <i class="fa fa-user"></i> <?php echo ucfirst(get_the_author()) ?>
                                 </div>
-                                <div class="service-content"><?php the_excerpt() ?></div>
+                                <div class="service-content"><?php echo wp_trim_words(get_the_excerpt(), 35, '...') ?></div>
                                 <div class="read-more">
                                     <a href="<?php the_permalink() ?>">
                                         Read More <i class="fa fa-long-arrow-right"></i>

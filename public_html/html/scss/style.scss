@@ -604,6 +604,15 @@ ul.m-sidebar{
     }
 }
 
+ul.ul-diff{
+    li{
+        img{
+            @include transition(0.2s);
+            cursor: pointer;
+        }
+    }
+}
+
 .mico{
     display: inline-block;
     width: 60px;
@@ -829,6 +838,7 @@ ul.m-sidebar{
         color: #C6C6C6;
         font-size: 16px;
         padding-bottom: 20px;
+        padding-top: 20px;
         p{
             font-size: 16px;
         }
@@ -839,7 +849,7 @@ ul.m-sidebar{
         height: 100%;
     }
     .module-special{
-        height: 235px;
+        height: 265px;
     }
 }
 .information{
@@ -1049,29 +1059,32 @@ ul.m-sidebar{
         a{
             h4{
                 color: #fff;
-                display: block;
+                background: rgba(0,0,0,0.7);
+                display: table;
                 font-size: 14px;
                 left: 0;
-                /*opacity: 1;*/
                 position: absolute;
                 text-align: center;
-                /*top: 69%;*/
-                /*vertical-align: middle;*/
                 width: 100%;
                 z-index: 9;
-                bottom: 6px;
+                bottom: 0;
+                height: 35px;
+                margin-bottom: 0;
+                span{
+                    display: table-cell;
+                    vertical-align: middle;
+                }
             }
-            .news-overlay{
+/*            .news-overlay{
                 background: rgba(0,0,0,0.75);
                 display: block;
-                /*border:1px solid #999;*/
                 height: 50px;
                 left: 0;
                 position: absolute;
-                /*top: 61%;*/
+                top: 61%;
                 width: 100%;
                 bottom: 0;
-            }
+            }*/
         }
     }
     .pr-bar{
@@ -1527,6 +1540,20 @@ ul.m-sidebar{
             /* FF 4-18 */
             color: #FFFFFF;
             font-size: 16px;
+        }
+        &:focus{
+            *:-moz-placeholder{
+                color: transparent !important;
+            }
+            *::-moz-placeholder{
+                color: transparent !important;
+            }
+            *::-webkit-input-placeholder{
+                color: transparent !important;
+            }
+            *:-ms-input-placeholder{
+                color: transparent !important;
+            }
         }
         *::-moz-placeholder {
             /* FF 19+ */
@@ -2346,6 +2373,13 @@ ul.recent_short{
             }
         }
     }
+}
+
+.orange{
+    color: $title-color !important;
+}
+.white{
+    color: $white !important;
 }
 
 @import "nmf-1-max-1200.scss";

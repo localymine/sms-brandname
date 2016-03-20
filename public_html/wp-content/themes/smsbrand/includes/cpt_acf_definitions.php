@@ -180,7 +180,7 @@ function cptui_register_my_cpts() {
         "query_var" => true,
         "menu_position" => 26,
         "menu_icon" => get_template_directory_uri() . '/images/ad-ico/h7.png',
-        "supports" => array("title", "editor", "excerpt", "comments"),
+        "supports" => array("title", "editor", "excerpt", "comments", "custom-fields"),
         'taxonomies' => array('post_tag'),
     );
     register_post_type("news", $args);
@@ -531,6 +531,16 @@ if (function_exists("register_field_group")) {
                         'key' => 'field_569e730046e54',
                         'label' => 'Image',
                         'name' => 'image',
+                        'type' => 'image',
+                        'column_width' => '',
+                        'save_format' => 'object',
+                        'preview_size' => 'thumbnail',
+                        'library' => 'all',
+                    ),
+                    array(
+                        'key' => 'field_56eedc8b9e764',
+                        'label' => 'Image Hover',
+                        'name' => 'image_hover',
                         'type' => 'image',
                         'column_width' => '',
                         'save_format' => 'object',

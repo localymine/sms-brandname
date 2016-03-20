@@ -34,7 +34,7 @@ if ($terms && !is_wp_error($terms)) {
                 <section id="content-detail" class="text-left">
                     <h2><?php the_title() ?></h2>
                     <div class="time">
-                        <span><i class="fa fa-star"></i> <?php echo $on_draught ?></span> | <?php the_date('H:i, d/m/Y', '<span>', '</span>', true) ?>
+                        <span><i class="fa fa-star"></i> <?php echo $on_draught ?></span>
                         <span>
                             <i class="fa fa-user"></i> 
                             <?php if (have_posts()) : ?>
@@ -42,6 +42,9 @@ if ($terms && !is_wp_error($terms)) {
                                     <?php echo ucfirst(get_the_author()) ?>
                                 <?php endwhile; ?>
                             <?php endif; ?>
+                        </span>
+                        <span>
+                            <i class="fa fa-calendar"></i> <?php echo get_the_date('Y M jS', '', '', true) ?>
                         </span>
                     </div>
                     <!-- social network -->

@@ -2,7 +2,7 @@
 <?php
 $args = array(
     'post_type' => 'info-slider',
-    'posts_per_page' => 1,
+    'posts_per_page' => -1,
     'orderby' => array('date' => 'DESC'),
 );
 $loop = new WP_Query($args);
@@ -24,9 +24,9 @@ $loop = new WP_Query($args);
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-
             <?php
             //
+            $i = 0;
             if ($loop->have_posts()):
                 while ($loop->have_posts()):
                     $loop->the_post();
@@ -34,7 +34,7 @@ $loop = new WP_Query($args);
                     $avatar = get_field('avatar');
                     ?>
 
-                    <div class="item active">
+                    <div class="item <?php echo ($i == 0) ? 'active' : '' ?>">
                         <div class="article-img">
                             <div class="img-intro">
                                 <img class="img-responsive img-circle" alt="" src="<?php echo $avatar['sizes']['large'] ?>">
@@ -49,6 +49,7 @@ $loop = new WP_Query($args);
                     </div>
 
                     <?php
+                    $i++;
                 endwhile;
             endif;
             wp_reset_postdata();

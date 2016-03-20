@@ -118,17 +118,15 @@ global $omw_theme_settings;
                                 <textarea class="form-control" name="re_content" rows="10" cols="30" placeholder=""></textarea>
                             </div>
                         </div>
-                        <!-- <div class="form-group"> 
-                            <div class="center-block" style="width: 21%;">
+                        <div class="form-group"> 
+                            <div class="col-xs-12 col-md-6">
                                 <div class="g-recaptcha" data-sitekey="<?php echo $omw_theme_settings->ct_recaptcha_public_key ?>"></div>
                                 <div id="catpcha"></div>
                             </div>
-                        </div> -->
-                        <div class="form-group"> 
-                            <div class="col-sm-12 text-right">
+                            <div class="col-xs-12 col-md-6 text-right">
                                 <button type="submit" class="submit btn btn-default">GỬI NỘI DUNG</button>
                             </div>
-                        </div>
+                        </div> 
                     </form>
                 </div>
             </div>
@@ -162,18 +160,32 @@ global $omw_theme_settings;
                         </i>
                         <span><?php echo $omw_theme_settings->ct_company_telephone ?></span>
                     </p>
+                    <?php if (trim($omw_theme_settings->ct_company_fax) != ''): ?>
+                        <p>
+                            <i class="fa">
+                                <img class="img-responsive nopadding" src="<?php echo get_template_directory_uri() ?>/images/contact-6.png" />
+                            </i>
+                            <span><?php echo $omw_theme_settings->ct_company_fax ?></span>
+                        </p>
+                    <?php endif; ?>
                     <p>
-                        <i class="fa">
-                            <img class="img-responsive nopadding" src="<?php echo get_template_directory_uri() ?>/images/contact-6.png" />
-                        </i>
-                        <span><?php echo $omw_theme_settings->ct_company_fax ?></span>
-                    </p>
-                    <p>
-                        <?php echo $omw_theme_settings->ct_company_google_map ?>
+                        <i class="fa fa-globe" style="color: #F88010;"></i>
+                        <span>
+                            <a style="color: #666" href="http://MaxsSMS.com" target="_blank">Max SMS</a><br/>
+                        </span>
+                        <i class="fa fa-globe" style="color: #F88010;"></i>
+                        <span>
+                            <a style="color: #666" href="http://Maxsolutions.vn" target="_blank">Max Solutions</a>
+                        </span>
                     </p>
                 </div>
             </div>
             <!-- <div class="col-md-1"></div> -->
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12 nopadding">
+                <?php echo $omw_theme_settings->ct_company_google_map ?>
+            </div>
         </div>
         <div class="row-gap-big"></div>
     </div>

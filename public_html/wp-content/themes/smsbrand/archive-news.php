@@ -47,8 +47,7 @@ get_header();
                         <div class="col-xs-12 col-md-6 news-row text-center" style="margin-top: 20px;">
                             <div class="news-info" style="min-height: 200px;">
                                 <a href="<?php the_permalink() ?>">
-                                    <h4><?php the_title() ?></h4>
-                                    <span class="news-overlay"></span>
+                                    <h4><span><?php the_title() ?></span></h4>
                                     <img class="img-responsive center-block" height="250" src="<?php echo $image['sizes']['large'] ?>"/>
                                 </a>
                             </div>

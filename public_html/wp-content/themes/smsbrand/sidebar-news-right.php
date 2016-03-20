@@ -1,6 +1,7 @@
 <div class="col-xs-12 col-md-3 pr-bar nopadding">
     <span class="service-title">TIN TỨC LIÊN QUAN</span>
-    <div class="border-titile"></div>
+    <?php get_template_part('part-news-banner') ?>
+    <div class="border-titile clearfix"></div>
     <!--<img class="img-responsive banner-news" src="<?php echo get_template_directory_uri(); ?>/images/prod-p1.jpg" alt="vietnam" />-->
     <?php
     global $posts__id;
@@ -56,14 +57,21 @@
             $image = get_field('image');
             ?>
             <div class="col-xs-12 nopadding news-slide-row">
-                <div class="col-xs-12 col-md-5 nopadding">
+                <div class="col-xs-12 col-md-3 nopadding">
                     <a href="<?php the_permalink() ?>">
                         <img class="img-responsive" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
                     </a>
                 </div>
-                <div class="col-xs-12 col-md-7 nopadding">
+                <div class="col-xs-12 col-md-9 nopadding">
                     <a href="<?php the_permalink() ?>">
-                        <h4><?php the_title() ?></h4>
+                        <h4>
+                            <?php the_title() ?>
+                            <span>
+                                <h5>
+                                <?php echo wp_trim_words(get_the_excerpt(), 15, '...') ?>
+                                </h5>
+                            </span>
+                        </h4>
                     </a>
                 </div>
             </div>
@@ -72,6 +80,4 @@
     endif;
     wp_reset_postdata();
     ?>
-    
-    <?php get_template_part('part-news-banner') ?>
 </div>

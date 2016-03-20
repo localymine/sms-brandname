@@ -21,8 +21,13 @@
                             //
                             $image = get_sub_field('image');
                             $img_size = $image['sizes']['large'];
+                            //
+                            $image_hover = get_sub_field('image_hover');
+                            $img_size_hover = $image_hover['sizes']['large'];
                             ?>
-                            <li><img class="img-responsive center-block" src="<?php echo $img_size ?>"/></li>
+                    <li>
+                        <img class="img-responsive center-block" src="<?php echo $img_size ?>" onmouseover="this.src='<?php echo $img_size_hover ?>'" onmouseout="this.src='<?php echo $img_size ?>'"/>
+                    </li>
                             <?php
                         endwhile;
                     endwhile;

@@ -17,11 +17,14 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
                     <?php get_template_part('part-social-share-footer') ?>
                 </div>
                 <div class="col-xs-12 col-md-4 signs-up text-center">
-                    <span>
-                        Đăng ký để nhận ưu đãi
-                    </span>
+                    <h3 class="orange">
+                        Tặng voucher 100,000 VNĐ
+                    </h3>
+                    <h4 class="white">
+                        cho khách hàng mới
+                    </h4>
                     <form class="text-center">
-                        <input type="text" class="controls" placeholder="Email"><button class="btn btn-default"><i class="fa fa-check"></i></button>
+                        <input type="text" class="controls" placeholder="Email"><button class="btn btn-default"><i class="fa fa-check orange"></i></button>
                     </form>
                 </div>
                 <div class="col-xs-12 col-md-4 copyright text-right">

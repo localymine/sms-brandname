@@ -22,11 +22,15 @@
                     $image = get_field('image');
                     ?>
                     <div class="col-xs-12 col-md-4 text-center nopadding">
-                        <img class="img-responsive center-block" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
-                        <a href="javascript:void(0);">
+                        <?php
+                        $url = get_field('url');
+                        ?>
+                        <a href="<?php echo $url != '' ? $url : get_the_permalink()  ?>">
+                            <img class="img-responsive center-block" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
                             <span class="service-title"><?php the_title() ?></span>
-                        </a><br />
-                        <div class="service-content"><?php the_excerpt() ?></div>
+                            <br />
+                            <div class="service-content"><?php the_excerpt() ?></div>
+                        </a>
                     </div>
                     <?php
                 endwhile;
