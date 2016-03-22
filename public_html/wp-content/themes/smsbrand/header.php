@@ -45,6 +45,7 @@
     <?php echo $omw_theme_settings->ct_custom_css; ?>
             </style>
         <?php endif; ?>
+        <?php wp_head(); ?>
     </head>
     <body>
         <?php if (isset($omw_theme_settings->ct_facebook_script)) echo $omw_theme_settings->ct_facebook_script; ?>

@@ -109,13 +109,13 @@ global $omw_theme_settings;
                         </div>
                         <div class="form-group">
                             <div class="col-sm-7 nopaddingl">
-                                <input type="website" name="re_website" class="" id="website" placeholder="www.example.com">
+                                <input type="website" name="re_website" class="" id="website" placeholder="">
                             </div>
-                            <label class="control-label col-sm-2" for="name">Website <span class="star">*</span></label>
+                            <label class="control-label col-sm-2" for="website">Phone <span class="star">*</span></label>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <textarea class="form-control" name="re_content" rows="10" cols="30" placeholder=""></textarea>
+                                <textarea class="form-control" name="re_content" rows="5" cols="30" placeholder=""></textarea>
                             </div>
                         </div>
                         <div class="form-group"> 

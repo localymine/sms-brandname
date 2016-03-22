@@ -3,35 +3,10 @@
     <span class="service-title">TIN TỨC LIÊN QUAN</span>
     <div class="border-titile clearfix"></div>
     <?php
-    global $posts__id;
-    $arr_terms = array();
-    
-    if (is_single()) {
-        //
-        $terms = get_the_terms($post->ID, 'news-cat');
-        $arr_terms[] = ($terms != FALSE) ? $terms[0]->slug : '';
-        //
-        $args = array(
-            'post_type' => array('news'),
-            'posts_per_page' => 6,
-            'order' => 'DESC',
-            'orderby' => 'post_date',
-            'post__not_in' => array($post->ID),
-            'tax_query' => array(
-                array(
-                    'taxonomy' => 'news-cat',
-                    'field' => 'slug',
-                    'terms' => $arr_terms,
-                ),
-                array(
-                    'taxonomy' => 'news-cat',
-                    'field' => 'slug',
-                    'terms' => array('top', 'guide'),
-                    'operator' => 'NOT IN',
-                ),
-            ),
-        );
-    } else {
+        global $posts__id;
+
+        $req_uri = explode('/', $_SERVER['REQUEST_URI']);
+        $term = isset($req_uri[2]) ? $req_uri[2] : '';
         //
         $args = array(
             'post_type' => array('news'),
@@ -43,12 +18,10 @@
                 array(
                     'taxonomy' => 'news-cat',
                     'field' => 'slug',
-                    'terms' => array('top', 'guide'),
-                    'operator' => 'NOT IN',
+                    'terms' => array($term),
                 ),
             ),
         );
-    }
 
     $loop = new WP_Query($args);
     if ($loop->have_posts()):

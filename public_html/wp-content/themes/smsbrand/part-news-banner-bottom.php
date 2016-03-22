@@ -5,6 +5,13 @@ $args = array(
     'posts_per_page' => 1,
     'order' => 'DESC',
     'orderby' => 'post_date',
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'banner-position',
+            'field' => 'slug',
+            'terms' => array('top'),
+        ),
+    ),
 );
 
 $loop = new WP_Query($args);
@@ -28,3 +35,4 @@ if ($loop->have_posts()):
 endif;
 wp_reset_postdata();
 ?>
+<div class="border-titile clearfix"></div>

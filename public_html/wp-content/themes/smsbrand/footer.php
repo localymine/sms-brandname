@@ -65,5 +65,6 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
 <?php if (isset($omw_theme_settings->ct_google_analytics)) echo $omw_theme_settings->ct_google_analytics; ?>
 <?php if (isset($omw_theme_settings->ct_google_tag_manager)) echo $omw_theme_settings->ct_google_tag_manager; ?>
 
+<?php wp_footer(); ?>
 </body>
 </html>

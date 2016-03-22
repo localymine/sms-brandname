@@ -292,6 +292,22 @@ function cptui_register_my_taxes() {
     );
     register_taxonomy("sms-type", array("sms"), $args);
 
+    $labels = array(
+        "name" => "Banner Position",
+        "label" => "Banner Position",
+    );
+
+    $args = array(
+        "labels" => $labels,
+        "hierarchical" => true,
+        "label" => "Banner Position",
+        "show_ui" => true,
+        "query_var" => true,
+        "rewrite" => array('slug' => 'banner-position', 'with_front' => true),
+        "show_admin_column" => true,
+    );
+    register_taxonomy("banner-position", array("news-banner"), $args);
+
 // End cptui_register_my_taxes
 }
 

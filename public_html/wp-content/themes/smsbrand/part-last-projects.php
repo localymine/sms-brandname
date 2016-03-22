@@ -4,7 +4,7 @@
         <div class="row-gap-medium"></div>
         <div class="row">
             <div class="col-xs-12 col-md-12 text-center wow fadeInUp" data-wow-delay="0.5s">
-                <h2>Chúng tôi hành động</h2><br />
+                <h2>Chúng tôi hành động</h2>
                 <span>“Giá trị tạo lập niềm tin”.</span>
             </div>
         </div>
