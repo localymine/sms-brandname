@@ -131,12 +131,11 @@ global $omw_theme_settings;
                 </div>
             </div>
             <div class="col-md-1"></div>
-            <div class="col-xs-12 col-md-3 text-left">
+            <div class="col-xs-12 col-md-3 text-left nopadding-right">
                 <div class="contact-form">
                     <span>COMPANY</span>
                 </div>
-                <p><span>Demo test Demo test Demo test</span></p>
-                <!-- <p class="detail-company"><span><?php echo $omw_theme_settings->ct_company_name ?></span></p> -->
+                <p><span><?php echo $omw_theme_settings->ct_company_name ?></span></p>
                 <div class="row-gap-medium"></div>
                 <div class="contact-form">
                     <span>Contact</span>

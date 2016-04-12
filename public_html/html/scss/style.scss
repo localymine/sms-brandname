@@ -23,6 +23,9 @@ $nopadding: (left: 0, right: 0, top: 0, bottom: 0);
 .nomargin{
     margin: 0;
 }
+html{
+    overflow-x: hidden;
+}
 body{
     @include main-font;
     background: $bg-primary;
@@ -724,7 +727,7 @@ ul.ul-diff{
         color: $title-color;
     }
     span{
-        color: $white;
+        color: $sub-title;
         font-size: 17px;
     }
     .menu-tab-pro{
@@ -1281,7 +1284,7 @@ ul.ul-diff{
             color: #F88010;
             font-weight: bold;
             padding: 6px 20px;
-            margin-top: 30px;
+            margin-top: 20px;
             text-align: center;
         }
         button.submit:hover {
@@ -1501,8 +1504,14 @@ ul.ul-diff{
             font-weight: 500;
             padding-right: 10%;
         }
+        span.product_of{
+            padding-right: 10%;
+        }
     }
     .signs-up{
+        h3{
+            margin-bottom: 0;
+        }
         span{
             color: #999B9C;
             font-size: 26px;
@@ -1533,13 +1542,15 @@ ul.ul-diff{
             }
         }
         *::-webkit-input-placeholder {
-            color: #FFFFFF;
+            color: $title-color;
             font-size: 16px;
+            opacity: 1 !important;
         }
         *:-moz-placeholder {
             /* FF 4-18 */
-            color: #FFFFFF;
+            color: $title-color;
             font-size: 16px;
+            opacity: 1 !important;
         }
         &:focus{
             *:-moz-placeholder{
@@ -1557,13 +1568,15 @@ ul.ul-diff{
         }
         *::-moz-placeholder {
             /* FF 19+ */
-            color: #FFFFFF;
+            color: $title-color;
             font-size: 16px;
+            opacity: 1 !important;
         }
         *:-ms-input-placeholder {
             /* IE 10+ */
-            color: #FFFFFF;
+            color: $title-color;
             font-size: 16px;
+            opacity: 1 !important;
         }
     }
 }
@@ -1921,6 +1934,15 @@ ul.ul-diff{
         padding-top: 10px;
         h2{
             font-size: 18px;
+        }
+    }
+    .mes-content{
+        img{
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
         }
     }
 }
@@ -2321,11 +2343,12 @@ ul.recent_short{
 #slideDesign{
     background: #363d42;
     color: #7a8f99;
-    padding: 96px 0;
+    padding: 35px 0;
     .item{
         background: #363d42;
         min-height: 200px;
         transition: left 0.6s ease-in-out 0s;
+        padding-bottom: 30px;
     }
     .article-img{
         border-radius: 60px;
@@ -2346,10 +2369,10 @@ ul.recent_short{
         width: auto;
         font-size: 24px;
         line-height: 1.875em;
-        padding-right: 24px;
+        /*padding-right: 24px;*/
         h4{
             font-weight: 400;
-            margin-bottom: 12px;
+            margin-bottom: 20px;
             font-size: 16px;
             color: $title-color;
         }

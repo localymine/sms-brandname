@@ -42,7 +42,7 @@ function omw_active_menu() {
     $omw_active_menu = array(
         'home' => '',
         'sms-brandname' => '',
-        'sms-opt' => '',
+        'sms-otp' => '',
         'sms-marketing' => '',
         'sms-8x77' => '',
         'news' => '',
@@ -55,9 +55,9 @@ function omw_active_menu() {
         $omw_active_menu['home'] = $active;
     } elseif ($pagename == 'sms-brandname') {
         $omw_active_menu['sms-brandname'] = $active;
-    } elseif ($post_type == 'sms-opt') {
-        $omw_active_menu['sms-opt'] = $active;
-    } elseif ($post_type == 'sms-marketing') {
+    } elseif ($pagename == 'sms-otp') {
+        $omw_active_menu['sms-otp'] = $active;
+    } elseif ($pagename == 'sms-marketing') {
         $omw_active_menu['sms-marketing'] = $active;
     } elseif ($pagename == 'sms-8x77') {
         $omw_active_menu['sms-8x77'] = $active;

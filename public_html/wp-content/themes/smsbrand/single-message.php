@@ -15,11 +15,13 @@ get_header();
 <div id="message-detail">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-8 content-message text-left nopadding">
+            <div class="col-xs-12 col-md-12 content-message text-left nopadding">
                 <h2><?php the_title() ?></h2>
-                <div><?php echo get_field('content') ?></div>
+                <div class="mes-content">
+                    <?php echo get_field('content') ?>
+                </div>
             </div>
-            <?php get_sidebar('message') ?>
+            <?php // get_sidebar('message') ?>
             <!-- <div class="col-md-1"></div> -->
         </div>
         <div class="row-gap-big"></div>

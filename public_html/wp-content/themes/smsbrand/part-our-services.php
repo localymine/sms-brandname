@@ -31,12 +31,12 @@
                         <div class="module-special">
                             <article class="item">
                                 <img class="img-responsive center-block img-sim" src="<?php echo $img_size ?>"/>
-                                <a href="<?php the_permalink() ?>">
+                                <a href="<?php echo get_field('url') ?>">
                                     <span class="service-title"><?php the_title() ?></span>
                                 </a>
                                 <div class="service-content"><?php echo wp_trim_words(get_field('description'), 35, '...') ?></div>
                                 <div class="read-more">
-                                    <a href="<?php the_permalink() ?>">
+                                    <a href="<?php echo get_field('url') ?>">
                                        Read More <i class="fa fa-long-arrow-right"></i>
                                     </a>
                                 </div>

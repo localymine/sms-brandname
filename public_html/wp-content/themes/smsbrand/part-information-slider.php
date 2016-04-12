@@ -36,12 +36,12 @@ $loop = new WP_Query($args);
 
                     <div class="item <?php echo ($i == 0) ? 'active' : '' ?>">
                         <div class="article-img">
-                            <div class="img-intro">
-                                <img class="img-responsive img-circle" alt="" src="<?php echo $avatar['sizes']['large'] ?>">
+                            <div class="img-intro" style="display: block;width: 100%; height: 100%;">
+                                <img style="height: 100%;" class="img-responsive" alt="" src="<?php echo $avatar['sizes']['large'] ?>">
                             </div>
                         </div>
                         <div class="article-content">
-                            <h4><?php echo get_field('info') ?></h4>
+                            <h4 class="center-block"><?php echo get_field('info') ?></h4>
                             <p class="mod-articles-category-introtext">
                                 <?php echo get_field('quote') ?>
                             </p>

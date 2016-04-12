@@ -4,7 +4,7 @@
         <title>SMS BRANDNAME – SMS Solutions - Giải pháp marketing hiệu quả với chi phí thấp trên thiết bị di động.</title>
         <meta charset="UTF-8">
         <meta content="IE=9" http-equiv="X-UA-Compatible">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
         <meta content="" name="description">
         <meta content="" name="author">
 
@@ -143,7 +143,7 @@
                         <a class="<?php echo $omw_active_menu['home'] ?>" href="<?php echo home_url() ?>"><span>HOME</span></a>
                     </li>
                     <li>
-                        <a class="<?php echo $omw_active_menu['sms-brandname'] ?>" href="<?php echo home_url('sms-brandname') ?>/sms-brandname"><span>SMS BRANDNAME</span></a>
+                        <a class="<?php echo $omw_active_menu['sms-brandname'] ?>" href="<?php echo home_url('sms-brandname') ?>"><span>SMS BRANDNAME</span></a>
                     </li>
                     <li>
                         <a class="<?php echo $omw_active_menu['sms-marketing'] ?>" href="<?php echo home_url('sms-marketing') ?>"><span>SMS SOLUTIONS</span></a>
@@ -155,9 +155,9 @@
                         <a class="<?php echo $omw_active_menu['sms-otp'] ?>" href="<?php echo home_url('sms-otp') ?>"><span>OTP SMS</span></a>
                     </li>
                     <li>
-                        <a class="<?php echo $omw_active_menu['news'] ?>" href="<?php echo home_url('news') ?>"><span>HƯỚNG DẪN</span></a>
+                        <a class="<?php echo $omw_active_menu['news'] ?>" href="<?php echo home_url('help') ?>"><span>HƯỚNG DẪN</span></a>
                     </li>
-                    <li><a class="<?php echo $omw_active_menu['help'] ?>" href="<?php echo home_url('help') ?>"><span>TIN TỨC</span></a></li>
+                    <li><a class="<?php echo $omw_active_menu['help'] ?>" href="<?php echo home_url('news') ?>"><span>TIN TỨC</span></a></li>
                     <li><a class="<?php echo $omw_active_menu['contact'] ?>" href="<?php echo home_url('contact') ?>"><span>LIÊN HỆ</span></a></li>
                 </ul>
                 <!--side-bar-->

@@ -75,7 +75,7 @@
     }
     #footer-wrapper{
         .copyright{
-            padding-right: 32%;
+            /*padding-right: 32%;*/
             padding-top: 20px;
         }
         .signs-up{
@@ -99,6 +99,19 @@
             li {
                 .hotline{
                     font-size: 13px !important;
+                }
+            }
+        }
+    }
+    
+    #footer-wrapper{
+        .copyright{
+            span.product_of{
+                padding-right: 34%;
+            }
+            .footer-logo{
+                img{
+                    float: none !important;
                 }
             }
         }

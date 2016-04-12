@@ -478,6 +478,19 @@ if (function_exists("register_field_group")) {
                 'rows' => '',
                 'formatting' => 'br',
             ),
+            array(
+                'key' => 'field_570c392412dc9',
+                'label' => 'URL',
+                'name' => 'url',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+            
         ),
         'location' => array(
             array(

@@ -28,8 +28,8 @@ $logo = (object) json_decode($omw_theme_settings->ct_company_logo_footer);
                     </form>
                 </div>
                 <div class="col-xs-12 col-md-4 copyright text-right">
-                    <span>A product of</span><br />
-                    <a class="footer-logo" href="#"><img class="img-responsive pull-right" src="<?php echo $logo->url ?>"/></a>
+                    <span class="product_of">A product of</span><br />
+                    <a class="footer-logo" href="<?php echo home_url() ?>"><img class="img-responsive pull-right center-block" src="<?php echo $logo->url ?>"/></a>
                 </div>
             </div>
             <div class="row-gap-medium"></div>

@@ -56,20 +56,20 @@
             $image = get_field('image');
             ?>
             <div class="col-xs-12 nopadding news-slide-row">
-                <div class="col-xs-12 col-md-4 nopadding">
+                <div class="col-xs-12 col-md-5 nopadding">
                     <a href="<?php the_permalink() ?>">
                         <img class="img-responsive" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
                     </a>
                 </div>
-                <div class="col-xs-12 col-md-8 nopadding">
+                <div class="col-xs-12 col-md-7 nopadding">
                     <a href="<?php the_permalink() ?>">
                         <h4>
                             <?php the_title() ?>
-                            <span>
-                                <h5>
-                                <?php echo wp_trim_words(get_the_excerpt(), 15, '...') ?>
-                                </h5>
-                            </span>
+                            <!--<span>-->
+                                <!--<h5>-->
+                                <?php // echo wp_trim_words(get_the_excerpt(), 15, '...') ?>
+                                <!--</h5>-->
+                            <!--</span>-->
                         </h4>
                     </a>
                 </div>
