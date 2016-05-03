@@ -25,7 +25,11 @@ get_header();
                     <h2><?php the_title() ?></h2>
                     <!--<div class="social-network"><span>facebook-twister</span></div>-->
                     <div class="content">
-                        <?php the_content() ?>
+                        <?php if (have_posts()) : ?>
+                            <?php while (have_posts()) : the_post(); ?>
+                                <?php the_content(); ?>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
                     </div>
                 </section>
                 <!-- content detail end -->

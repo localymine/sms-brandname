@@ -38,6 +38,9 @@ function omw_active_menu() {
     $query = $wp_query->query;
     $pagename = isset($query['pagename']) ? $query['pagename'] : '';
     $post_type = isset($query['post_type']) ? $query['post_type'] : '';
+    
+    $req_uri = explode('/', $_SERVER['REQUEST_URI']);
+    $term = isset($req_uri[1]) ? $req_uri[1] : '';
 
     $omw_active_menu = array(
         'home' => '',
@@ -61,7 +64,7 @@ function omw_active_menu() {
         $omw_active_menu['sms-marketing'] = $active;
     } elseif ($pagename == 'sms-8x77') {
         $omw_active_menu['sms-8x77'] = $active;
-    } elseif (is_post_type_archive('news') || is_page('news') || is_tax('news-type')) {
+    } elseif (is_post_type_archive('news') || is_page('news') || is_tax('news-type')|| $term == 'topic') {
         $omw_active_menu['news'] = $active;
     } elseif ($pagename == 'help') {
         $omw_active_menu['help'] = $active;

@@ -2405,6 +2405,16 @@ ul.recent_short{
     color: $white !important;
 }
 
+.thankyou-dialog{
+    max-width: 555px;
+    width: 100%;
+    height: 333px;
+    border: 2px solid #F88010;
+    padding: 20px;
+    padding-top: 10%;
+    margin: 0 auto;
+}
+
 @import "nmf-1-max-1200.scss";
 @import "nmf-2-max-992.scss";
 @import "nmf-3-max-768.scss";

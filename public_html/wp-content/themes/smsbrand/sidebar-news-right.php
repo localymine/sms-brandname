@@ -58,7 +58,7 @@
             <div class="col-xs-12 nopadding news-slide-row">
                 <div class="col-xs-12 col-md-5 nopadding">
                     <a href="<?php the_permalink() ?>">
-                        <img class="img-responsive" src="<?php echo $image['sizes']['thumbnail'] ?>"/>
+                        <img class="img-responsive" src="<?php echo $image['sizes']['large'] ?>"/>
                     </a>
                 </div>
                 <div class="col-xs-12 col-md-7 nopadding">
